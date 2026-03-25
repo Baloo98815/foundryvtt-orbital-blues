@@ -20,7 +20,7 @@ export class OrbitalBluesItemSheet extends ItemSheet {
 
   /** @override */
   async getData() {
-    const context = super.getData();
+    const context = await super.getData();
     context.system = context.item.system;
     context.config = CONFIG.ORBITAL_BLUES;
     context.enrichedDescription = await TextEditor.enrichHTML(

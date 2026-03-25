@@ -7,10 +7,13 @@
     "minimum": "12",
     "verified": "13"
   },
+  "url": "https://github.com/Baloo98815/foundryvtt-orbital-blues",
+  "manifest": "https://raw.githubusercontent.com/Baloo98815/foundryvtt-orbital-blues/main/system.json",
+  "download": "https://github.com/Baloo98815/foundryvtt-orbital-blues/releases/latest/download/orbital-blues.zip",
   "authors": [
     {
-      "name": "Community",
-      "url": ""
+      "name": "Baloo98815",
+      "url": "https://github.com/Baloo98815"
     }
   ],
   "esmodules": ["orbital-blues.mjs"],

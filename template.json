@@ -97,8 +97,7 @@
     },
     "trouble": {
       "templates": ["common"],
-      "questions": [],
-      "bluesTriggers": []
+      "bluesTriggers": ""
     }
   }
 }

@@ -15,8 +15,8 @@ export class OrbitalBluesShipSheet extends ActorSheet {
   }
 
   /** @override */
-  getData() {
-    const context = super.getData();
+  async getData() {
+    const context = await super.getData();
     context.system = context.actor.system;
     context.config = CONFIG.ORBITAL_BLUES;
 
