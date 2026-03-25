@@ -1,0 +1,38 @@
+{
+  "id": "orbital-blues",
+  "title": "Orbital Blues",
+  "description": "System implementation for Orbital Blues, a lo-fi space western RPG by Soul Muppet Publishing.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Community",
+      "url": ""
+    }
+  ],
+  "esmodules": ["orbital-blues.mjs"],
+  "styles": ["styles/orbital-blues.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "socket": false,
+  "initiative": "2d6 + @stats.savvy.value",
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "heart",
+  "secondaryTokenAttribute": "blues"
+}

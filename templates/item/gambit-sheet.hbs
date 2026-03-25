@@ -1,0 +1,10 @@
+<form class="{{cssClass}} flexcol ob-item-form" autocomplete="off">
+  <header class="ob-item-header">
+    <img class="ob-item-header-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <input class="ob-item-header-name" type="text" name="name" value="{{item.name}}" placeholder="Gambit Name" />
+  </header>
+  <div class="sheet-body">
+    <p class="ob-hint">Gambits are talents, tricks and reliable assets characters call upon to get jobs done.</p>
+    {{prosemirror enrichedDescription name="system.description" fieldLabel="Description" editable=editable button=false}}
+  </div>
+</form>

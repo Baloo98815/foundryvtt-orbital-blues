@@ -1,0 +1,104 @@
+{
+  "Actor": {
+    "types": ["character", "ship", "npc"],
+    "templates": {
+      "common": {}
+    },
+    "character": {
+      "concept": "",
+      "crewTitle": "",
+      "sector": "",
+      "alias": "",
+      "soundtrack": "",
+      "stats": {
+        "muscle": { "value": 0 },
+        "grit":   { "value": 0 },
+        "savvy":  { "value": 0 }
+      },
+      "heart": {
+        "value": 8,
+        "min": 0,
+        "max": 8
+      },
+      "blues": {
+        "value": 0,
+        "min": 0,
+        "max": 12
+      },
+      "credits": 0,
+      "debts": 0,
+      "savings": 0,
+      "notes": "",
+      "biography": ""
+    },
+    "ship": {
+      "purpose": "",
+      "origin": "",
+      "chassis": "",
+      "size": "medium",
+      "stats": {
+        "body":     { "value": 0 },
+        "mobility": { "value": 0 },
+        "systems":  { "value": 0 }
+      },
+      "shipWeapon": "",
+      "additionalFeature": "",
+      "crewProjects": {
+        "pips": 0,
+        "max": 4
+      },
+      "notes": ""
+    },
+    "npc": {
+      "concept": "",
+      "sector": "",
+      "stats": {
+        "muscle": { "value": 0 },
+        "grit":   { "value": 0 },
+        "savvy":  { "value": 0 }
+      },
+      "heart": {
+        "value": 8,
+        "min": 0,
+        "max": 8
+      },
+      "notes": "",
+      "biography": ""
+    }
+  },
+  "Item": {
+    "types": ["weapon", "equipment", "memento", "gambit", "trouble"],
+    "templates": {
+      "common": {
+        "description": "",
+        "source": ""
+      }
+    },
+    "weapon": {
+      "templates": ["common"],
+      "category": "ranged",
+      "subcategory": "personal",
+      "traits": [],
+      "integrated": false,
+      "quantity": 1,
+      "bulky": false
+    },
+    "equipment": {
+      "templates": ["common"],
+      "integrated": false,
+      "quantity": 1,
+      "bulky": false
+    },
+    "memento": {
+      "templates": ["common"]
+    },
+    "gambit": {
+      "templates": ["common"]
+    },
+    "trouble": {
+      "templates": ["common"],
+      "questions": [],
+      "bluesTriggers": []
+    }
+  }
+}

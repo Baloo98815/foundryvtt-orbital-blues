@@ -1,0 +1,114 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  <!-- ===== HEADER ===== -->
+  <header class="ob-sheet-header ob-ship-header">
+    <div class="ob-portrait">
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    </div>
+    <div class="ob-header-info">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{actor.name}}" placeholder="Ship Name" />
+      </h1>
+      <div class="ob-header-fields">
+        <div class="ob-field">
+          <label>{{localize "ORBITAL_BLUES.Ship.Purpose"}}</label>
+          <input type="text" name="system.purpose" value="{{system.purpose}}" />
+        </div>
+        <div class="ob-field">
+          <label>{{localize "ORBITAL_BLUES.Ship.Origin"}}</label>
+          <input type="text" name="system.origin" value="{{system.origin}}" />
+        </div>
+        <div class="ob-field">
+          <label>{{localize "ORBITAL_BLUES.Ship.Chassis"}}</label>
+          <input type="text" name="system.chassis" value="{{system.chassis}}" />
+        </div>
+        <div class="ob-field">
+          <label>{{localize "ORBITAL_BLUES.Ship.Size"}}</label>
+          <select name="system.size">
+            <option value="small" {{#if (eq system.size "small")}}selected{{/if}}>Small</option>
+            <option value="medium" {{#if (eq system.size "medium")}}selected{{/if}}>Medium</option>
+            <option value="large" {{#if (eq system.size "large")}}selected{{/if}}>Large</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SHIP STATS ===== -->
+  <div class="ob-stats-row ob-ship-stats">
+    {{#each system.stats as |stat key|}}
+    <div class="ob-stat-block ob-ship-stat-block">
+      <div class="ob-stat-name">{{localize (concat "ORBITAL_BLUES.ShipStats." (capitalize key))}}</div>
+      <div class="ob-stat-value-wrap">
+        <input type="number" name="system.stats.{{key}}.value" value="{{stat.value}}" min="-1" max="3" class="ob-stat-input" />
+      </div>
+      <button type="button" class="ob-ship-stat-roll ob-roll-btn" data-stat="{{key}}"
+        title="Roll a check with this stat">
+        <i class="fas fa-dice-d6"></i>
+      </button>
+    </div>
+    {{/each}}
+  </div>
+
+  <!-- ===== FEATURES ===== -->
+  <div class="ob-ship-features">
+    <div class="ob-field">
+      <label>{{localize "ORBITAL_BLUES.Ship.ShipWeapon"}}</label>
+      <input type="text" name="system.shipWeapon" value="{{system.shipWeapon}}" placeholder="e.g. Gatling Gun (Personal–Rapid Fire)" />
+    </div>
+    <div class="ob-field">
+      <label>{{localize "ORBITAL_BLUES.Ship.AdditionalFeature"}}</label>
+      <input type="text" name="system.additionalFeature" value="{{system.additionalFeature}}" placeholder="e.g. On-board AI. Callous, if not resourceful." />
+    </div>
+  </div>
+
+  <!-- ===== CREW PROJECTS ===== -->
+  <div class="ob-crew-projects">
+    <div class="ob-section-header">
+      <span>{{localize "ORBITAL_BLUES.Ship.CrewProjects"}}</span>
+      <span class="ob-pips-label">{{system.crewProjects.pips}} / 4 pips</span>
+    </div>
+    <div class="ob-crew-pips">
+      {{#times 4}}
+      <button type="button" class="ob-crew-project-pip {{#if (lte (add @index 1) ../system.crewProjects.pips)}}active{{/if}}"
+        data-pip="{{add @index 1}}">●</button>
+      {{/times}}
+    </div>
+    <p class="ob-hint">At 4 pips: Upgrade ship stat, Obtain Crew Equipment, or Upgrade a weapon.</p>
+  </div>
+
+  <!-- TABS -->
+  <nav class="sheet-tabs tabs">
+    <a class="item" data-tab="crew-equipment"><i class="fas fa-toolbox"></i> {{localize "ORBITAL_BLUES.Ship.CrewEquipment"}}</a>
+    <a class="item" data-tab="notes"><i class="fas fa-book"></i> {{localize "ORBITAL_BLUES.Ship.Notes"}}</a>
+  </nav>
+
+  <div class="sheet-body">
+    <div class="tab" data-tab="crew-equipment">
+      <div class="ob-section-header">
+        <span>{{localize "ORBITAL_BLUES.Ship.CrewEquipment"}}</span>
+        <a class="item-create ob-add-btn" data-type="equipment"><i class="fas fa-plus"></i></a>
+      </div>
+      <ul class="ob-item-list">
+        {{#each crewEquipment}}
+        <li class="item" data-item-id="{{_id}}">
+          <img src="{{img}}" class="ob-item-icon" />
+          <div class="ob-item-name">{{name}}</div>
+          {{#if system.integrated}}<span class="ob-tag ob-tag-integrated">Integrated</span>{{/if}}
+          <div class="ob-item-controls">
+            <a class="item-edit"><i class="fas fa-edit"></i></a>
+            <a class="item-delete"><i class="fas fa-trash"></i></a>
+          </div>
+        </li>
+        {{else}}
+        <li class="ob-empty">No crew equipment.</li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="tab" data-tab="notes">
+      {{prosemirror system.notes name="system.notes" fieldLabel="Notes" editable=editable button=false}}
+    </div>
+  </div>
+
+</form>

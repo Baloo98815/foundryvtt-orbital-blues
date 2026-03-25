@@ -1,0 +1,70 @@
+<form class="{{cssClass}} flexcol ob-item-form" autocomplete="off">
+  <header class="ob-item-header">
+    <img class="ob-item-header-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <input class="ob-item-header-name" type="text" name="name" value="{{item.name}}" placeholder="Weapon Name" />
+  </header>
+
+  <nav class="sheet-tabs tabs">
+    <a class="item" data-tab="description"><i class="fas fa-book"></i> Description</a>
+    <a class="item" data-tab="details"><i class="fas fa-cog"></i> Details</a>
+  </nav>
+
+  <div class="sheet-body">
+    <div class="tab" data-tab="description">
+      {{prosemirror enrichedDescription name="system.description" fieldLabel="Description" editable=editable button=false}}
+    </div>
+
+    <div class="tab" data-tab="details">
+      <div class="ob-form-row">
+        <label>{{localize "ORBITAL_BLUES.Weapon.Category"}}</label>
+        <select name="system.category">
+          <option value="ranged" {{#if (eq system.category "ranged")}}selected{{/if}}>
+            {{localize "ORBITAL_BLUES.Weapon.Categories.ranged"}}
+          </option>
+          <option value="melee" {{#if (eq system.category "melee")}}selected{{/if}}>
+            {{localize "ORBITAL_BLUES.Weapon.Categories.melee"}}
+          </option>
+        </select>
+      </div>
+
+      <div class="ob-form-row">
+        <label>{{localize "ORBITAL_BLUES.Weapon.Subcategory"}}</label>
+        <select name="system.subcategory">
+          <option value="personal" {{#if (eq system.subcategory "personal")}}selected{{/if}}>
+            {{localize "ORBITAL_BLUES.Weapon.Subcategories.personal"}}
+          </option>
+          <option value="military" {{#if (eq system.subcategory "military")}}selected{{/if}}>
+            {{localize "ORBITAL_BLUES.Weapon.Subcategories.military"}}
+          </option>
+          <option value="improvised" {{#if (eq system.subcategory "improvised")}}selected{{/if}}>
+            {{localize "ORBITAL_BLUES.Weapon.Subcategories.improvised"}}
+          </option>
+          <option value="martial" {{#if (eq system.subcategory "martial")}}selected{{/if}}>
+            {{localize "ORBITAL_BLUES.Weapon.Subcategories.martial"}}
+          </option>
+        </select>
+      </div>
+
+      <div class="ob-form-row ob-checkboxes-row">
+        <label>{{localize "ORBITAL_BLUES.Weapon.Traits"}}</label>
+        <div class="ob-trait-checkboxes">
+          {{#each traitCheckboxes}}
+          <label class="ob-trait-label">
+            <input type="checkbox" class="ob-trait-checkbox" data-trait="{{key}}" {{#if checked}}checked{{/if}} />
+            {{label}}
+          </label>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="ob-form-row">
+        <label>{{localize "ORBITAL_BLUES.Weapon.Integrated"}}</label>
+        <input type="checkbox" name="system.integrated" {{#if system.integrated}}checked{{/if}} />
+      </div>
+      <div class="ob-form-row">
+        <label>{{localize "ORBITAL_BLUES.Weapon.Bulky"}}</label>
+        <input type="checkbox" name="system.bulky" {{#if system.bulky}}checked{{/if}} />
+      </div>
+    </div>
+  </div>
+</form>

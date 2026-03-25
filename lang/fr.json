@@ -1,0 +1,113 @@
+{
+  "ORBITAL_BLUES": {
+    "SheetLabels": {
+      "Character": "Hors-la-loi Interstellaire",
+      "Ship": "Vaisseau de l'Équipage",
+      "NPC": "PNJ",
+      "Weapon": "Arme",
+      "Equipment": "Équipement",
+      "Memento": "Memento",
+      "Gambit": "Gambit",
+      "Trouble": "Tracas"
+    },
+    "Stats": {
+      "Muscle": "Muscle",
+      "Grit": "Cran",
+      "Savvy": "Astuce",
+      "Heart": "Cœur",
+      "Blues": "Blues",
+      "Credits": "Crédits",
+      "Debts": "Dettes",
+      "Savings": "Économies"
+    },
+    "ShipStats": {
+      "Body": "Coque",
+      "Mobility": "Mobilité",
+      "Systems": "Systèmes"
+    },
+    "Rolls": {
+      "StatCheck": "Test de Stat",
+      "BluesCheck": "Test de Blues",
+      "ObservationCheck": "Test d'Observation",
+      "UpperHand": "Avantage",
+      "AgainstTheOdds": "Contre Vents et Marées",
+      "Normal": "Normal",
+      "RollMode": "Mode de Jet",
+      "Target": "Cible",
+      "Result": "Résultat",
+      "Success": "SUCCÈS",
+      "Failure": "ÉCHEC",
+      "Trivial": "TRIVIAL (Succès Auto)",
+      "Impossible": "IMPOSSIBLE (Échec Auto)",
+      "Exertion": "Effort",
+      "SpendHeart": "Dépenser du Cœur pour relancer des dés"
+    },
+    "Character": {
+      "Concept": "Concept",
+      "CrewTitle": "Titre dans l'Équipage",
+      "Sector": "Secteur",
+      "Alias": "Alias",
+      "Soundtrack": "Bande Son",
+      "Biography": "Biographie",
+      "Notes": "Notes",
+      "Gambits": "Gambits",
+      "Troubles": "Tracas",
+      "Equipment": "Équipement",
+      "Weapons": "Armes",
+      "Mementos": "Mementos"
+    },
+    "Ship": {
+      "Purpose": "Ancienne Vocation",
+      "Origin": "Origine du Vaisseau",
+      "Chassis": "Châssis",
+      "Size": "Taille",
+      "ShipWeapon": "Arme du Vaisseau",
+      "AdditionalFeature": "Caractéristique Additionnelle",
+      "CrewProjects": "Projets d'Équipage",
+      "CrewEquipment": "Équipement d'Équipage",
+      "Notes": "Notes"
+    },
+    "Blues": {
+      "Brewing": "Le Trouble Mijote !",
+      "BrewingDesc": "Vous avez 8+ Blues. Vous pouvez déclarer qu'un Tracas Mijote.",
+      "Reset": "Réinitialiser les Blues à 0",
+      "Gained": "a gagné 1 Blues",
+      "NoGained": "a tenu le coup"
+    },
+    "Weapon": {
+      "Category": "Catégorie",
+      "Subcategory": "Type",
+      "Traits": "Traits",
+      "Integrated": "Intégré",
+      "Bulky": "Encombrant",
+      "Categories": {
+        "ranged": "À Distance",
+        "melee": "Corps à Corps"
+      },
+      "Subcategories": {
+        "personal": "Personnel",
+        "military": "Militaire",
+        "improvised": "Improvisé",
+        "martial": "Martial"
+      },
+      "TraitsList": {
+        "rapid-fire": "Tir Rapide",
+        "concealable": "Dissimulable",
+        "stun": "Paralysant",
+        "precise": "Précis",
+        "intimidating": "Intimidant",
+        "shot": "Mitraille",
+        "armour-piercing": "Perforant",
+        "long-range": "Longue Portée",
+        "limited-ammo": "Munitions Limitées",
+        "loud": "Bruyant",
+        "deadly": "Mortel",
+        "defensive": "Défensif",
+        "heavy": "Lourd",
+        "explosive": "Explosif",
+        "bind": "Entrave",
+        "conspicuous": "Voyant"
+      }
+    }
+  }
+}

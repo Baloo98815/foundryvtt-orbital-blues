@@ -1,0 +1,113 @@
+{
+  "ORBITAL_BLUES": {
+    "SheetLabels": {
+      "Character": "Interstellar Outlaw",
+      "Ship": "Crew Ship",
+      "NPC": "NPC",
+      "Weapon": "Weapon",
+      "Equipment": "Equipment",
+      "Memento": "Memento",
+      "Gambit": "Gambit",
+      "Trouble": "Trouble"
+    },
+    "Stats": {
+      "Muscle": "Muscle",
+      "Grit": "Grit",
+      "Savvy": "Savvy",
+      "Heart": "Heart",
+      "Blues": "Blues",
+      "Credits": "Credits",
+      "Debts": "Debts",
+      "Savings": "Savings"
+    },
+    "ShipStats": {
+      "Body": "Body",
+      "Mobility": "Mobility",
+      "Systems": "Systems"
+    },
+    "Rolls": {
+      "StatCheck": "Stat Check",
+      "BluesCheck": "Blues Check",
+      "ObservationCheck": "Observation Check",
+      "UpperHand": "Upper Hand",
+      "AgainstTheOdds": "Against the Odds",
+      "Normal": "Normal",
+      "RollMode": "Roll Mode",
+      "Target": "Target",
+      "Result": "Result",
+      "Success": "SUCCESS",
+      "Failure": "FAILURE",
+      "Trivial": "TRIVIAL (Auto-Success)",
+      "Impossible": "IMPOSSIBLE (Auto-Fail)",
+      "Exertion": "Exertion",
+      "SpendHeart": "Spend Heart to reroll dice"
+    },
+    "Character": {
+      "Concept": "Concept",
+      "CrewTitle": "Crew Title",
+      "Sector": "Sector",
+      "Alias": "Alias",
+      "Soundtrack": "Soundtrack",
+      "Biography": "Biography",
+      "Notes": "Notes",
+      "Gambits": "Gambits",
+      "Troubles": "Troubles",
+      "Equipment": "Equipment",
+      "Weapons": "Weapons",
+      "Mementos": "Mementos"
+    },
+    "Ship": {
+      "Purpose": "Former Purpose",
+      "Origin": "Ship Origin",
+      "Chassis": "Ship Chassis",
+      "Size": "Size",
+      "ShipWeapon": "Ship Weapon",
+      "AdditionalFeature": "Additional Feature",
+      "CrewProjects": "Crew Projects",
+      "CrewEquipment": "Crew Equipment",
+      "Notes": "Notes"
+    },
+    "Blues": {
+      "Brewing": "Trouble's Brewing!",
+      "BrewingDesc": "You have 8+ Blues. You may declare a Trouble is Brewing.",
+      "Reset": "Reset Blues to 0",
+      "Gained": "gained 1 Blues",
+      "NoGained": "shrugged off the Blues"
+    },
+    "Weapon": {
+      "Category": "Category",
+      "Subcategory": "Type",
+      "Traits": "Traits",
+      "Integrated": "Integrated",
+      "Bulky": "Bulky",
+      "Categories": {
+        "ranged": "Ranged",
+        "melee": "Melee"
+      },
+      "Subcategories": {
+        "personal": "Personal",
+        "military": "Military",
+        "improvised": "Improvised",
+        "martial": "Martial"
+      },
+      "TraitsList": {
+        "rapid-fire": "Rapid Fire",
+        "concealable": "Concealable",
+        "stun": "Stun",
+        "precise": "Precise",
+        "intimidating": "Intimidating",
+        "shot": "Shot",
+        "armour-piercing": "Armour Piercing",
+        "long-range": "Long Range",
+        "limited-ammo": "Limited Ammo",
+        "loud": "Loud",
+        "deadly": "Deadly",
+        "defensive": "Defensive",
+        "heavy": "Heavy",
+        "explosive": "Explosive",
+        "bind": "Bind",
+        "conspicuous": "Conspicuous"
+      }
+    }
+  }
+}

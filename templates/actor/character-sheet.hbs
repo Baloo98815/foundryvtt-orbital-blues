@@ -1,0 +1,280 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  <!-- ===== HEADER ===== -->
+  <header class="ob-sheet-header">
+    <div class="ob-portrait">
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    </div>
+    <div class="ob-header-info">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{actor.name}}" placeholder="Name" />
+      </h1>
+      <div class="ob-header-fields">
+        <div class="ob-field">
+          <label>{{localize "ORBITAL_BLUES.Character.CrewTitle"}}</label>
+          <input type="text" name="system.crewTitle" value="{{system.crewTitle}}" placeholder="The ___" />
+        </div>
+        <div class="ob-field">
+          <label>{{localize "ORBITAL_BLUES.Character.Alias"}}</label>
+          <input type="text" name="system.alias" value="{{system.alias}}" placeholder="Alias" />
+        </div>
+        <div class="ob-field">
+          <label>{{localize "ORBITAL_BLUES.Character.Sector"}}</label>
+          <input type="text" name="system.sector" value="{{system.sector}}" placeholder="Sector" />
+        </div>
+      </div>
+      <div class="ob-field ob-concept">
+        <label>{{localize "ORBITAL_BLUES.Character.Concept"}}</label>
+        <input type="text" name="system.concept" value="{{system.concept}}" placeholder="Character concept..." />
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== VITALS BAR (Heart, Blues, Credits) ===== -->
+  <div class="ob-vitals-bar">
+
+    <!-- HEART -->
+    <div class="ob-vital ob-heart-block">
+      <div class="ob-vital-label">
+        <i class="fas fa-heart"></i> {{localize "ORBITAL_BLUES.Stats.Heart"}}
+      </div>
+      <div class="ob-vital-controls">
+        <button type="button" class="ob-heart-change ob-minus" data-delta="-1">−</button>
+        <span class="ob-vital-value">{{system.heart.value}} / {{system.heart.max}}</span>
+        <button type="button" class="ob-heart-change ob-plus" data-delta="1">+</button>
+      </div>
+      <div class="ob-pips">
+        {{#each (times system.heart.max)}}
+          <span class="ob-pip {{#if (lte (add @index 1) ../system.heart.value)}}filled{{/if}}"></span>
+        {{/each}}
+      </div>
+    </div>
+
+    <!-- BLUES -->
+    <div class="ob-vital ob-blues-block {{#if system.bluesBrewing}}blues-brewing{{/if}}">
+      <div class="ob-vital-label">
+        <i class="fas fa-music"></i> {{localize "ORBITAL_BLUES.Stats.Blues"}}
+        {{#if system.bluesBrewing}}
+          <span class="ob-brewing-badge" title="{{localize "ORBITAL_BLUES.Blues.BrewingDesc"}}">🎵</span>
+        {{/if}}
+      </div>
+      <div class="ob-vital-controls">
+        <button type="button" class="ob-blues-change ob-minus" data-delta="-1">−</button>
+        <span class="ob-vital-value">{{system.blues.value}}</span>
+        <button type="button" class="ob-blues-change ob-plus" data-delta="1">+</button>
+      </div>
+      <div class="ob-blues-buttons">
+        <button type="button" class="ob-blues-check ob-roll-btn">
+          <i class="fas fa-dice"></i> {{localize "ORBITAL_BLUES.Rolls.BluesCheck"}}
+        </button>
+        {{#if system.bluesBrewing}}
+          <button type="button" class="ob-blues-reset ob-danger-btn">
+            <i class="fas fa-fire"></i> {{localize "ORBITAL_BLUES.Blues.Reset"}}
+          </button>
+        {{/if}}
+      </div>
+    </div>
+
+    <!-- CREDITS / DEBTS -->
+    <div class="ob-vital ob-money-block">
+      <div class="ob-vital-label"><i class="fas fa-coins"></i> {{localize "ORBITAL_BLUES.Stats.Credits"}}</div>
+      <div class="ob-money-fields">
+        <div class="ob-money-row">
+          <label>{{localize "ORBITAL_BLUES.Stats.Credits"}}</label>
+          <input type="number" name="system.credits" value="{{system.credits}}" min="0" />
+        </div>
+        <div class="ob-money-row">
+          <label>{{localize "ORBITAL_BLUES.Stats.Debts"}}</label>
+          <input type="number" name="system.debts" value="{{system.debts}}" min="0" />
+        </div>
+        <div class="ob-money-row">
+          <label>{{localize "ORBITAL_BLUES.Stats.Savings"}}</label>
+          <input type="number" name="system.savings" value="{{system.savings}}" min="0" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== STATS ===== -->
+  <div class="ob-stats-row">
+    {{#each system.stats as |stat key|}}
+    <div class="ob-stat-block">
+      <div class="ob-stat-name">{{localize (concat "ORBITAL_BLUES.Stats." (capitalize key))}}</div>
+      <div class="ob-stat-value-wrap">
+        <input type="number" name="system.stats.{{key}}.value" value="{{stat.value}}" min="-1" max="3" class="ob-stat-input" />
+      </div>
+      <button type="button" class="ob-stat-roll ob-roll-btn" data-stat="{{key}}"
+        title="Left-click: Normal | Shift: Upper Hand | Alt: Against the Odds | Right-click: Choose">
+        <i class="fas fa-dice-d6"></i>
+      </button>
+      <button type="button" class="ob-stat-roll ob-obs-btn" data-stat="{{key}}"
+        style="display:none;">
+      </button>
+    </div>
+    {{/each}}
+    <!-- Observation Check -->
+    <div class="ob-stat-block ob-obs-block">
+      <div class="ob-stat-name">OBS</div>
+      <div class="ob-stat-value-wrap">—</div>
+      <button type="button" class="ob-obs-check ob-roll-btn">
+        <i class="fas fa-eye"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== TABS ===== -->
+  <nav class="sheet-tabs tabs">
+    <a class="item" data-tab="gambits"><i class="fas fa-star"></i> {{localize "ORBITAL_BLUES.Character.Gambits"}}</a>
+    <a class="item" data-tab="troubles"><i class="fas fa-skull"></i> {{localize "ORBITAL_BLUES.Character.Troubles"}}</a>
+    <a class="item" data-tab="gear"><i class="fas fa-gun"></i> {{localize "ORBITAL_BLUES.Character.Weapons"}}</a>
+    <a class="item" data-tab="biography"><i class="fas fa-book"></i> {{localize "ORBITAL_BLUES.Character.Biography"}}</a>
+  </nav>
+
+  <div class="sheet-body">
+
+    <!-- ===== GAMBITS TAB ===== -->
+    <div class="tab" data-tab="gambits">
+      <div class="ob-section-header">
+        <span>{{localize "ORBITAL_BLUES.Character.Gambits"}}</span>
+        <a class="item-create ob-add-btn" data-type="gambit"><i class="fas fa-plus"></i></a>
+      </div>
+      <ul class="ob-item-list">
+        {{#each gambits}}
+        <li class="item" data-item-id="{{_id}}">
+          <img src="{{img}}" class="ob-item-icon" />
+          <div class="ob-item-name">{{name}}</div>
+          <div class="ob-item-desc">{{system.description}}</div>
+          <div class="ob-item-controls">
+            <a class="item-edit"><i class="fas fa-edit"></i></a>
+            <a class="item-delete"><i class="fas fa-trash"></i></a>
+          </div>
+        </li>
+        {{else}}
+        <li class="ob-empty">{{localize "ORBITAL_BLUES.Character.Gambits"}} — none yet.</li>
+        {{/each}}
+      </ul>
+
+      <div class="ob-section-header mt-4">
+        <span>{{localize "ORBITAL_BLUES.Character.Mementos"}}</span>
+        <a class="item-create ob-add-btn" data-type="memento"><i class="fas fa-plus"></i></a>
+      </div>
+      <ul class="ob-item-list">
+        {{#each mementos}}
+        <li class="item" data-item-id="{{_id}}">
+          <img src="{{img}}" class="ob-item-icon" />
+          <div class="ob-item-name">{{name}}</div>
+          <div class="ob-item-controls">
+            <a class="item-edit"><i class="fas fa-edit"></i></a>
+            <a class="item-delete"><i class="fas fa-trash"></i></a>
+          </div>
+        </li>
+        {{else}}
+        <li class="ob-empty">No mementos.</li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <!-- ===== TROUBLES TAB ===== -->
+    <div class="tab" data-tab="troubles">
+      <div class="ob-section-header">
+        <span>{{localize "ORBITAL_BLUES.Character.Troubles"}}</span>
+        <a class="item-create ob-add-btn" data-type="trouble"><i class="fas fa-plus"></i></a>
+      </div>
+      <ul class="ob-item-list ob-troubles-list">
+        {{#each troubles}}
+        <li class="item ob-trouble-item" data-item-id="{{_id}}">
+          <img src="{{img}}" class="ob-item-icon" />
+          <div class="ob-trouble-content">
+            <div class="ob-item-name">{{name}}</div>
+            {{#if system.description}}
+              <div class="ob-item-desc">{{system.description}}</div>
+            {{/if}}
+          </div>
+          <div class="ob-item-controls">
+            <a class="item-edit"><i class="fas fa-edit"></i></a>
+            <a class="item-delete"><i class="fas fa-trash"></i></a>
+          </div>
+        </li>
+        {{else}}
+        <li class="ob-empty">No troubles... yet.</li>
+        {{/each}}
+      </ul>
+      <div class="ob-trouble-hint">
+        <p>For every 2 Troubles, gain 1 Gambit. You gain Blues from your Troubles.</p>
+      </div>
+    </div>
+
+    <!-- ===== GEAR TAB ===== -->
+    <div class="tab" data-tab="gear">
+      <div class="ob-section-header">
+        <span>{{localize "ORBITAL_BLUES.Character.Weapons"}}</span>
+        <a class="item-create ob-add-btn" data-type="weapon"><i class="fas fa-plus"></i></a>
+      </div>
+      <ul class="ob-item-list ob-weapons-list">
+        {{#each weapons}}
+        <li class="item ob-weapon-item" data-item-id="{{_id}}">
+          <img src="{{img}}" class="ob-item-icon" />
+          <div class="ob-weapon-info">
+            <div class="ob-item-name">{{name}}</div>
+            <div class="ob-weapon-traits">
+              <span class="ob-tag ob-tag-{{system.category}}">{{localize (concat "ORBITAL_BLUES.Weapon.Categories." system.category)}}</span>
+              <span class="ob-tag ob-tag-sub">{{localize (concat "ORBITAL_BLUES.Weapon.Subcategories." system.subcategory)}}</span>
+              {{#each system.traits}}
+                <span class="ob-trait-tag">{{localize (concat "ORBITAL_BLUES.Weapon.TraitsList." this)}}</span>
+              {{/each}}
+            </div>
+          </div>
+          <div class="ob-item-controls">
+            <a class="item-attack ob-attack-btn" title="Attack (Shift: Upper Hand / Alt: Against the Odds)">
+              <i class="fas fa-crosshairs"></i>
+            </a>
+            <a class="item-edit"><i class="fas fa-edit"></i></a>
+            <a class="item-delete"><i class="fas fa-trash"></i></a>
+          </div>
+        </li>
+        {{else}}
+        <li class="ob-empty">No weapons.</li>
+        {{/each}}
+      </ul>
+
+      <div class="ob-section-header mt-4">
+        <span>{{localize "ORBITAL_BLUES.Character.Equipment"}}</span>
+        <a class="item-create ob-add-btn" data-type="equipment"><i class="fas fa-plus"></i></a>
+      </div>
+      <ul class="ob-item-list">
+        {{#each equipment}}
+        <li class="item" data-item-id="{{_id}}">
+          <img src="{{img}}" class="ob-item-icon" />
+          <div class="ob-item-name">{{name}}</div>
+          {{#if system.integrated}}<span class="ob-tag ob-tag-integrated">Integrated</span>{{/if}}
+          {{#if system.bulky}}<span class="ob-tag ob-tag-bulky">Bulky</span>{{/if}}
+          <div class="ob-item-controls">
+            <a class="item-edit"><i class="fas fa-edit"></i></a>
+            <a class="item-delete"><i class="fas fa-trash"></i></a>
+          </div>
+        </li>
+        {{else}}
+        <li class="ob-empty">No equipment.</li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <!-- ===== BIOGRAPHY TAB ===== -->
+    <div class="tab" data-tab="biography">
+      <div class="ob-field ob-soundtrack">
+        <label><i class="fas fa-music"></i> {{localize "ORBITAL_BLUES.Character.Soundtrack"}}</label>
+        <input type="text" name="system.soundtrack" value="{{system.soundtrack}}" placeholder="Your character's theme song..." />
+      </div>
+      <div class="ob-bio-section">
+        <label>{{localize "ORBITAL_BLUES.Character.Biography"}}</label>
+        {{prosemirror enrichedBiography name="system.biography" fieldLabel="Biography" editable=editable button=false}}
+      </div>
+      <div class="ob-bio-section">
+        <label>{{localize "ORBITAL_BLUES.Character.Notes"}}</label>
+        {{prosemirror system.notes name="system.notes" fieldLabel="Notes" editable=editable button=false}}
+      </div>
+    </div>
+
+  </div>
+</form>

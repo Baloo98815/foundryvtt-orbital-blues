@@ -1,0 +1,20 @@
+<form class="{{cssClass}} flexcol ob-item-form" autocomplete="off">
+  <header class="ob-item-header">
+    <img class="ob-item-header-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <input class="ob-item-header-name" type="text" name="name" value="{{item.name}}" placeholder="Trouble Name" />
+  </header>
+  <div class="sheet-body">
+    <p class="ob-hint">Troubles are summations of a character's past misgivings, misdeeds, vices or regrets.<br/>
+    <em>For every 2 Troubles, gain 1 Gambit.</em></p>
+
+    <div class="ob-form-section">
+      <label>Description / Backstory questions</label>
+      {{prosemirror enrichedDescription name="system.description" fieldLabel="Description" editable=editable button=false}}
+    </div>
+
+    <div class="ob-form-section">
+      <label>When do you gain Blues from this Trouble?</label>
+      <textarea name="system.bluesTriggers" placeholder="e.g. When you bottle it up. When something reminds you of...">{{system.bluesTriggers}}</textarea>
+    </div>
+  </div>
+</form>
