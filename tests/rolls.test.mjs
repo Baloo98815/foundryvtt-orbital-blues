@@ -311,4 +311,191 @@ describe('OrbitalBluesActor — rollObservationCheck', () => {
     expect(capturedModifiers[0]).toBe(0);
     OrbitalBluesActor.rollCheck = original;
   });
+
+  it('uses type = "observation"', async () => {
+    __setRollTotal(9);
+    const capturedTypes = [];
+    const actor = makeActor();
+
+    const original = OrbitalBluesActor.rollCheck;
+    OrbitalBluesActor.rollCheck = async (opts) => {
+      capturedTypes.push(opts.type);
+      return { roll: {}, total: 9, success: true };
+    };
+
+    await actor.rollObservationCheck();
+
+    expect(capturedTypes[0]).toBe('observation');
+    OrbitalBluesActor.rollCheck = original;
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* rollCheck — formulas with modifier (all three modes)               */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesActor.rollCheck — formulas with modifier', () => {
+  function captureFormula() {
+    const formulas = [];
+    const OriginalRoll = global.Roll;
+    global.Roll = class extends OriginalRoll {
+      constructor(formula) { super(formula); formulas.push(formula); }
+    };
+    return { formulas, restore: () => { global.Roll = OriginalRoll; } };
+  }
+
+  it('normal mode with modifier → "2d6 + 2"', async () => {
+    __setRollTotal(9);
+    const { formulas, restore } = captureFormula();
+    await OrbitalBluesActor.rollCheck({ actor: makeActor(), label: 'Test', modifier: 2, mode: 'normal', type: 'stat' });
+    expect(formulas[0]).toBe('2d6 + 2');
+    restore();
+  });
+
+  it('Upper Hand with modifier → "3d6kh2 + 1"', async () => {
+    __setRollTotal(11);
+    const { formulas, restore } = captureFormula();
+    await OrbitalBluesActor.rollCheck({ actor: makeActor(), label: 'Test', modifier: 1, mode: 'upper', type: 'stat' });
+    expect(formulas[0]).toBe('3d6kh2 + 1');
+    restore();
+  });
+
+  it('Against the Odds with modifier → "3d6kl2 + 3"', async () => {
+    __setRollTotal(8);
+    const { formulas, restore } = captureFormula();
+    await OrbitalBluesActor.rollCheck({ actor: makeActor(), label: 'Test', modifier: 3, mode: 'odds', type: 'stat' });
+    expect(formulas[0]).toBe('3d6kl2 + 3');
+    restore();
+  });
+
+  it('negative modifier → "2d6 + -1" (valid Foundry formula)', async () => {
+    __setRollTotal(6);
+    const { formulas, restore } = captureFormula();
+    await OrbitalBluesActor.rollCheck({ actor: makeActor(), label: 'Test', modifier: -1, mode: 'normal', type: 'stat' });
+    expect(formulas[0]).toBe('2d6 + -1');
+    restore();
+  });
+
+  it('modifier = 0 → formula without modifier suffix', async () => {
+    __setRollTotal(9);
+    const { formulas, restore } = captureFormula();
+    await OrbitalBluesActor.rollCheck({ actor: makeActor(), label: 'Test', modifier: 0, mode: 'upper', type: 'stat' });
+    expect(formulas[0]).toBe('3d6kh2');
+    restore();
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* rollCheck — result object structure                                 */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesActor.rollCheck — result object', () => {
+  it('returns { roll, total, success }', async () => {
+    __setRollTotal(10);
+    const result = await OrbitalBluesActor.rollCheck({
+      actor: makeActor(), label: 'Test', modifier: 0, mode: 'normal', type: 'stat'
+    });
+    expect(result).toHaveProperty('roll');
+    expect(result).toHaveProperty('total');
+    expect(result).toHaveProperty('success');
+  });
+
+  it('total in result matches mocked roll total', async () => {
+    __setRollTotal(5);
+    const result = await OrbitalBluesActor.rollCheck({
+      actor: makeActor(), label: 'Test', modifier: 0, mode: 'normal', type: 'stat'
+    });
+    expect(result.total).toBe(5);
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* rollStatCheck — savvy stat                                          */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesActor — rollStatCheck (savvy)', () => {
+  it('passes savvy stat value as modifier', async () => {
+    __setRollTotal(9);
+    const capturedModifiers = [];
+    const actor = makeActor(); // savvy = 0
+
+    const original = OrbitalBluesActor.rollCheck;
+    OrbitalBluesActor.rollCheck = async (opts) => {
+      capturedModifiers.push(opts.modifier);
+      return { roll: {}, total: 9, success: true };
+    };
+
+    await actor.rollStatCheck('savvy', 'normal');
+
+    expect(capturedModifiers[0]).toBe(0); // savvy = 0
+    OrbitalBluesActor.rollCheck = original;
+  });
+
+  it('uses type = "stat" for a savvy roll', async () => {
+    __setRollTotal(9);
+    const capturedTypes = [];
+    const actor = makeActor();
+
+    const original = OrbitalBluesActor.rollCheck;
+    OrbitalBluesActor.rollCheck = async (opts) => {
+      capturedTypes.push(opts.type);
+      return { roll: {}, total: 9, success: true };
+    };
+
+    await actor.rollStatCheck('savvy', 'normal');
+
+    expect(capturedTypes[0]).toBe('stat');
+    OrbitalBluesActor.rollCheck = original;
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* Blues Check — edge cases                                            */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesActor.rollCheck — Blues Check edge cases', () => {
+  it('blues at 11 increments to 12 on success', async () => {
+    __setRollTotal(9); // success
+    const actor = makeActor({ blues: { value: 11 } });
+
+    await OrbitalBluesActor.rollCheck({
+      actor, label: 'Blues Check', modifier: 0, mode: 'normal', type: 'blues'
+    });
+
+    expect(actor.system.blues.value).toBe(12);
+  });
+
+  it('blues at 0 increments to 1 on success', async () => {
+    __setRollTotal(10); // success
+    const actor = makeActor({ blues: { value: 0 } });
+
+    await OrbitalBluesActor.rollCheck({
+      actor, label: 'Blues Check', modifier: 0, mode: 'normal', type: 'blues'
+    });
+
+    expect(actor.system.blues.value).toBe(1);
+  });
+
+  it('blues unchanged on failure (total = 7)', async () => {
+    __setRollTotal(7); // failure
+    const actor = makeActor({ blues: { value: 5 } });
+
+    await OrbitalBluesActor.rollCheck({
+      actor, label: 'Blues Check', modifier: 0, mode: 'normal', type: 'blues'
+    });
+
+    expect(actor.system.blues.value).toBe(5);
+  });
+
+  it('stat type does not modify blues on success', async () => {
+    __setRollTotal(9); // success but type = stat
+    const actor = makeActor({ blues: { value: 3 } });
+
+    await OrbitalBluesActor.rollCheck({
+      actor, label: 'Muscle Check', modifier: 2, mode: 'normal', type: 'stat'
+    });
+
+    // Blues must not change for stat checks
+    expect(actor.system.blues.value).toBe(3);
+  });
 });

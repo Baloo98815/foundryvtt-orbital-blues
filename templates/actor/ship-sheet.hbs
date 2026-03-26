@@ -107,7 +107,7 @@
     </div>
 
     <div class="tab" data-tab="notes">
-      {{prosemirror system.notes name="system.notes" fieldLabel="Notes" editable=editable button=false}}
+      <textarea name="system.notes" rows="8" {{#unless editable}}disabled{{/unless}}>{{system.notes}}</textarea>
     </div>
   </div>
 

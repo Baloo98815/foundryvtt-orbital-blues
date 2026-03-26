@@ -134,11 +134,19 @@ Hooks.once("ready", function () {
    ============================================================ */
 function _registerHandlebarsHelpers() {
   // Generate an array of N numbers for looping
-  Handlebars.registerHelper("times", function (n, block) {
+  // Supports two usages:
+  //   - Subexpression: {{#each (times n)}} → returns array [0..n-1]
+  //   - Block helper: {{#times n}}...{{/times}} → renders block n times
+  Handlebars.registerHelper("times", function (n, options) {
+    if (!options || typeof options.fn !== "function") {
+      // Called as subexpression: (times n) → return iterable array
+      return Array.from({ length: n }, (_, i) => i);
+    }
+    // Called as block helper: {{#times n}}...{{/times}}
     let result = "";
     for (let i = 0; i < n; i++) {
-      block.data.index = i;
-      result += block.fn(i);
+      options.data.index = i;
+      result += options.fn(i);
     }
     return result;
   });

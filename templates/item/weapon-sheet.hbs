@@ -11,7 +11,7 @@
 
   <div class="sheet-body">
     <div class="tab" data-tab="description">
-      {{prosemirror enrichedDescription name="system.description" fieldLabel="Description" editable=editable button=false}}
+      <textarea name="system.description" rows="5" {{#unless editable}}disabled{{/unless}}>{{system.description}}</textarea>
     </div>
 
     <div class="tab" data-tab="details">

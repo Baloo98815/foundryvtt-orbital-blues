@@ -5,6 +5,6 @@
   </header>
   <div class="sheet-body">
     <p class="ob-hint">Gambits are talents, tricks and reliable assets characters call upon to get jobs done.</p>
-    {{prosemirror enrichedDescription name="system.description" fieldLabel="Description" editable=editable button=false}}
+    <textarea name="system.description" rows="6" {{#unless editable}}disabled{{/unless}}>{{system.description}}</textarea>
   </div>
 </form>

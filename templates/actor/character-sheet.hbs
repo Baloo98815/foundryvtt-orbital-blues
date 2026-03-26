@@ -268,11 +268,11 @@
       </div>
       <div class="ob-bio-section">
         <label>{{localize "ORBITAL_BLUES.Character.Biography"}}</label>
-        {{prosemirror enrichedBiography name="system.biography" fieldLabel="Biography" editable=editable button=false}}
+        <textarea name="system.biography" rows="8" {{#unless editable}}disabled{{/unless}}>{{system.biography}}</textarea>
       </div>
       <div class="ob-bio-section">
         <label>{{localize "ORBITAL_BLUES.Character.Notes"}}</label>
-        {{prosemirror system.notes name="system.notes" fieldLabel="Notes" editable=editable button=false}}
+        <textarea name="system.notes" rows="6" {{#unless editable}}disabled{{/unless}}>{{system.notes}}</textarea>
       </div>
     </div>
 

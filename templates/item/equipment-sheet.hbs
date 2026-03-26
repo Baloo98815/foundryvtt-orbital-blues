@@ -13,6 +13,6 @@
       <label>{{localize "ORBITAL_BLUES.Weapon.Bulky"}}</label>
       <input type="checkbox" name="system.bulky" {{#if system.bulky}}checked{{/if}} />
     </div>
-    {{prosemirror enrichedDescription name="system.description" fieldLabel="Description" editable=editable button=false}}
+    <textarea name="system.description" rows="5" {{#unless editable}}disabled{{/unless}}>{{system.description}}</textarea>
   </div>
 </form>

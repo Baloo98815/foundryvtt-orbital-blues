@@ -12,7 +12,7 @@
 Math.clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 /* ------------------------------------------------------------------ */
-/* foundry.utils                                                        */
+/* foundry.utils + foundry.applications.ux (V13)                       */
 /* ------------------------------------------------------------------ */
 global.foundry = {
   utils: {
@@ -29,6 +29,16 @@ global.foundry = {
         cur = cur[parts[i]];
       }
       cur[parts[parts.length - 1]] = value;
+    }
+  },
+  // V13 namespaced APIs
+  applications: {
+    ux: {
+      TextEditor: {
+        implementation: {
+          async enrichHTML(text, _opts) { return text ?? ''; }
+        }
+      }
     }
   }
 };

@@ -26,7 +26,7 @@ export class OrbitalBluesActorSheet extends ActorSheet {
     // Prepare items for display
     this._prepareItems(context);
     // Enrich HTML descriptions (async in V13)
-    context.enrichedBiography = await TextEditor.enrichHTML(
+    context.enrichedBiography = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
       context.system.biography || "",
       { relativeTo: this.actor, secrets: this.actor.isOwner }
     );

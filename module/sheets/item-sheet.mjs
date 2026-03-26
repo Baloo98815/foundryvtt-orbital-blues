@@ -23,7 +23,7 @@ export class OrbitalBluesItemSheet extends ItemSheet {
     const context = await super.getData();
     context.system = context.item.system;
     context.config = CONFIG.ORBITAL_BLUES;
-    context.enrichedDescription = await TextEditor.enrichHTML(
+    context.enrichedDescription = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
       context.system.description || "",
       { relativeTo: this.item, secrets: this.item.isOwner }
     );

@@ -217,3 +217,102 @@ describe('OrbitalBluesShipSheet — getData()', () => {
     expect(context.system.stats.systems.value).toBe(0);
   });
 });
+
+/* ------------------------------------------------------------------ */
+/* NPC sheet — getData() structure                                     */
+/* ------------------------------------------------------------------ */
+
+function makeNPCActor() {
+  const items = [];
+  items.get = () => undefined;
+  return {
+    type: 'npc',
+    name: 'Space Bandit',
+    img:  '',
+    flags: {},
+    isOwner: true,
+    items,
+    system: {
+      stats: {
+        muscle: { value: 1 },
+        grit:   { value: 0 },
+        savvy:  { value: -1 }
+      },
+      heart:     { value: 6, max: 9 },
+      biography: 'A ruthless outlaw.',
+      notes:     ''
+    }
+  };
+}
+
+describe('OrbitalBluesActorSheet — NPC sheet', () => {
+  it('can be instantiated for an NPC without throwing', () => {
+    expect(() => new OrbitalBluesActorSheet(makeNPCActor())).not.toThrow();
+  });
+
+  it('getData() returns actor and system for NPC', async () => {
+    const context = await new OrbitalBluesActorSheet(makeNPCActor()).getData();
+
+    expect(context.actor).toBeDefined();
+    expect(context.system).toBeDefined();
+    expect(context.system.stats.muscle.value).toBe(1);
+    expect(context.system.stats.savvy.value).toBe(-1);
+  });
+
+  it('getData() returns empty item arrays for NPC with no items', async () => {
+    const context = await new OrbitalBluesActorSheet(makeNPCActor()).getData();
+
+    expect(context.weapons).toEqual([]);
+    expect(context.gambits).toEqual([]);
+    expect(context.troubles).toEqual([]);
+    expect(context.equipment).toEqual([]);
+    expect(context.mementos).toEqual([]);
+  });
+
+  it('getData() enriches NPC biography', async () => {
+    const context = await new OrbitalBluesActorSheet(makeNPCActor()).getData();
+    // mock enrichHTML returns text as-is
+    expect(context.enrichedBiography).toBe('A ruthless outlaw.');
+  });
+
+  it('getData() enriches empty biography without crashing', async () => {
+    const actor   = makeNPCActor();
+    actor.system.biography = '';
+    const context = await new OrbitalBluesActorSheet(actor).getData();
+    expect(context.enrichedBiography).toBe('');
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* ActorSheet — item default icon                                      */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesActorSheet — item default icon', () => {
+  it('assigns Item.DEFAULT_ICON to items whose img is falsy', async () => {
+    const noImgItem = {
+      _id: 'item-no-img',
+      type: 'weapon',
+      name: 'Mystery Blaster',
+      img:  null,
+      system: { traits: [] }
+    };
+    const actor   = makeCharacterActor([noImgItem]);
+    const context = await new OrbitalBluesActorSheet(actor).getData();
+
+    expect(context.weapons[0].img).toBe(Item.DEFAULT_ICON);
+  });
+
+  it('keeps the existing img when item already has one', async () => {
+    const imgItem = {
+      _id:  'item-has-img',
+      type: 'gambit',
+      name: 'Daring Escape',
+      img:  'icons/svg/dagger.svg',
+      system: {}
+    };
+    const actor   = makeCharacterActor([imgItem]);
+    const context = await new OrbitalBluesActorSheet(actor).getData();
+
+    expect(context.gambits[0].img).toBe('icons/svg/dagger.svg');
+  });
+});

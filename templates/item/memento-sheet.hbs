@@ -4,6 +4,6 @@
     <input class="ob-item-header-name" type="text" name="name" value="{{item.name}}" placeholder="Memento Name" />
   </header>
   <div class="sheet-body">
-    {{prosemirror enrichedDescription name="system.description" fieldLabel="Description" editable=editable button=false}}
+    <textarea name="system.description" rows="6" {{#unless editable}}disabled{{/unless}}>{{system.description}}</textarea>
   </div>
 </form>

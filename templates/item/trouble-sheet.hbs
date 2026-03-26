@@ -9,7 +9,7 @@
 
     <div class="ob-form-section">
       <label>Description / Backstory questions</label>
-      {{prosemirror enrichedDescription name="system.description" fieldLabel="Description" editable=editable button=false}}
+      <textarea name="system.description" rows="5" {{#unless editable}}disabled{{/unless}}>{{system.description}}</textarea>
     </div>
 
     <div class="ob-form-section">

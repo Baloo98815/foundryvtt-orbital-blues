@@ -124,6 +124,147 @@ describe('OrbitalBluesItemSheet — weapon traitCheckboxes', () => {
 });
 
 /* ------------------------------------------------------------------ */
+/* Item helpers for other types                                        */
+/* ------------------------------------------------------------------ */
+
+function makeMementoItem(overrides = {}) {
+  return {
+    type:    'memento',
+    name:    'Cracked Locket',
+    img:     'icons/svg/item-bag.svg',
+    isOwner: true,
+    system:  { description: 'A keepsake from home.', source: '', ...overrides.system },
+    async update(data) {
+      for (const [key, value] of Object.entries(data)) {
+        foundry.utils.setProperty(this, key, value);
+      }
+      return this;
+    },
+    ...overrides
+  };
+}
+
+function makeGambitItem(overrides = {}) {
+  return {
+    type:    'gambit',
+    name:    'Quick Draw',
+    img:     'icons/svg/item-bag.svg',
+    isOwner: true,
+    system:  { description: 'React before the other guy.', source: '', ...overrides.system },
+    async update(data) {
+      for (const [key, value] of Object.entries(data)) {
+        foundry.utils.setProperty(this, key, value);
+      }
+      return this;
+    },
+    ...overrides
+  };
+}
+
+function makeTroubleItem(overrides = {}) {
+  return {
+    type:    'trouble',
+    name:    'Wanted',
+    img:     'icons/svg/item-bag.svg',
+    isOwner: true,
+    system:  { description: 'Bounty on your head.', source: '', bluesTriggers: 'When confronted by law.', ...overrides.system },
+    async update(data) {
+      for (const [key, value] of Object.entries(data)) {
+        foundry.utils.setProperty(this, key, value);
+      }
+      return this;
+    },
+    ...overrides
+  };
+}
+
+/* ------------------------------------------------------------------ */
+/* getData() — memento                                                 */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesItemSheet — memento getData()', () => {
+  it('returns system, config, enrichedDescription', async () => {
+    const context = await new OrbitalBluesItemSheet(makeMementoItem()).getData();
+
+    expect(context.system).toBeDefined();
+    expect(context.config).toBe(CONFIG.ORBITAL_BLUES);
+    expect(context.enrichedDescription).toBe('A keepsake from home.');
+  });
+
+  it('does not include traitCheckboxes', async () => {
+    const context = await new OrbitalBluesItemSheet(makeMementoItem()).getData();
+    expect(context.traitCheckboxes).toBeUndefined();
+  });
+
+  it('enriches empty description without crashing', async () => {
+    const item    = makeMementoItem({ system: { description: '', source: '' } });
+    const context = await new OrbitalBluesItemSheet(item).getData();
+    expect(context.enrichedDescription).toBe('');
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* getData() — gambit                                                  */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesItemSheet — gambit getData()', () => {
+  it('returns system, config, enrichedDescription', async () => {
+    const context = await new OrbitalBluesItemSheet(makeGambitItem()).getData();
+
+    expect(context.system).toBeDefined();
+    expect(context.config).toBe(CONFIG.ORBITAL_BLUES);
+    expect(context.enrichedDescription).toBe('React before the other guy.');
+  });
+
+  it('does not include traitCheckboxes', async () => {
+    const context = await new OrbitalBluesItemSheet(makeGambitItem()).getData();
+    expect(context.traitCheckboxes).toBeUndefined();
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* getData() — trouble                                                 */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesItemSheet — trouble getData()', () => {
+  it('returns system, config, enrichedDescription', async () => {
+    const context = await new OrbitalBluesItemSheet(makeTroubleItem()).getData();
+
+    expect(context.system).toBeDefined();
+    expect(context.config).toBe(CONFIG.ORBITAL_BLUES);
+    expect(context.enrichedDescription).toBe('Bounty on your head.');
+  });
+
+  it('exposes bluesTriggers in system', async () => {
+    const context = await new OrbitalBluesItemSheet(makeTroubleItem()).getData();
+    expect(context.system.bluesTriggers).toBe('When confronted by law.');
+  });
+
+  it('does not include traitCheckboxes', async () => {
+    const context = await new OrbitalBluesItemSheet(makeTroubleItem()).getData();
+    expect(context.traitCheckboxes).toBeUndefined();
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* Template path — dynamic per item type                               */
+/* ------------------------------------------------------------------ */
+
+describe('OrbitalBluesItemSheet — template path', () => {
+  it.each([
+    ['weapon',    'systems/orbital-blues/templates/item/weapon-sheet.hbs'],
+    ['equipment', 'systems/orbital-blues/templates/item/equipment-sheet.hbs'],
+    ['memento',   'systems/orbital-blues/templates/item/memento-sheet.hbs'],
+    ['gambit',    'systems/orbital-blues/templates/item/gambit-sheet.hbs'],
+    ['trouble',   'systems/orbital-blues/templates/item/trouble-sheet.hbs'],
+  ])('type "%s" resolves to correct .hbs path', (type, expectedPath) => {
+    const item  = { type, name: 'Test', img: '', isOwner: true, system: { description: '', traits: [] } };
+    const sheet = new OrbitalBluesItemSheet(item);
+    expect(sheet.template).toBe(expectedPath);
+  });
+});
+
+/* ------------------------------------------------------------------ */
 /* _onTraitChange — add / remove traits                                */
 /* ------------------------------------------------------------------ */
 
