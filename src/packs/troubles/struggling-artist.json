@@ -1,0 +1,20 @@
+{
+  "_id": "LsS72T8iafcxSAJz",
+  "_key": "!items!LsS72T8iafcxSAJz",
+  "name": "Struggling Artist",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu es un artiste. Un jour, ils te reconnaîtront. Tous finiront par te voir.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu comptes sur ton talent.</li><li>Quelque chose te rappelle ton échec.</li><li>Quelqu'un fait une remarque sur ton talent.</li></ul><p><strong>Questions :</strong></p><ol><li>Comment exprimes-tu ton talent ?</li><li>Qui a cru en toi ?</li><li>Pourquoi n'as-tu jamais percé ?</li><li>Qui t'a dit que tu n'y arriverais jamais ?</li><li>Quand as-tu enfin admis que ça ne marcherait pas ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu es un artiste. Un jour, ils te reconnaîtront. Tous finiront par te voir.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

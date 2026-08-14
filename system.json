@@ -1,0 +1,62 @@
+{
+  "id": "orbital-blues",
+  "title": "Orbital Blues",
+  "description": "Système non officiel pour Orbital Blues (Soulmuppet Publishing) sur Foundry VTT v14.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Julien",
+      "email": "julien@andafter.fr"
+    }
+  ],
+  "esmodules": ["module/orbital-blues.mjs"],
+  "styles": ["styles/orbital-blues.css"],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "ship": {},
+      "npc": {}
+    },
+    "Item": {
+      "gambit": {},
+      "trouble": {},
+      "gear": {},
+      "cargo": {},
+      "shipPart": {}
+    }
+  },
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "fr", "name": "Français", "path": "lang/fr.json" }
+  ],
+  "packs": [
+    { "name": "gambits",   "label": "Ruses (Gambits)", "path": "packs/gambits",   "type": "Item", "system": "orbital-blues" },
+    { "name": "troubles",  "label": "Troubles",        "path": "packs/troubles",  "type": "Item", "system": "orbital-blues" },
+    { "name": "weapons",   "label": "Armes",           "path": "packs/weapons",   "type": "Item", "system": "orbital-blues" },
+    { "name": "equipment", "label": "Équipement",      "path": "packs/equipment", "type": "Item", "system": "orbital-blues" },
+    { "name": "mementos",  "label": "Mementos",        "path": "packs/mementos",  "type": "Item", "system": "orbital-blues" }
+  ],
+  "packFolders": [
+    {
+      "name": "Orbital Blues",
+      "sorting": "m",
+      "packs": ["gambits", "troubles", "weapons", "equipment", "mementos"]
+    }
+  ],
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "resources.heart",
+  "background": "",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "MIT",
+  "readme": "README.md"
+}

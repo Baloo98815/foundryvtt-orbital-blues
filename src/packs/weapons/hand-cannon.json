@@ -1,0 +1,27 @@
+{
+  "_id": "bBKrl2USZ2g6djxh",
+  "_key": "!items!bBKrl2USZ2g6djxh",
+  "name": "Hand Cannon",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Militaire<br/><strong>Traits :</strong> Armour piercing, Loud</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Armour piercing, Loud",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

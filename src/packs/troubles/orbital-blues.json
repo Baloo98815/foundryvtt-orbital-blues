@@ -1,0 +1,20 @@
+{
+  "_id": "OqQd1VvkW8uyGYzy",
+  "_key": "!items!OqQd1VvkW8uyGYzy",
+  "name": "Orbital Blues",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>La réalité est impitoyable. Tous les autres combattent aussi les Blues, mais toi, tu as tout perdu.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu luttes contre les Blues.</li><li>Tu infliges les Blues à quelqu'un d'autre.</li><li>Tu vois quelqu'un profiter de quelque chose que les Blues t'ont gâché.</li></ul><p><strong>Questions :</strong></p><ol><li>Qu'est-ce qui a provoqué l'apparition des Blues ?</li><li>Qu'aimais-tu avant d'avoir les Blues ?</li><li>Qu'est-ce qui te donne la force de sortir du lit chaque jour ?</li><li>Comment fais-tu face aux Blues ?</li><li>Qui t'aide à traverser les Blues ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "La réalité est impitoyable. Tous les autres combattent aussi les Blues, mais toi, tu as tout perdu.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

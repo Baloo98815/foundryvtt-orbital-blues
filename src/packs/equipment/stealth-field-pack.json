@@ -1,0 +1,27 @@
+{
+  "_id": "oIw4vSmp04tPHTWM",
+  "_key": "!items!oIw4vSmp04tPHTWM",
+  "name": "Stealth Field Pack",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal (déconseillé médicalement). Sac à dos de surplus militaire dissimulant le porteur par réfraction de la lumière.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

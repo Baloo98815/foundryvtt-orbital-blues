@@ -1,0 +1,105 @@
+{
+  "OB.SheetLabels.Character": "Character",
+  "OB.SheetLabels.Ship": "Ship",
+  "OB.SheetLabels.Npc": "NPC",
+  "OB.SheetLabels.Item": "Item",
+
+  "OB.Actor.Name": "Name",
+  "OB.Ship.Name": "Ship name",
+  "OB.Ship.Callsign": "Callsign",
+  "OB.Ship.Class": "Class",
+  "OB.Ship.Integrity": "Integrity",
+  "OB.Ship.Fuel": "Fuel",
+  "OB.Ship.Cargo": "Cargo",
+
+  "OB.Stat.Muscle": "Muscle",
+  "OB.Stat.Grit": "Grit",
+  "OB.Stat.Savvy": "Savvy",
+
+  "OB.ShipStat.Engines": "Engines",
+  "OB.ShipStat.Systems": "Systems",
+  "OB.ShipStat.Hull": "Hull",
+
+  "OB.Resource.Heart": "Heart",
+  "OB.Resource.Blues": "Blues",
+  "OB.Resource.Cash": "Cash",
+
+  "OB.RollMode.Normal": "Normal (2d6)",
+  "OB.RollMode.UpperHand": "Upper Hand (drop lowest)",
+  "OB.RollMode.AgainstOdds": "Against the Odds (drop highest)",
+
+  "OB.Outcome.Miss": "Failure",
+  "OB.Outcome.Success": "Success",
+
+  "OB.Attack.Hit": "Hit",
+  "OB.Attack.Miss": "Missed",
+  "OB.Attack.Damage": "Damage",
+
+  "OB.Blues.Gain": "Shaken — +1 Blues",
+  "OB.Blues.None": "The feeling passes — no Blues",
+
+  "OB.Roll.Roll": "Roll",
+  "OB.Dialog.RollTitle": "Make a roll",
+  "OB.Dialog.AttackTitle": "Attack",
+  "OB.Dialog.Mode": "Mode",
+  "OB.Dialog.Bonus": "Bonus",
+  "OB.Dialog.Difficulty": "Difficulty",
+  "OB.Dialog.DamageBonus": "Damage bonus",
+  "OB.Dialog.Roll": "Roll",
+  "OB.Dialog.Cancel": "Cancel",
+
+  "OB.Chat.Check": "Check",
+  "OB.Chat.Perception": "Perception",
+  "OB.Chat.BluesCheck": "Blues Check",
+  "OB.Chat.Attack": "Attack",
+  "OB.Chat.Details": "Roll details",
+
+  "OB.Tab.Main": "Main",
+  "OB.Tab.Items": "Items",
+  "OB.Tab.Biography": "Biography",
+
+  "OB.Section.Gambits": "Gambits",
+  "OB.Section.Troubles": "Troubles",
+  "OB.Section.Gear": "Gear",
+  "OB.Section.ShipParts": "Ship parts",
+  "OB.Section.Cargo": "Cargo",
+
+  "OB.Details.Concept": "Concept",
+  "OB.Details.Look": "Look",
+  "OB.Details.Past": "Past",
+  "OB.Details.Biography": "Biography",
+  "OB.Details.Notes": "Notes",
+  "OB.Details.Description": "Description",
+
+  "OB.Item.New": "New {type}",
+  "OB.ItemType.gambit": "Gambit",
+  "OB.ItemType.trouble": "Trouble",
+  "OB.ItemType.gear": "Gear",
+  "OB.ItemType.cargo": "Cargo",
+  "OB.ItemType.shipPart": "Ship part",
+
+  "OB.Gambit.Trigger": "Trigger",
+  "OB.Gambit.Effect": "Effect",
+  "OB.Trouble.Hook": "Hook",
+  "OB.Trouble.Triggered": "Recently triggered",
+
+  "OB.Gear.Quantity": "Quantity",
+  "OB.Gear.Cash": "Value (¢)",
+  "OB.Gear.Damage": "Damage",
+  "OB.Gear.Range": "Range",
+  "OB.Gear.Tags": "Tags",
+  "OB.Gear.IsWeapon": "This is a weapon",
+  "OB.Gear.AttackStat": "Attack stat",
+  "OB.Gear.DamageBonus": "Damage bonus",
+
+  "OB.Cargo.Units": "Units",
+  "OB.Cargo.Buy": "Buy",
+  "OB.Cargo.Sell": "Sell",
+  "OB.Cargo.Legal": "Legal",
+
+  "OB.ShipPart.Slot": "Slot",
+
+  "OB.Npc.Role": "Role",
+  "OB.Npc.Motive": "Motive",
+  "OB.Npc.Threat": "Threat"
+}

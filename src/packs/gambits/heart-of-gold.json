@@ -1,0 +1,20 @@
+{
+  "_id": "Es5vOgOKlkUjT0wY",
+  "_key": "!items!Es5vOgOKlkUjT0wY",
+  "name": "Heart of Gold",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Quand tu parles avec sincérité ou du fond du cœur, Avantage pour convaincre les gens de te croire ou de t'aider."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

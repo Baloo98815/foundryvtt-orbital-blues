@@ -1,0 +1,20 @@
+{
+  "_id": "BJYzgF3FIHPScCQf",
+  "_key": "!items!BJYzgF3FIHPScCQf",
+  "name": "Too Big for Your Boots",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu es le meilleur dans un domaine, et tu le sais. Que Dieu aide quiconque prétendrait le contraire.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu rabaisses les autres.</li><li>Tu listes tes accomplissements.</li><li>Tu n'arrives pas à prouver ta supériorité.</li></ul><p><strong>Questions :</strong></p><ol><li>Quel domaine domines-tu ?</li><li>Quels sont tes immenses accomplissements ?</li><li>Quels rivaux végètent dans ton ombre ?</li><li>Dans quels moments sombres doutes-tu de ta suprématie ?</li><li>Qui t'a aidé à atteindre ton sommet ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu es le meilleur dans un domaine, et tu le sais. Que Dieu aide quiconque prétendrait le contraire.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

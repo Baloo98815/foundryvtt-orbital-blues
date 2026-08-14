@@ -1,0 +1,20 @@
+{
+  "_id": "HA04disuiOsjqpso",
+  "_key": "!items!HA04disuiOsjqpso",
+  "name": "On the Run",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu t'es frotté à quelqu'un qu'il ne fallait pas, et tu t'es enfui comme un chien.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu évites un problème au lieu de l'affronter.</li><li>Tu imagines voir tes poursuivants alors qu'ils ne sont pas là.</li><li>Tu abandonnes quelqu'un pour t'échapper.</li></ul><p><strong>Questions :</strong></p><ol><li>Qui fuis-tu, et pourquoi ?</li><li>Es-tu coupable de ce dont on t'accuse ?</li><li>Pourquoi n'as-tu pas affronté ces personnes ?</li><li>Qui t'a aidé à t'échapper ?</li><li>Qui as-tu laissé derrière toi ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu t'es frotté à quelqu'un qu'il ne fallait pas, et tu t'es enfui comme un chien.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

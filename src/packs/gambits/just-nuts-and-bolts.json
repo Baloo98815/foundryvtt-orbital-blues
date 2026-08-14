@@ -1,0 +1,20 @@
+{
+  "_id": "jPviQnEJlpC6fA6A",
+  "_key": "!items!jPviQnEJlpC6fA6A",
+  "name": "Just Nuts and Bolts",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Face à une technologie cassée, le MJ te dit quelles pièces il faut pour la réparer et combien de temps cela prendra."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,5 @@
+node_modules/
+
+# Note : packs/ (LevelDB) est un artefact de build MAIS doit être présent pour que
+# Foundry charge les compendiums. On le conserve (il n'est donc PAS ignoré ici).
+# La source de vérité reste scripts/data/*.mjs et src/packs/.

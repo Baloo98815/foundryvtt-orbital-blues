@@ -1,0 +1,27 @@
+{
+  "_id": "9FVjCBqrUAib3ADq",
+  "_key": "!items!9FVjCBqrUAib3ADq",
+  "name": "Rifle, Sniper",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Militaire<br/><strong>Traits :</strong> Long Range, Limited ammo</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Long Range, Limited ammo",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

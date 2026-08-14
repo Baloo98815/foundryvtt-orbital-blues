@@ -1,0 +1,27 @@
+{
+  "_id": "RDsorZ2sUKafiPmE",
+  "_key": "!items!RDsorZ2sUKafiPmE",
+  "name": "Personal Shield Generator",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal (déconseillé avec pacemaker/prothèse). En combat, une Action pour l'activer : le seuil pour te toucher passe à 9 au lieu de 8. Détruit les puces de crédit et perturbe l'électronique.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

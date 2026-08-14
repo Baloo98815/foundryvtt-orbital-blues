@@ -1,0 +1,20 @@
+{
+  "_id": "uVMGDcnUXk4FN16r",
+  "_key": "!items!uVMGDcnUXk4FN16r",
+  "name": "Fast Hands",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "À l'initiative, lance 2D3 et ajoute le plus élevé à ton Astuce. Même si le groupe est pris par surprise, tu peux agir à ton premier tour."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

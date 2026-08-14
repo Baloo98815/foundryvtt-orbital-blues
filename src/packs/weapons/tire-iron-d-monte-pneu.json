@@ -1,0 +1,27 @@
+{
+  "_id": "9PuBSsWa6erJGY3L",
+  "_key": "!items!9PuBSsWa6erJGY3L",
+  "name": "Tire Iron (démonte-pneu)",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Stun</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Stun",
+    "damage": "",
+    "range": "À proximité (mêlée)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "tzXZyF70sekXS1T3",
+  "_key": "!items!tzXZyF70sekXS1T3",
+  "name": "Space Suits",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal. Combinaison spatiale ; l'autonomie en oxygène dépend de la qualité (20-30 min basique, 2-3 h standard, jusqu'à 6 h haut de gamme).</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

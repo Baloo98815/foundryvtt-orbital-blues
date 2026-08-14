@@ -1,0 +1,27 @@
+{
+  "_id": "x88jDcq4ba20zxE4",
+  "_key": "!items!x88jDcq4ba20zxE4",
+  "name": "Bio-Verifier",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal (prélèvement légal = consentement requis). Vérifie l'identité d'une cible à partir d'un échantillon, à 3 % près.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

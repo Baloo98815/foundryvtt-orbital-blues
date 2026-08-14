@@ -1,0 +1,27 @@
+{
+  "_id": "oPTL860evcvoP01G",
+  "_key": "!items!oPTL860evcvoP01G",
+  "name": "Planetary Scanner",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal. Suite intégrée au vaisseau lisant les données planétaires en vol (population, événements, économie, troubles civils).</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

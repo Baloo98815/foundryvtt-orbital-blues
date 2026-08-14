@@ -1,0 +1,20 @@
+{
+  "_id": "HSMtI5r1UKT0Hfzq",
+  "_key": "!items!HSMtI5r1UKT0Hfzq",
+  "name": "Ace Pilot",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "En pilotant un véhicule, tu peux toujours utiliser ton Astuce au lieu de Mobilité. Dépense 1 Cœur pour choisir deux options au lieu d'une lors d'une action de pilotage réussie."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

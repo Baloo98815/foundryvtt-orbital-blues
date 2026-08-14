@@ -1,0 +1,34 @@
+<form class="orbital-blues sheet actor npc">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" />
+    <div class="header-fields">
+      <h1><input type="text" name="name" value="{{actor.name}}" /></h1>
+      <div>
+        <label>{{localize 'OB.Npc.Role'}}</label>
+        <input type="text" name="system.details.role" value="{{system.details.role}}" />
+      </div>
+      <div>
+        <label>{{localize 'OB.Npc.Motive'}}</label>
+        <input type="text" name="system.details.motive" value="{{system.details.motive}}" />
+      </div>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+    <div class="resources">
+      <div class="resource threat">
+        <label>{{localize 'OB.Npc.Threat'}}</label>
+        <input type="number" name="system.stats.threat.value" value="{{system.stats.threat.value}}" />
+      </div>
+      <div class="resource heart">
+        <label>{{localize 'OB.Resource.Heart'}}</label>
+        <input type="number" name="system.resources.heart.value" value="{{system.resources.heart.value}}" />
+        <span>/</span>
+        <input type="number" name="system.resources.heart.max" value="{{system.resources.heart.max}}" />
+      </div>
+    </div>
+
+    <label>{{localize 'OB.Details.Notes'}}</label>
+    <textarea name="system.notes">{{system.notes}}</textarea>
+  </section>
+</form>

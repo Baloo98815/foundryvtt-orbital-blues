@@ -1,0 +1,27 @@
+{
+  "_id": "XXHhjLnhYK6vpLqm",
+  "_key": "!items!XXHhjLnhYK6vpLqm",
+  "name": "EMP Grenade",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Strictement illégale. Désactive toute l'électronique À proximité pendant 1D3+3 rounds. Peut couper les systèmes vitaux d'un vaisseau/station.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

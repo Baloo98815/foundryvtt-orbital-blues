@@ -1,0 +1,20 @@
+{
+  "_id": "S55KQZD9pNxxdOze",
+  "_key": "!items!S55KQZD9pNxxdOze",
+  "name": "True Grit",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Une fois par session, lance un test de caractéristique ou une attaque avec Avantage en utilisant ton Cran à la place de la caractéristique normale."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "jQcjtWF5eMuCwDFr",
+  "_key": "!items!jQcjtWF5eMuCwDFr",
+  "name": "Well-Travelled",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Une fois par Arc, en arrivant sur un nouveau lieu, déclare y être déjà venu : génère un contact ou un lieu connu et gagne 1 Blues."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

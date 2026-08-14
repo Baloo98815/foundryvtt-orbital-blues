@@ -1,0 +1,20 @@
+{
+  "_id": "XtalQC86QAG1kBo3",
+  "_key": "!items!XtalQC86QAG1kBo3",
+  "name": "Bloodthirsty",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Le meilleur moyen de finir un combat est d'être prêt à commettre plus de violence que ton adversaire.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu perds ton sang-froid.</li><li>Tu résous tes problèmes par la force plutôt que par les mots.</li><li>Tu laisses un adversaire terrifié.</li></ul><p><strong>Questions :</strong></p><ol><li>Quel fut le premier combat que tu as gagné ?</li><li>Quelle cicatrice portes-tu avec fierté ?</li><li>Quels ennemis as-tu durement gagnés ?</li><li>Quand as-tu tué quelqu'un que tu voulais seulement estropier ?</li><li>Quel ancien ami a désormais peur de ta brutalité ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Le meilleur moyen de finir un combat est d'être prêt à commettre plus de violence que ton adversaire.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

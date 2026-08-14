@@ -1,0 +1,27 @@
+{
+  "_id": "BowrWO1ku5OZLh6v",
+  "_key": "!items!BowrWO1ku5OZLh6v",
+  "name": "Androids",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Doit être attribué à un propriétaire disposant des documents de propriété. Machines programmables pour des tâches simples ou répétitives, incapables de répondre au-delà de politesses.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

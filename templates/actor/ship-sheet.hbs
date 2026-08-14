@@ -1,0 +1,93 @@
+<form class="orbital-blues sheet actor ship">
+
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" />
+    <div class="header-fields">
+      <h1><input type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'OB.Ship.Name'}}" /></h1>
+      <div class="callsign">
+        <label>{{localize 'OB.Ship.Callsign'}}</label>
+        <input type="text" name="system.details.callsign" value="{{system.details.callsign}}" />
+      </div>
+      <div class="ship-class">
+        <label>{{localize 'OB.Ship.Class'}}</label>
+        <input type="text" name="system.details.shipClass" value="{{system.details.shipClass}}" />
+      </div>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+
+    <div class="stats-block">
+      {{#each config.shipStats as |label key|}}
+      <div class="stat">
+        <label>{{localize label}}</label>
+        <input type="number" name="system.stats.{{key}}.value" value="{{lookup (lookup ../system.stats key) 'value'}}" />
+        <button type="button" class="ob-roll-shipstat" data-stat="{{key}}">
+          <i class="fa-solid fa-dice-d6"></i>
+        </button>
+      </div>
+      {{/each}}
+    </div>
+
+    <div class="resources">
+      <div class="resource integrity">
+        <label>{{localize 'OB.Ship.Integrity'}}</label>
+        <input type="number" name="system.resources.integrity.value" value="{{system.resources.integrity.value}}" />
+        <span>/</span>
+        <input type="number" name="system.resources.integrity.max" value="{{system.resources.integrity.max}}" />
+      </div>
+      <div class="resource fuel">
+        <label>{{localize 'OB.Ship.Fuel'}}</label>
+        <input type="number" name="system.resources.fuel.value" value="{{system.resources.fuel.value}}" />
+        <span>/</span>
+        <input type="number" name="system.resources.fuel.max" value="{{system.resources.fuel.max}}" />
+      </div>
+      <div class="resource cargo">
+        <label>{{localize 'OB.Ship.Cargo'}}</label>
+        <input type="number" name="system.resources.cargoUsed.value" value="{{system.resources.cargoUsed.value}}" />
+        <span>/</span>
+        <input type="number" name="system.resources.cargoUsed.max" value="{{system.resources.cargoUsed.max}}" />
+      </div>
+    </div>
+
+    <section class="item-group">
+      <header>
+        <h3>{{localize 'OB.Section.ShipParts'}}</h3>
+        <button type="button" class="ob-item-create" data-type="shipPart"><i class="fa-solid fa-plus"></i></button>
+      </header>
+      <ul class="item-list">
+        {{#each parts as |it|}}
+        <li data-item-id="{{it.id}}">
+          <span class="name">{{it.name}}</span>
+          <span class="slot">{{it.system.slot}}</span>
+          <span class="controls">
+            <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
+            <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
+          </span>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+
+    <section class="item-group">
+      <header>
+        <h3>{{localize 'OB.Section.Cargo'}}</h3>
+        <button type="button" class="ob-item-create" data-type="cargo"><i class="fa-solid fa-plus"></i></button>
+      </header>
+      <ul class="item-list">
+        {{#each cargo as |it|}}
+        <li data-item-id="{{it.id}}">
+          <span class="name">{{it.name}}</span>
+          <span class="units">×{{it.system.units}}</span>
+          <span class="buy">{{it.system.buy}} ¢</span>
+          <span class="controls">
+            <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
+            <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
+          </span>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+
+  </section>
+</form>

@@ -1,0 +1,14 @@
+<form class="orbital-blues sheet item gambit">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" />
+    <h1><input type="text" name="name" value="{{item.name}}" /></h1>
+  </header>
+  <section class="sheet-body">
+    <label>{{localize 'OB.Gambit.Trigger'}}</label>
+    <input type="text" name="system.trigger" value="{{system.trigger}}" />
+    <label>{{localize 'OB.Gambit.Effect'}}</label>
+    <textarea name="system.effect">{{system.effect}}</textarea>
+    <label>{{localize 'OB.Details.Description'}}</label>
+    {{editor enriched.description target="system.description" button=true editable=editable engine="prosemirror"}}
+  </section>
+</form>

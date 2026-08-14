@@ -1,0 +1,27 @@
+{
+  "_id": "kYcnpFwG6pXs7tIe",
+  "_key": "!items!kYcnpFwG6pXs7tIe",
+  "name": "Gambit Chip",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illégal, méprisé du crime organisé. Émet de mini-impulsions EMP interférant avec l'électronique des casinos.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

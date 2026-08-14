@@ -1,0 +1,20 @@
+{
+  "_id": "lYQezzOMCZhYSyLv",
+  "_key": "!items!lYQezzOMCZhYSyLv",
+  "name": "Lost It All on the River",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Il faut jouer la main que la vie t'a donnée. Tu aimes le jeu, et tu ne jettes jamais tes cartes.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu défies les probabilités et tu gagnes gros.</li><li>Tu fais un bluff extravagant.</li><li>Tu mises tout et tu le regrettes.</li></ul><p><strong>Questions :</strong></p><ol><li>À quel jeu joues-tu ?</li><li>Dans quel antre de vice as-tu remporté ta première fortune ?</li><li>Quel est ton tic quand tu bluffes ?</li><li>Quel vieil ami t'a vu perdre gros ?</li><li>Qu'as-tu perdu de plus important en une seule main ? À qui ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Il faut jouer la main que la vie t'a donnée. Tu aimes le jeu, et tu ne jettes jamais tes cartes.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

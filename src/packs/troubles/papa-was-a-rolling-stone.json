@@ -1,0 +1,20 @@
+{
+  "_id": "WGltg8Vj50wg52Ca",
+  "_key": "!items!WGltg8Vj50wg52Ca",
+  "name": "Papa Was a Rolling Stone",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Un de tes parents était une légende. Quoi qu'il en soit, tu vivras toujours dans leur ombre.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>La réputation de ton ancêtre mine tes propres réussites.</li><li>On doute de tes capacités par rapport à celles de ton prédécesseur.</li><li>On compare tes talents ou accomplissements aux leurs.</li></ul><p><strong>Questions :</strong></p><ol><li>Sous l'ombre de qui vis-tu ?</li><li>Pourquoi étaient-ils si réputés ?</li><li>Comment espères-tu les surpasser ?</li><li>En quoi leur réputation te hante-t-elle ?</li><li>Comment t'es-tu affranchi de leur influence ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Un de tes parents était une légende. Quoi qu'il en soit, tu vivras toujours dans leur ombre.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

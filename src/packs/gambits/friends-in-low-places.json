@@ -1,0 +1,20 @@
+{
+  "_id": "UUNLsmp2Bf3tv4jn",
+  "_key": "!items!UUNLsmp2Bf3tv4jn",
+  "name": "Friends in Low Places",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "En retournant dans un ancien repaire retrouver de vieux amis, lance un Test de Blues. Réussite : +1 Blues et Avantage sur ton prochain jet pour obtenir/contraindre quelque chose de quelqu'un ici."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

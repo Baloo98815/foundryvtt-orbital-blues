@@ -1,0 +1,251 @@
+/* Orbital Blues — feuille de style de base
+   Vibe rétro-futur / space western. À affiner. */
+
+.orbital-blues.sheet {
+  --ob-bg: #1a1520;
+  --ob-fg: #f2ebd8;
+  --ob-accent: #d97845;
+  --ob-blue: #4a90b8;
+  --ob-muted: #7a6f60;
+  --ob-border: #3a2f2a;
+  font-family: "Signika", "Segoe UI", sans-serif;
+  color: var(--ob-fg);
+  background: var(--ob-bg);
+}
+
+.orbital-blues.sheet .sheet-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-bottom: 2px solid var(--ob-accent);
+}
+
+.orbital-blues.sheet .profile-img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border: 2px solid var(--ob-accent);
+  border-radius: 4px;
+}
+
+.orbital-blues.sheet h1 input {
+  font-size: 1.6rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed var(--ob-muted);
+  color: var(--ob-fg);
+  width: 100%;
+}
+
+.orbital-blues.sheet input,
+.orbital-blues.sheet textarea,
+.orbital-blues.sheet select {
+  background: rgba(255,255,255,0.03);
+  color: var(--ob-fg);
+  border: 1px solid var(--ob-border);
+  border-radius: 3px;
+}
+
+.orbital-blues.sheet .sheet-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--ob-border);
+}
+
+.orbital-blues.sheet .sheet-tabs .item {
+  padding: 4px 10px;
+  color: var(--ob-muted);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.orbital-blues.sheet .sheet-tabs .item.active {
+  color: var(--ob-accent);
+  border-bottom: 2px solid var(--ob-accent);
+}
+
+.orbital-blues.sheet .stats-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 12px;
+}
+
+.orbital-blues.sheet .stats-block .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid var(--ob-border);
+  border-radius: 4px;
+  background: rgba(0,0,0,0.2);
+}
+
+.orbital-blues.sheet .stats-block .stat-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--ob-muted);
+}
+
+.orbital-blues.sheet .stats-block .stat-value {
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  background: transparent;
+  color: var(--ob-fg);
+  width: 3rem;
+}
+
+.orbital-blues.sheet .stats-block button {
+  background: var(--ob-accent);
+  color: var(--ob-bg);
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.orbital-blues.sheet .stats-block button:hover {
+  filter: brightness(1.15);
+}
+
+.orbital-blues.sheet .resources {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 0 12px 12px;
+}
+
+.orbital-blues.sheet .resource {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid var(--ob-border);
+  border-radius: 4px;
+}
+
+.orbital-blues.sheet .resource label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--ob-muted);
+}
+
+.orbital-blues.sheet .resource input {
+  width: 3rem;
+  text-align: center;
+}
+
+.orbital-blues.sheet .item-group header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 12px;
+  background: rgba(0,0,0,0.2);
+  border-top: 1px solid var(--ob-border);
+  border-bottom: 1px solid var(--ob-border);
+}
+
+.orbital-blues.sheet .item-group h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ob-accent);
+}
+
+.orbital-blues.sheet .item-list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 12px;
+}
+
+.orbital-blues.sheet .item-list li {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px dashed var(--ob-border);
+}
+
+.orbital-blues.sheet .item-list li .name {
+  font-weight: bold;
+}
+
+.orbital-blues.sheet .item-list li .controls a {
+  margin-left: 6px;
+  color: var(--ob-muted);
+}
+
+.orbital-blues.sheet .item-list li .controls a:hover {
+  color: var(--ob-accent);
+}
+
+.orbital-blues.sheet .grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.orbital-blues.sheet .ob-checks {
+  display: flex;
+  gap: 8px;
+  padding: 0 12px 12px;
+}
+
+.orbital-blues.sheet .ob-checks button {
+  flex: 1;
+  background: rgba(0,0,0,0.25);
+  color: var(--ob-fg);
+  border: 1px solid var(--ob-border);
+  border-radius: 3px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.orbital-blues.sheet .ob-checks button:hover {
+  border-color: var(--ob-accent);
+  color: var(--ob-accent);
+}
+
+.orbital-blues.sheet .item-list li .controls a.ob-attack:hover {
+  color: var(--ob-accent);
+}
+
+/* Roll card in chat */
+.orbital-blues.roll-card {
+  padding: 8px;
+  border-left: 3px solid var(--ob-muted, #7a6f60);
+}
+.orbital-blues.roll-card.outcome-miss    { border-left-color: #a04040; }
+.orbital-blues.roll-card.outcome-success { border-left-color: #4a90b8; }
+.orbital-blues.roll-card.outcome-blues   { border-left-color: #d97845; }
+
+.orbital-blues.roll-card .damage {
+  margin-top: 4px;
+  color: var(--ob-accent, #d97845);
+}
+
+.orbital-blues.roll-card .total {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.orbital-blues.roll-card .target {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.orbital-blues.roll-card .outcome {
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

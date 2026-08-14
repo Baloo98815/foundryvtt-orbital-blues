@@ -1,0 +1,27 @@
+{
+  "_id": "7Gfek69uq1yzk0lo",
+  "_key": "!items!7Gfek69uq1yzk0lo",
+  "name": "Heat Vision Scanner",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal (fournisseurs de chasse à la prime). Imagerie thermique montée sur la tête ; suit une cible à travers murs/structures selon la qualité.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

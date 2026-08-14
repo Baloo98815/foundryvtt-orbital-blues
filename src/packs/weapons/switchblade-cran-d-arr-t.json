@@ -1,0 +1,27 @@
+{
+  "_id": "lfELF5iAfiSj7kWk",
+  "_key": "!items!lfELF5iAfiSj7kWk",
+  "name": "Switchblade (cran d'arrêt)",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Concealable</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Concealable",
+    "damage": "",
+    "range": "À proximité (mêlée)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

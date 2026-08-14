@@ -1,0 +1,20 @@
+{
+  "_id": "xvZLMqDWKpUq9Ey4",
+  "_key": "!items!xvZLMqDWKpUq9Ey4",
+  "name": "Side Hustle",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "En fin de session, lors du calcul des Crédits/Dettes, lance 1D3-1 et ajoute le résultat aux Crédits du job ou à tes Économies."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "zm8SQthK0TzFmObB",
+  "_key": "!items!zm8SQthK0TzFmObB",
+  "name": "Lucky",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Une fois par Arc, force-toi ou un autre personnage à relancer un seul jet avec Avantage ou Désavantage, et choisis le résultat préféré."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

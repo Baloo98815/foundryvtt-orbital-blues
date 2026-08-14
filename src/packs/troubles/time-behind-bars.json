@@ -1,0 +1,20 @@
+{
+  "_id": "CzmamtlQ4ARIVigQ",
+  "_key": "!items!CzmamtlQ4ARIVigQ",
+  "name": "Time Behind Bars",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu as passé du temps en prison, pour des crimes que tu as commis ou non. Tu es dehors maintenant, mais ça t'a changé.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Quelque chose te rappelle ta cellule ou tes codétenus.</li><li>Quelque chose te rappelle tes geôliers.</li><li>Tu utilises une compétence apprise en prison.</li></ul><p><strong>Questions :</strong></p><ol><li>Pour quel crime as-tu été condamné ? L'as-tu commis ?</li><li>Quelles compétences inhabituelles as-tu acquises ?</li><li>Quels amis t'es-tu faits en prison ?</li><li>Quels ennemis t'es-tu faits en prison ?</li><li>Où as-tu purgé ta peine, et combien de temps ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu as passé du temps en prison, pour des crimes que tu as commis ou non. Tu es dehors maintenant, mais ça t'a changé.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

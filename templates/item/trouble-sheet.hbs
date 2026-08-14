@@ -1,0 +1,16 @@
+<form class="orbital-blues sheet item trouble">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" />
+    <h1><input type="text" name="name" value="{{item.name}}" /></h1>
+  </header>
+  <section class="sheet-body">
+    <label>{{localize 'OB.Trouble.Hook'}}</label>
+    <textarea name="system.hook">{{system.hook}}</textarea>
+    <label>
+      <input type="checkbox" name="system.triggered" {{checked system.triggered}} />
+      {{localize 'OB.Trouble.Triggered'}}
+    </label>
+    <label>{{localize 'OB.Details.Description'}}</label>
+    {{editor enriched.description target="system.description" button=true editable=editable engine="prosemirror"}}
+  </section>
+</form>

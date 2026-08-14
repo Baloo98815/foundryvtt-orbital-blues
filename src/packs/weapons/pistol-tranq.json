@@ -1,0 +1,27 @@
+{
+  "_id": "23hFFP1Up4tFlsNl",
+  "_key": "!items!23hFFP1Up4tFlsNl",
+  "name": "Pistol, Tranq",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Stun</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Stun",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

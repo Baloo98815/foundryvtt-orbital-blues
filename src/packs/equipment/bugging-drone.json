@@ -1,0 +1,27 @@
+{
+  "_id": "2SKQLPCKUfwuZ65l",
+  "_key": "!items!2SKQLPCKUfwuZ65l",
+  "name": "Bugging Drone",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illégal, courant au marché noir. Surveillance audio discrète : 72 h d'enregistrement autonome ; transmission continue à plusieurs km si intégré au vaisseau.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

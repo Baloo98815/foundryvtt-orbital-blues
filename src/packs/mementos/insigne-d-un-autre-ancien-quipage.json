@@ -1,0 +1,27 @@
+{
+  "_id": "Yn5gI9wbSwMppWDg",
+  "_key": "!items!Yn5gI9wbSwMppWDg",
+  "name": "Insigne d'un autre ancien équipage",
+  "type": "gear",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "description": "<p>Un souvenir de ta vie d'avant. Surtout utile pour ton background.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Memento",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

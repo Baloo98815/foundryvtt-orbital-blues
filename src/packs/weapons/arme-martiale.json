@@ -1,0 +1,27 @@
+{
+  "_id": "hwLcak6epoGvprGm",
+  "_key": "!items!hwLcak6epoGvprGm",
+  "name": "Arme Martiale",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Martiale<br/><strong>Traits :</strong> 1 trait au choix (Armour piercing, Concealable, Deadly, Defensive, Intimidating ou Precise) + 1 drawback (Conspicuous ou Heavy)</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "1 trait au choix (Armour piercing, Concealable, Deadly, Defensive, Intimidating ou Precise) + 1 drawback (Conspicuous ou Heavy)",
+    "damage": "",
+    "range": "À proximité (mêlée)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

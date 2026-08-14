@@ -1,0 +1,27 @@
+{
+  "_id": "J1vV56uPpjuEPJPX",
+  "_key": "!items!J1vV56uPpjuEPJPX",
+  "name": "Medkit",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal, courant. Trousse de premiers secours de base : gazes, désinfectants, antidouleurs, bandages.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

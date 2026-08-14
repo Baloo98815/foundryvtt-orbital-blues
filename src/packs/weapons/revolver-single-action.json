@@ -1,0 +1,27 @@
+{
+  "_id": "63j2Rk50OujLUDjn",
+  "_key": "!items!63j2Rk50OujLUDjn",
+  "name": "Revolver, Single-Action",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Intimidating</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Intimidating",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

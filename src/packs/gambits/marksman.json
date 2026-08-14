@@ -1,0 +1,20 @@
+{
+  "_id": "ZAU6dsi6WeaYDnJ6",
+  "_key": "!items!ZAU6dsi6WeaYDnJ6",
+  "name": "Marksman",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Passe un tour à viser une cible. Au tour suivant, attaque avec Avantage à distance (arme perso/militaire) en ignorant les malus de portée et de couverture."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

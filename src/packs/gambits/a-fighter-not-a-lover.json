@@ -1,0 +1,20 @@
+{
+  "_id": "GiYcdBblQmlYkkzP",
+  "_key": "!items!GiYcdBblQmlYkkzP",
+  "name": "A Fighter, Not a Lover",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "À chaque session, la première fois où tu devrais dépenser du Cœur pour un Effort en combat, lance un Test de Blues à la place. Si tu réussis, tu ne dépenses pas de Cœur."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

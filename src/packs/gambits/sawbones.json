@@ -1,0 +1,20 @@
+{
+  "_id": "787oQAeOxrON3zl5",
+  "_key": "!items!787oQAeOxrON3zl5",
+  "name": "Sawbones",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Toujours Avantage sur les jets de Soin ou liés à la médecine. En fin de session, jet d'Astuce si l'équipage doit récupérer du Cœur (Désavantage si c'est pour toi) : réussite = aucune Dette."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "GNAuUTwexfUQKCZH",
+  "_key": "!items!GNAuUTwexfUQKCZH",
+  "name": "Reluctant Vagabond",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu avais une belle vie quelque part, plus confortable que la vie sur la route. Ça te manque au point de te ronger de l'intérieur.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu te souviens de ce que tu as laissé derrière toi.</li><li>Tu vois d'autres vivre une vie confortable et stable.</li><li>Tu te plains de ta nouvelle vie.</li></ul><p><strong>Questions :</strong></p><ol><li>Qu'as-tu laissé derrière toi ?</li><li>Qu'est-ce qui t'a forcé à prendre la route ?</li><li>Penses-tu pouvoir revenir un jour ?</li><li>Où vas-tu maintenant ?</li><li>Qui t'attend là-bas ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu avais une belle vie quelque part, plus confortable que la vie sur la route. Ça te manque au point de te ronger de l'intérieur.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

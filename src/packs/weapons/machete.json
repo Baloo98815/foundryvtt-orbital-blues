@@ -1,0 +1,27 @@
+{
+  "_id": "83a3xrMOVAZy61PD",
+  "_key": "!items!83a3xrMOVAZy61PD",
+  "name": "Machete",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Mêlée<br/><strong>Traits :</strong> Intimidating</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Intimidating",
+    "damage": "",
+    "range": "À proximité (mêlée)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

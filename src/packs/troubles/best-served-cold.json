@@ -1,0 +1,20 @@
+{
+  "_id": "c90Jesp9mSuO3bhQ",
+  "_key": "!items!c90Jesp9mSuO3bhQ",
+  "name": "Best Served Cold",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Ils t'ont trahi, et ils vont le regretter.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu te souviens de ce que ça t'a coûté.</li><li>Tu prépares une situation pour te venger.</li><li>Tu franchis la limite que tu t'étais fixée.</li></ul><p><strong>Questions :</strong></p><ol><li>Qui t'a trahi ?</li><li>Qu'ont-ils fait ?</li><li>Pourquoi leur as-tu fait confiance ?</li><li>Qu'est-ce que ça t'a coûté ?</li><li>Quelle limite ne voulais-tu pas franchir pour te venger ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Ils t'ont trahi, et ils vont le regretter.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "rQA7oYmSHgNekYbj",
+  "_key": "!items!rQA7oYmSHgNekYbj",
+  "name": "Scan Detection Monitor",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illégal mais facile à obtenir. Alerte discrètement le porteur de tout scan effectué sur lui (qualité élevée : détecte la présence de scanners).</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

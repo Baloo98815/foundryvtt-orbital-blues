@@ -1,0 +1,20 @@
+{
+  "_id": "iikWarYpip8HPVpx",
+  "_key": "!items!iikWarYpip8HPVpx",
+  "name": "The Perfect Lie",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Une fois par session, tu peux convaincre parfaitement quelqu'un d'un mensonge."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

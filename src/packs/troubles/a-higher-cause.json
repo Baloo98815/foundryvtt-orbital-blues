@@ -1,0 +1,20 @@
+{
+  "_id": "h4drwUsja5KcfqBy",
+  "_key": "!items!h4drwUsja5KcfqBy",
+  "name": "A Higher Cause",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu as une croyance religieuse ; ces idéologies s'accordent rarement avec le mode de vie du hors-la-loi interstellaire.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Quelqu'un rejette ta foi.</li><li>Ta foi t'oblige à faire quelque chose de stupide.</li><li>Tu enfreins un principe fondamental de ta foi.</li></ul><p><strong>Questions :</strong></p><ol><li>À quoi pries-tu ?</li><li>Quels sont les principes centraux de ta foi ?</li><li>As-tu déjà été témoin d'un miracle ?</li><li>Quand ta foi a-t-elle été mise à l'épreuve ?</li><li>Quel ami partage ta foi ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu as une croyance religieuse ; ces idéologies s'accordent rarement avec le mode de vie du hors-la-loi interstellaire.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

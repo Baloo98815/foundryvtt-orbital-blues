@@ -1,0 +1,27 @@
+{
+  "_id": "CXzd6mUyvdM7uqHt",
+  "_key": "!items!CXzd6mUyvdM7uqHt",
+  "name": "Transit Tracker",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illégal (vaisseaux équipés saisis). Lit la destination et la route prévues d'un vaisseau, et sa cargaison.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

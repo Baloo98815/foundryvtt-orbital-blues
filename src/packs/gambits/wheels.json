@@ -1,0 +1,20 @@
+{
+  "_id": "tkLzHAqE367VYOcI",
+  "_key": "!items!tkLzHAqE367VYOcI",
+  "name": "Wheels",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Tu possèdes un Small Vehicle (total de 2 en caractéristiques), sans équipement intégré pour l'instant. Ton vaisseau dispose d'une baie hangar pour l'accueillir."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

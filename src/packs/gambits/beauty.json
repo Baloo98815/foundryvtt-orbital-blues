@@ -1,0 +1,20 @@
+{
+  "_id": "VhYQ7cxCk5VgC2UQ",
+  "_key": "!items!VhYQ7cxCk5VgC2UQ",
+  "name": "Beauty",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Tu es attirant : Avantage lors des tests contre les personnes séduites, Désavantage contre les envieux."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

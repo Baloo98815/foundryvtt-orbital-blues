@@ -1,0 +1,20 @@
+{
+  "_id": "ESVKo8Neb600APGd",
+  "_key": "!items!ESVKo8Neb600APGd",
+  "name": "Devil in the Bottle",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu dis à tes amis que tu gères bien. Ce n'est pas le cas.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu fais quelque chose en étant ivre qui te rappelle une autre bêtise passée.</li><li>Tu arrêtes de boire pendant plus d'un jour ou deux.</li><li>Tu fais face aux conséquences d'une gueule de bois.</li></ul><p><strong>Questions :</strong></p><ol><li>Quel est ton alcool préféré ?</li><li>Où est ton repaire favori ? T'y apprécie-t-on ?</li><li>Quelle est la chose la plus stupide faite en étant ivre ? Qui ça a énervé ?</li><li>Qui est ton plus vieux compagnon de beuverie ?</li><li>Quelle est ta cure de gueule de bois préférée ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu dis à tes amis que tu gères bien. Ce n'est pas le cas.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "a7HNQHND9kx85Oeq",
+  "_key": "!items!a7HNQHND9kx85Oeq",
+  "name": "Skeleton Keycard",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illégal, incroyablement rare. « Passe-partout » ouvrant n'importe quelle serrure à carte. Graal des outils de voleur.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

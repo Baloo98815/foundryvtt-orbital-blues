@@ -1,0 +1,20 @@
+{
+  "_id": "tI4CTypwlYuaqF9i",
+  "_key": "!items!tI4CTypwlYuaqF9i",
+  "name": "Devil's Right Hand",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Tu attaques toujours avec Avantage avec un pistolet, et ne lances jamais en Désavantage avec."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

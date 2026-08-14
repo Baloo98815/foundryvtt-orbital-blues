@@ -1,0 +1,27 @@
+{
+  "_id": "PVaKAnyVFkeQ7nCg",
+  "_key": "!items!PVaKAnyVFkeQ7nCg",
+  "name": "Bio-Compass",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Interdit à usage personnel. À partir d'un échantillon biologique, pointe vers la localisation de la cible (précision : à l'échelle d'une ville).</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

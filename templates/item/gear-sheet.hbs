@@ -1,0 +1,49 @@
+<form class="orbital-blues sheet item gear">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" />
+    <h1><input type="text" name="name" value="{{item.name}}" /></h1>
+  </header>
+  <section class="sheet-body">
+    <div class="grid-2">
+      <label>{{localize 'OB.Gear.Quantity'}}
+        <input type="number" name="system.quantity" value="{{system.quantity}}" />
+      </label>
+      <label>{{localize 'OB.Gear.Cash'}}
+        <input type="number" name="system.cash" value="{{system.cash}}" />
+      </label>
+      <label>{{localize 'OB.Gear.Damage'}}
+        <input type="text" name="system.damage" value="{{system.damage}}" />
+      </label>
+      <label>{{localize 'OB.Gear.Range'}}
+        <input type="text" name="system.range" value="{{system.range}}" />
+      </label>
+    </div>
+    <label>{{localize 'OB.Gear.Tags'}}</label>
+    <input type="text" name="system.tags" value="{{system.tags}}" placeholder="e.g. Loud, Ranged, Heavy" />
+
+    <label class="ob-weapon-toggle">
+      <input type="checkbox" name="system.isWeapon" {{checked system.isWeapon}} />
+      {{localize 'OB.Gear.IsWeapon'}}
+    </label>
+    {{#if system.isWeapon}}
+    <div class="grid-2">
+      <label>{{localize 'OB.Gear.AttackStat'}}
+        <select name="system.attackStat">
+          {{#each config.attackStats as |label key|}}
+          <option value="{{key}}" {{#if (ob-eq ../system.attackStat key)}}selected{{/if}}>{{localize label}}</option>
+          {{/each}}
+        </select>
+      </label>
+      <label>{{localize 'OB.Dialog.Difficulty'}}
+        <input type="number" name="system.difficulty" value="{{system.difficulty}}" />
+      </label>
+      <label>{{localize 'OB.Gear.DamageBonus'}}
+        <input type="number" name="system.damageBonus" value="{{system.damageBonus}}" />
+      </label>
+    </div>
+    {{/if}}
+
+    <label>{{localize 'OB.Details.Description'}}</label>
+    {{editor enriched.description target="system.description" button=true editable=editable engine="prosemirror"}}
+  </section>
+</form>

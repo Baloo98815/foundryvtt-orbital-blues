@@ -1,0 +1,20 @@
+{
+  "_id": "uOC5G3yzJvcbNMWR",
+  "_key": "!items!uOC5G3yzJvcbNMWR",
+  "name": "Desperado",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Quand tu utilises un Effort pour relancer un dé en combat, tu peux relancer jusqu'à 2 dés par Cœur dépensé au lieu d'un."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

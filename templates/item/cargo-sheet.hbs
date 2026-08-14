@@ -1,0 +1,25 @@
+<form class="orbital-blues sheet item cargo">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" />
+    <h1><input type="text" name="name" value="{{item.name}}" /></h1>
+  </header>
+  <section class="sheet-body">
+    <div class="grid-2">
+      <label>{{localize 'OB.Cargo.Units'}}
+        <input type="number" name="system.units" value="{{system.units}}" />
+      </label>
+      <label>{{localize 'OB.Cargo.Buy'}}
+        <input type="number" name="system.buy" value="{{system.buy}}" />
+      </label>
+      <label>{{localize 'OB.Cargo.Sell'}}
+        <input type="number" name="system.sell" value="{{system.sell}}" />
+      </label>
+      <label>
+        <input type="checkbox" name="system.legal" {{checked system.legal}} />
+        {{localize 'OB.Cargo.Legal'}}
+      </label>
+    </div>
+    <label>{{localize 'OB.Details.Description'}}</label>
+    {{editor enriched.description target="system.description" button=true editable=editable engine="prosemirror"}}
+  </section>
+</form>

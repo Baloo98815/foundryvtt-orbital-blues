@@ -1,0 +1,27 @@
+{
+  "_id": "xmZwYBUTTeMYkgpw",
+  "_key": "!items!xmZwYBUTTeMYkgpw",
+  "name": "Retrieval Drone",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal mais très coûteux. Récupère objets, débris ou marks à distance ; précieux dans le vide spatial.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

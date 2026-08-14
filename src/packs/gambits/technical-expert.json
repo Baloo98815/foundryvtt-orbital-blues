@@ -1,0 +1,20 @@
+{
+  "_id": "k3w0LmfVMRFq2olb",
+  "_key": "!items!k3w0LmfVMRFq2olb",
+  "name": "Technical Expert",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Pour réparer un véhicule, utilise ton Cran ou ton Astuce au lieu de ta Force. Dépense 1 Cœur pour choisir deux options au lieu d'une lors d'une Action de Réparation réussie."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

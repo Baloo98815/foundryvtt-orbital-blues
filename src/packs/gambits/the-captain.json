@@ -1,0 +1,20 @@
+{
+  "_id": "6jZuu8xZpebYGxCz",
+  "_key": "!items!6jZuu8xZpebYGxCz",
+  "name": "The Captain",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Une fois par scène, quand tu ordonnes à un membre d'équipage d'agir, il lance ce test avec Avantage."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

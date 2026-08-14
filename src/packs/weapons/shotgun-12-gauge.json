@@ -1,0 +1,27 @@
+{
+  "_id": "y6FFsg2eb31nXdTV",
+  "_key": "!items!y6FFsg2eb31nXdTV",
+  "name": "Shotgun, 12-Gauge",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Militaire<br/><strong>Traits :</strong> Intimidating, Loud</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Intimidating, Loud",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

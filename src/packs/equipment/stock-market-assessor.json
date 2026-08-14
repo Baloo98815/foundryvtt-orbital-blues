@@ -1,0 +1,27 @@
+{
+  "_id": "kBdj9IF2VXr8LSRV",
+  "_key": "!items!kBdj9IF2VXr8LSRV",
+  "name": "Stock Market Assessor",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Licence requise. Évalue la valeur marchande d'un chargement sur les marchés système et galactique.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "XkLzvtIdKuTlFDXH",
+  "_key": "!items!XkLzvtIdKuTlFDXH",
+  "name": "Heard It Through the Grapevine",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Une fois par Arc, lance un jet d'Astuce pour découvrir un avantage sur la situation de l'équipage. Avantage sur tous les jets pour recueillir rumeurs ou infos cachées."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

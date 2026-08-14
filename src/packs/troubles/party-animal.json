@@ -1,0 +1,20 @@
+{
+  "_id": "wqOLjH5wLMPJ79L9",
+  "_key": "!items!wqOLjH5wLMPJ79L9",
+  "name": "Party Animal",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu sais comment vivre. Ne laisse personne te dire le contraire.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu prends plus de plaisir que tu ne le devrais sans doute.</li><li>Tu fais une grosse bêtise dans une situation très grave.</li><li>Tu dissimules tes vrais sentiments dans la débauche.</li></ul><p><strong>Questions :</strong></p><ol><li>Où vas-tu pour te défouler ?</li><li>Quel est le pire crime commis en cherchant juste à t'amuser ?</li><li>Avec qui fais-tu la fête ?</li><li>Quelles drogues t'aident à trouver ce zen fuyant ?</li><li>Quel sentiment enfouis-tu sous les drogues et les mauvaises décisions ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu sais comment vivre. Ne laisse personne te dire le contraire.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

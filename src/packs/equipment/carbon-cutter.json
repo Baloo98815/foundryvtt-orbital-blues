@@ -1,0 +1,27 @@
+{
+  "_id": "A4ESyGvhOydZ6vT1",
+  "_key": "!items!A4ESyGvhOydZ6vT1",
+  "name": "Carbon Cutter",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal, possession souvent surveillée. Outil de type chalumeau capable de découper la plupart des matériaux connus.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

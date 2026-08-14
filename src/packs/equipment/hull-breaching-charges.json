@@ -1,0 +1,27 @@
+{
+  "_id": "9zadtrsbbcePql01",
+  "_key": "!items!9zadtrsbbcePql01",
+  "name": "Hull-Breaching Charges",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal avec licence de ferrailleur. Charges qui percent les coques de vaisseaux ; tailles variées selon les dégâts voulus.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "mtNMdnXL58s4lEDG",
+  "_key": "!items!mtNMdnXL58s4lEDG",
+  "name": "Mono-Edge Knife",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Mêlée<br/><strong>Traits :</strong> Armour piercing</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Armour piercing",
+    "damage": "",
+    "range": "À proximité (mêlée)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

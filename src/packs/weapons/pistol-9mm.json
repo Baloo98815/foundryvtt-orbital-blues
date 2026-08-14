@@ -1,0 +1,27 @@
+{
+  "_id": "DSNt89tk6vO0f62P",
+  "_key": "!items!DSNt89tk6vO0f62P",
+  "name": "Pistol, 9mm",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Precise</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Precise",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

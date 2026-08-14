@@ -1,0 +1,105 @@
+{
+  "OB.SheetLabels.Character": "Personnage",
+  "OB.SheetLabels.Ship": "Vaisseau",
+  "OB.SheetLabels.Npc": "PNJ",
+  "OB.SheetLabels.Item": "Objet",
+
+  "OB.Actor.Name": "Nom",
+  "OB.Ship.Name": "Nom du vaisseau",
+  "OB.Ship.Callsign": "Indicatif",
+  "OB.Ship.Class": "Classe",
+  "OB.Ship.Integrity": "Intégrité",
+  "OB.Ship.Fuel": "Carburant",
+  "OB.Ship.Cargo": "Soute",
+
+  "OB.Stat.Muscle": "Muscle",
+  "OB.Stat.Grit": "Cran",
+  "OB.Stat.Savvy": "Malice",
+
+  "OB.ShipStat.Engines": "Moteurs",
+  "OB.ShipStat.Systems": "Systèmes",
+  "OB.ShipStat.Hull": "Coque",
+
+  "OB.Resource.Heart": "Cœur",
+  "OB.Resource.Blues": "Blues",
+  "OB.Resource.Cash": "Cash",
+
+  "OB.RollMode.Normal": "Normal (2d6)",
+  "OB.RollMode.UpperHand": "Avantage — Upper Hand (retire le plus bas)",
+  "OB.RollMode.AgainstOdds": "Désavantage — Against the Odds (retire le plus haut)",
+
+  "OB.Outcome.Miss": "Échec",
+  "OB.Outcome.Success": "Réussite",
+
+  "OB.Attack.Hit": "Touché",
+  "OB.Attack.Miss": "Manqué",
+  "OB.Attack.Damage": "Dégâts",
+
+  "OB.Blues.Gain": "Secoué — +1 Blues",
+  "OB.Blues.None": "Le sentiment passe — pas de Blues",
+
+  "OB.Roll.Roll": "Lancer",
+  "OB.Dialog.RollTitle": "Effectuer un jet",
+  "OB.Dialog.AttackTitle": "Attaquer",
+  "OB.Dialog.Mode": "Mode",
+  "OB.Dialog.Bonus": "Bonus",
+  "OB.Dialog.Difficulty": "Difficulté",
+  "OB.Dialog.DamageBonus": "Bonus de dégâts",
+  "OB.Dialog.Roll": "Lancer",
+  "OB.Dialog.Cancel": "Annuler",
+
+  "OB.Chat.Check": "Test",
+  "OB.Chat.Perception": "Perception",
+  "OB.Chat.BluesCheck": "Blues Check",
+  "OB.Chat.Attack": "Attaque",
+  "OB.Chat.Details": "Détails du jet",
+
+  "OB.Tab.Main": "Principal",
+  "OB.Tab.Items": "Objets",
+  "OB.Tab.Biography": "Biographie",
+
+  "OB.Section.Gambits": "Gambits",
+  "OB.Section.Troubles": "Troubles",
+  "OB.Section.Gear": "Équipement",
+  "OB.Section.ShipParts": "Pièces du vaisseau",
+  "OB.Section.Cargo": "Cargaison",
+
+  "OB.Details.Concept": "Concept",
+  "OB.Details.Look": "Apparence",
+  "OB.Details.Past": "Passé",
+  "OB.Details.Biography": "Biographie",
+  "OB.Details.Notes": "Notes",
+  "OB.Details.Description": "Description",
+
+  "OB.Item.New": "Nouveau {type}",
+  "OB.ItemType.gambit": "Gambit",
+  "OB.ItemType.trouble": "Trouble",
+  "OB.ItemType.gear": "Équipement",
+  "OB.ItemType.cargo": "Cargaison",
+  "OB.ItemType.shipPart": "Pièce de vaisseau",
+
+  "OB.Gambit.Trigger": "Déclencheur",
+  "OB.Gambit.Effect": "Effet",
+  "OB.Trouble.Hook": "Accroche",
+  "OB.Trouble.Triggered": "Déclenché récemment",
+
+  "OB.Gear.Quantity": "Quantité",
+  "OB.Gear.Cash": "Valeur (¢)",
+  "OB.Gear.Damage": "Dégâts",
+  "OB.Gear.Range": "Portée",
+  "OB.Gear.Tags": "Tags",
+  "OB.Gear.IsWeapon": "C'est une arme",
+  "OB.Gear.AttackStat": "Caractéristique d'attaque",
+  "OB.Gear.DamageBonus": "Bonus de dégâts",
+
+  "OB.Cargo.Units": "Unités",
+  "OB.Cargo.Buy": "Achat",
+  "OB.Cargo.Sell": "Vente",
+  "OB.Cargo.Legal": "Légal",
+
+  "OB.ShipPart.Slot": "Emplacement",
+
+  "OB.Npc.Role": "Rôle",
+  "OB.Npc.Motive": "Motivation",
+  "OB.Npc.Threat": "Menace"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "orbital-blues",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Outils de build pour le système Foundry VTT Orbital Blues (compendiums).",
+  "scripts": {
+    "build:packs": "node scripts/build-packs.mjs",
+    "clean:packs": "node scripts/build-packs.mjs --clean"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.0"
+  }
+}

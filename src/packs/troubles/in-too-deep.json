@@ -1,0 +1,20 @@
+{
+  "_id": "lrO174KTLX2aNg2O",
+  "_key": "!items!lrO174KTLX2aNg2O",
+  "name": "In Too Deep",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu t'es retrouvé mêlé aux mauvaises personnes et tu as fait des choses dont tu n'es pas fier.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu comptes sur un talent appris d'un vieil ami.</li><li>Tu te retiens d'une violence autrefois seconde nature.</li><li>Tu obliges quelqu'un à faire quelque chose contre son gré.</li></ul><p><strong>Questions :</strong></p><ol><li>Avec quelle organisation peu recommandable as-tu travaillé ?</li><li>Quel représentant de la loi se souvient de ton visage ?</li><li>Quand as-tu réalisé que tu étais allé trop loin ?</li><li>Comment t'en es-tu sorti ? Es-tu vraiment tiré d'affaire ?</li><li>Quel vieil ami t'aiderait pour quelque chose d'illégal ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu t'es retrouvé mêlé aux mauvaises personnes et tu as fait des choses dont tu n'es pas fier.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "LcaC5t7LRGTCwXbX",
+  "_key": "!items!LcaC5t7LRGTCwXbX",
+  "name": "Night Vision Scanner",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal (fournisseurs de chasse à la prime, surplus militaires). Vision en basse lumière ; moins cher que le thermique.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

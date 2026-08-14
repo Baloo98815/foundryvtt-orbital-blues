@@ -1,0 +1,20 @@
+{
+  "_id": "6jDJrQXDKGT3Q0oM",
+  "_key": "!items!6jDJrQXDKGT3Q0oM",
+  "name": "Unstoppable",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Une fois par Arc, ne subis que la moitié des dégâts d'une attaque. Combiné à Trouble's Brewing, cela annule tous les dégâts reçus."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

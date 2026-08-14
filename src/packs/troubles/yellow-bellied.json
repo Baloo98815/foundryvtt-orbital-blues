@@ -1,0 +1,20 @@
+{
+  "_id": "jHPkctqKLWJLVOUo",
+  "_key": "!items!jHPkctqKLWJLVOUo",
+  "name": "Yellow-Bellied",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Ils t'ont traité de lâche. Le pire, c'est qu'ils n'ont pas tort.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu gardes tout pour toi.</li><li>Tu rumines le pire qui pourrait arriver.</li><li>Quelqu'un te traite de lâche, et il a raison.</li></ul><p><strong>Questions :</strong></p><ol><li>Pourquoi as-tu si peur ?</li><li>Pour quel ami n'as-tu pas eu le courage de prendre la défense ?</li><li>Quel idéal as-tu trahi par manque de force ?</li><li>À qui as-tu tenté de tenir tête, et qu'est-ce que ça t'a coûté ?</li><li>Qui a toujours pris ta défense, peu importe la situation ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Ils t'ont traité de lâche. Le pire, c'est qu'ils n'ont pas tort.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "1tcIcMYeVnzWysvW",
+  "_key": "!items!1tcIcMYeVnzWysvW",
+  "name": "Remote Explosives",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illégal (marché noir). En combat : arme Militaire, Explosive, Longue portée. Surtout utilisée contre véhicules ou forteresses.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "K7kx4ayKqAt4rqlV",
+  "_key": "!items!K7kx4ayKqAt4rqlV",
+  "name": "Warrant Scanner",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal (vendeurs de chasse à la prime, surplus militaires). Vérifie les primes, crimes et mandats liés à une cible ou à un vaisseau.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

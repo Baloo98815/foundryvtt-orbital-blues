@@ -1,0 +1,20 @@
+{
+  "_id": "91i8eWm7Mm7c1a2D",
+  "_key": "!items!91i8eWm7Mm7c1a2D",
+  "name": "Lovesick",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu avais un·e amoureux·se, mais maintenant il/elle n'est plus là. Ce n'est pas vraiment agréable.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Quelque chose te rappelle cette personne et ça pique un peu.</li><li>Quelque chose te rappelle cette personne et elle te manque énormément.</li><li>Quelque chose te rappelle cette personne et ça te vide complètement.</li></ul><p><strong>Questions :</strong></p><ol><li>Comment as-tu rencontré ton amour perdu ?</li><li>Qui a dit « je t'aime » en premier ?</li><li>Comment avez-vous passé votre plus belle journée ensemble ?</li><li>Quand as-tu compris que c'était fini ?</li><li>Où cela s'est-il terminé ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu avais un·e amoureux·se, mais maintenant il/elle n'est plus là. Ce n'est pas vraiment agréable.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

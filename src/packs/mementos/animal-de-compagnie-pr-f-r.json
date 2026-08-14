@@ -1,0 +1,27 @@
+{
+  "_id": "w1U3xCAg4c65UPos",
+  "_key": "!items!w1U3xCAg4c65UPos",
+  "name": "Animal de compagnie préféré",
+  "type": "gear",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "description": "<p>Un souvenir de ta vie d'avant. Surtout utile pour ton background.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Memento",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

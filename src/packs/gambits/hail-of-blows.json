@@ -1,0 +1,20 @@
+{
+  "_id": "9u7UOUYIBNqY2vgI",
+  "_key": "!items!9u7UOUYIBNqY2vgI",
+  "name": "Hail of Blows",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Dépense 1 Cœur en attaquant pour effectuer une seconde attaque en Désavantage avec la même arme ce tour-ci."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

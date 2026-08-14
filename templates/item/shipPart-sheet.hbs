@@ -1,0 +1,14 @@
+<form class="orbital-blues sheet item shipPart">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" />
+    <h1><input type="text" name="name" value="{{item.name}}" /></h1>
+  </header>
+  <section class="sheet-body">
+    <label>{{localize 'OB.ShipPart.Slot'}}</label>
+    <input type="text" name="system.slot" value="{{system.slot}}" placeholder="engines / weapons / systems / hull" />
+    <label>{{localize 'OB.Gear.Tags'}}</label>
+    <input type="text" name="system.tags" value="{{system.tags}}" />
+    <label>{{localize 'OB.Details.Description'}}</label>
+    {{editor enriched.description target="system.description" button=true editable=editable engine="prosemirror"}}
+  </section>
+</form>

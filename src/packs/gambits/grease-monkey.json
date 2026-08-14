@@ -1,0 +1,20 @@
+{
+  "_id": "OXt0dCSqbDy12mSd",
+  "_key": "!items!OXt0dCSqbDy12mSd",
+  "name": "Grease-Monkey",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Quand tu utilises un Effort pour relancer un dé en bricolant, en ingénierie ou en sabotage mécanique, relance jusqu'à 2 dés par Cœur dépensé."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

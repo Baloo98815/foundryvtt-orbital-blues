@@ -1,0 +1,28 @@
+<div class="orbital-blues roll-card outcome-{{outcome}}">
+  <header>
+    <strong>{{actor.name}}</strong> — {{title}}
+  </header>
+  <div class="formula">{{formula}}</div>
+
+  {{#if (ob-eq kind "attack")}}
+  <div class="total">
+    <span class="value">{{hitTotal}}</span>
+    <span class="target">vs {{difficulty}}</span>
+  </div>
+  <div class="outcome"><strong>{{outcomeLabel}}</strong></div>
+  {{#if hit}}
+  <div class="damage">{{localize 'OB.Attack.Damage'}} : <strong>{{damage}}</strong></div>
+  {{/if}}
+  {{else}}
+  <div class="total">
+    <span class="value">{{total}}</span>
+    <span class="target">vs {{target}}</span>
+  </div>
+  <div class="outcome"><strong>{{outcomeLabel}}</strong></div>
+  {{/if}}
+
+  <details class="tooltip">
+    <summary>{{localize 'OB.Chat.Details'}}</summary>
+    {{{rollTooltip}}}
+  </details>
+</div>

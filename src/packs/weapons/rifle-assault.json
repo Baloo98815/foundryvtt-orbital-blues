@@ -1,0 +1,27 @@
+{
+  "_id": "0MmgoY2XUgqiTYYn",
+  "_key": "!items!0MmgoY2XUgqiTYYn",
+  "name": "Rifle, Assault",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Militaire<br/><strong>Traits :</strong> Rapid Fire, Loud</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Rapid Fire, Loud",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

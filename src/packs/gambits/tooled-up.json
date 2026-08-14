@@ -1,0 +1,20 @@
+{
+  "_id": "kVtjN1JD2LUjj8ae",
+  "_key": "!items!kVtjN1JD2LUjj8ae",
+  "name": "Tooled Up",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Choisis-en deux : équipement d'équipage supplémentaire ; trait supplémentaire sur une arme ; arme en plus ; arme sur ton vaisseau ; armure (seuil pour te toucher = 9)."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

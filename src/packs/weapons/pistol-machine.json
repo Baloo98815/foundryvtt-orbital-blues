@@ -1,0 +1,27 @@
+{
+  "_id": "mSdKe5FIgJsehoQT",
+  "_key": "!items!mSdKe5FIgJsehoQT",
+  "name": "Pistol, Machine",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Rapid Fire</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Rapid Fire",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

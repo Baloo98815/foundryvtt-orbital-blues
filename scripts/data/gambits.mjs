@@ -1,0 +1,40 @@
+/**
+ * Ruses (Gambits) — source : page Notion « Ruses ».
+ * name : intitulé canonique (EN). effect : texte mécanique (FR).
+ */
+export const GAMBITS = [
+  ["A Fighter, Not a Lover", "À chaque session, la première fois où tu devrais dépenser du Cœur pour un Effort en combat, lance un Test de Blues à la place. Si tu réussis, tu ne dépenses pas de Cœur."],
+  ["Ace Pilot", "En pilotant un véhicule, tu peux toujours utiliser ton Astuce au lieu de Mobilité. Dépense 1 Cœur pour choisir deux options au lieu d'une lors d'une action de pilotage réussie."],
+  ["Beast", "Tu es très intimidant : Avantage contre les lâches, Désavantage contre ceux qui veulent prouver leur valeur."],
+  ["Beauty", "Tu es attirant : Avantage lors des tests contre les personnes séduites, Désavantage contre les envieux."],
+  ["Book Learning", "Choisis un domaine académique ou une spécialisation. Avantage sur tous les tests liés à tes connaissances dans ce domaine."],
+  ["Desperado", "Quand tu utilises un Effort pour relancer un dé en combat, tu peux relancer jusqu'à 2 dés par Cœur dépensé au lieu d'un."],
+  ["Devil's Right Hand", "Tu attaques toujours avec Avantage avec un pistolet, et ne lances jamais en Désavantage avec."],
+  ["Engineer", "Conçois un nouvel équipement d'équipage avec le MJ (tu le possèdes ou il est installé sur ton vaisseau). En fin de session, attribue un point supplémentaire à un projet d'équipage."],
+  ["Fast Hands", "À l'initiative, lance 2D3 et ajoute le plus élevé à ton Astuce. Même si le groupe est pris par surprise, tu peux agir à ton premier tour."],
+  ["Friends in Low Places", "En retournant dans un ancien repaire retrouver de vieux amis, lance un Test de Blues. Réussite : +1 Blues et Avantage sur ton prochain jet pour obtenir/contraindre quelque chose de quelqu'un ici."],
+  ["Gift of the Gab", "Quand tu utilises un Effort pour relancer un dé en situation sociale, tu peux relancer jusqu'à 2 dés par Cœur dépensé."],
+  ["Grease-Monkey", "Quand tu utilises un Effort pour relancer un dé en bricolant, en ingénierie ou en sabotage mécanique, relance jusqu'à 2 dés par Cœur dépensé."],
+  ["Hail of Blows", "Dépense 1 Cœur en attaquant pour effectuer une seconde attaque en Désavantage avec la même arme ce tour-ci."],
+  ["Heard It Through the Grapevine", "Une fois par Arc, lance un jet d'Astuce pour découvrir un avantage sur la situation de l'équipage. Avantage sur tous les jets pour recueillir rumeurs ou infos cachées."],
+  ["Heart of Gold", "Quand tu parles avec sincérité ou du fond du cœur, Avantage pour convaincre les gens de te croire ou de t'aider."],
+  ["It's All in the Details", "Avantage sur les tests d'Observation."],
+  ["Just Nuts and Bolts", "Face à une technologie cassée, le MJ te dit quelles pièces il faut pour la réparer et combien de temps cela prendra."],
+  ["Light-Fingered", "Avantage sur l'Observation pour repérer/identifier serrures, pièges et sécurités, ainsi que sur les tests pour les désamorcer."],
+  ["Lucky", "Une fois par Arc, force-toi ou un autre personnage à relancer un seul jet avec Avantage ou Désavantage, et choisis le résultat préféré."],
+  ["Marksman", "Passe un tour à viser une cible. Au tour suivant, attaque avec Avantage à distance (arme perso/militaire) en ignorant les malus de portée et de couverture."],
+  ["Martial Art", "À mains nues, tu ne lances jamais en Désavantage. Confère à tes attaques à mains nues un trait au choix : Défensif, Intimidant ou Précis."],
+  ["Sawbones", "Toujours Avantage sur les jets de Soin ou liés à la médecine. En fin de session, jet d'Astuce si l'équipage doit récupérer du Cœur (Désavantage si c'est pour toi) : réussite = aucune Dette."],
+  ["Side Hustle", "En fin de session, lors du calcul des Crédits/Dettes, lance 1D3-1 et ajoute le résultat aux Crédits du job ou à tes Économies."],
+  ["Technical Expert", "Pour réparer un véhicule, utilise ton Cran ou ton Astuce au lieu de ta Force. Dépense 1 Cœur pour choisir deux options au lieu d'une lors d'une Action de Réparation réussie."],
+  ["The Bandit", "Quand tu utilises un Effort pour relancer un dé lors d'exploits de dextérité, de vol ou d'agilité, relance jusqu'à 2 dés par Cœur dépensé."],
+  ["The Captain", "Une fois par scène, quand tu ordonnes à un membre d'équipage d'agir, il lance ce test avec Avantage."],
+  ["The Gambler", "Quand tu utilises un Effort pour relancer un dé en jouant ou en bluffant, relance jusqu'à 2 dés par Cœur dépensé."],
+  ["The Perfect Lie", "Une fois par session, tu peux convaincre parfaitement quelqu'un d'un mensonge."],
+  ["Thick Pockets", "Tu comptes toujours comme ayant 2 Crédits en Économies. Tu peux abandonner cette Ruse à tout moment pour 1D3 paiements et la retirer de ta fiche."],
+  ["Tooled Up", "Choisis-en deux : équipement d'équipage supplémentaire ; trait supplémentaire sur une arme ; arme en plus ; arme sur ton vaisseau ; armure (seuil pour te toucher = 9)."],
+  ["True Grit", "Une fois par session, lance un test de caractéristique ou une attaque avec Avantage en utilisant ton Cran à la place de la caractéristique normale."],
+  ["Unstoppable", "Une fois par Arc, ne subis que la moitié des dégâts d'une attaque. Combiné à Trouble's Brewing, cela annule tous les dégâts reçus."],
+  ["Well-Travelled", "Une fois par Arc, en arrivant sur un nouveau lieu, déclare y être déjà venu : génère un contact ou un lieu connu et gagne 1 Blues."],
+  ["Wheels", "Tu possèdes un Small Vehicle (total de 2 en caractéristiques), sans équipement intégré pour l'instant. Ton vaisseau dispose d'une baie hangar pour l'accueillir."]
+];

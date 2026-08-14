@@ -1,0 +1,27 @@
+{
+  "_id": "tM0WU6ktKEhl3eao",
+  "_key": "!items!tM0WU6ktKEhl3eao",
+  "name": "Authority Monitor",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illégal dans la plupart des systèmes. Tablette portable qui capte les flux radio et vidéo des véhicules de l'Autorité locale (portée : ville ; version vaisseau : nationale/continentale).</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

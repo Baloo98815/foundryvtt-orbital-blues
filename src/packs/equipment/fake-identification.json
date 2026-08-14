@@ -1,0 +1,27 @@
+{
+  "_id": "SPXxWT15v7bSCC1K",
+  "_key": "!items!SPXxWT15v7bSCC1K",
+  "name": "Fake Identification",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>En grande partie illégal selon la forme. De faux papiers aux lunettes qui trompent les scanners rétiniens.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

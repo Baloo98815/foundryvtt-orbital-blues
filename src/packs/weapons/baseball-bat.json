@@ -1,0 +1,27 @@
+{
+  "_id": "iG5MzrDw92mZv0Fw",
+  "_key": "!items!iG5MzrDw92mZv0Fw",
+  "name": "Baseball Bat",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Intimidating</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Intimidating",
+    "damage": "",
+    "range": "À proximité (mêlée)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

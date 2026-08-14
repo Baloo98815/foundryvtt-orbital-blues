@@ -1,0 +1,27 @@
+{
+  "_id": "6O3BRaY93o4O9OJh",
+  "_key": "!items!6O3BRaY93o4O9OJh",
+  "name": "Bond Chips",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Techniquement illégaux comme monnaie, mais acceptés dans de nombreuses banques et casinos. Stockent discrètement de grosses sommes de Crédits, indétectables aux scanners.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

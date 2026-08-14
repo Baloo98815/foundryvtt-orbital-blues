@@ -1,0 +1,20 @@
+{
+  "_id": "4JwlOcJ8w1Sx55NL",
+  "_key": "!items!4JwlOcJ8w1Sx55NL",
+  "name": "Through Your Teeth",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu n'as jamais trouvé de mot honnête plus efficace qu'un mensonge bien placé.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Quelqu'un ne te fait pas confiance alors qu'il le devrait.</li><li>Tu mens par habitude alors que ce n'est pas nécessaire.</li><li>Tu révèles accidentellement une vérité sur toi à travers un mensonge.</li></ul><p><strong>Questions :</strong></p><ol><li>Où as-tu appris à mentir ?</li><li>Quelle est la plus grande chose que la vérité t'ait coûtée ?</li><li>Comment transformes-tu les mensonges en argent ?</li><li>La confiance de qui as-tu perdue à cause de ta langue bien pendue ?</li><li>Qui chercherait ta ruine s'il connaissait la vérité ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu n'as jamais trouvé de mot honnête plus efficace qu'un mensonge bien placé.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

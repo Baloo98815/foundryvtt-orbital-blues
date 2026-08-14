@@ -1,0 +1,27 @@
+{
+  "_id": "DdB1Z4xQXra6BmjT",
+  "_key": "!items!DdB1Z4xQXra6BmjT",
+  "name": "Fence Drone",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Strictement illégal (la simple possession est punie). Retire marques, puces et tags d'objets étiquetés électroniquement ; extrêmement bruyant à l'usage.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

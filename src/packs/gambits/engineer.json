@@ -1,0 +1,20 @@
+{
+  "_id": "kWLewDxOlnadGkN0",
+  "_key": "!items!kWLewDxOlnadGkN0",
+  "name": "Engineer",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Conçois un nouvel équipement d'équipage avec le MJ (tu le possèdes ou il est installé sur ton vaisseau). En fin de session, attribue un point supplémentaire à un projet d'équipage."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

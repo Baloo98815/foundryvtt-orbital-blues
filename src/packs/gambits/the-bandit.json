@@ -1,0 +1,20 @@
+{
+  "_id": "BaAO43XgtKCsiO99",
+  "_key": "!items!BaAO43XgtKCsiO99",
+  "name": "The Bandit",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Quand tu utilises un Effort pour relancer un dé lors d'exploits de dextérité, de vol ou d'agilité, relance jusqu'à 2 dés par Cœur dépensé."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

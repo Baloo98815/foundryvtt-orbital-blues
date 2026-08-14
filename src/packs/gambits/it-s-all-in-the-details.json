@@ -1,0 +1,20 @@
+{
+  "_id": "QFWnvBPwD4TaPaXc",
+  "_key": "!items!QFWnvBPwD4TaPaXc",
+  "name": "It's All in the Details",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Avantage sur les tests d'Observation."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

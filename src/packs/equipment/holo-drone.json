@@ -1,0 +1,27 @@
+{
+  "_id": "u2aZLmnRwNO1QlHd",
+  "_key": "!items!u2aZLmnRwNO1QlHd",
+  "name": "Holo-Drone",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Récemment interdit dans toute la galaxie. Petit drone projetant un hologramme opaque d'un individu.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "vTRQo7gkxPpAAA08",
+  "_key": "!items!vTRQo7gkxPpAAA08",
+  "name": "Thick Pockets",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Tu comptes toujours comme ayant 2 Crédits en Économies. Tu peux abandonner cette Ruse à tout moment pour 1D3 paiements et la retirer de ta fiche."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

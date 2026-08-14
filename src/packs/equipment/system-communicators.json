@@ -1,0 +1,27 @@
+{
+  "_id": "Q7yDl8AIATuGivJF",
+  "_key": "!items!Q7yDl8AIATuGivJF",
+  "name": "System Communicators",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal, courant. Communication radio privée à distance (radios portables, oreillettes indétectables) — de quelques km à quelques secondes-lumière.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

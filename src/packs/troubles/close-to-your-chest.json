@@ -1,0 +1,20 @@
+{
+  "_id": "mlTAGA6YCK4NuHMP",
+  "_key": "!items!mlTAGA6YCK4NuHMP",
+  "name": "Close to Your Chest",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu possèdes une information dangereuse, très recherchée ou scandaleuse. Tu sais quelque chose que tu ne devrais surtout pas savoir.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu gardes ton secret au détriment des autres.</li><li>Tu retiens tes mots par égoïsme.</li><li>Garder ton secret nuit à ta vie quotidienne.</li></ul><p><strong>Questions :</strong></p><ol><li>Quel est ton secret ?</li><li>Qui souffrirait si tu le dévoilais ?</li><li>Qu'est-ce que tu gagnes à le garder ?</li><li>Qui pourrait bénéficier de cette révélation ?</li><li>Qui partage ce fardeau avec toi ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu possèdes une information dangereuse, très recherchée ou scandaleuse. Tu sais quelque chose que tu ne devrais surtout pas savoir.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

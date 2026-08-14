@@ -1,0 +1,27 @@
+{
+  "_id": "BRIU8BKqQP689u35",
+  "_key": "!items!BRIU8BKqQP689u35",
+  "name": "Revolver, Snub-Nose",
+  "type": "gear",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Concealable</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Concealable",
+    "damage": "",
+    "range": "Loin (tir)",
+    "cash": 0,
+    "isWeapon": true,
+    "attackStat": "savvy",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

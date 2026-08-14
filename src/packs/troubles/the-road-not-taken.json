@@ -1,0 +1,20 @@
+{
+  "_id": "JJ5V0kvIPGzK1Adz",
+  "_key": "!items!JJ5V0kvIPGzK1Adz",
+  "name": "The Road Not Taken",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Quelque chose t'a échappé, et tu n'arrives pas à l'oublier.</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Tu penses au chemin que tu as laissé derrière toi.</li><li>La réalité de ta voie choisie te revient en tête.</li><li>Tu essaies, sans succès, de changer de route.</li></ul><p><strong>Questions :</strong></p><ol><li>Quel choix regrettes-tu aujourd'hui ?</li><li>Pourquoi n'as-tu pas pris l'autre chemin ?</li><li>Qu'est-ce qui t'empêche de changer d'avis maintenant ?</li><li>Le respect de qui as-tu perdu en choisissant cette voie ?</li><li>En quoi l'autre voie aurait-elle amélioré ta vie ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Quelque chose t'a échappé, et tu n'arrives pas à l'oublier.",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

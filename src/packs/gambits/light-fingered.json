@@ -1,0 +1,20 @@
+{
+  "_id": "UttGbFwg1PlAD37T",
+  "_key": "!items!UttGbFwg1PlAD37T",
+  "name": "Light-Fingered",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Avantage sur l'Observation pour repérer/identifier serrures, pièges et sécurités, ainsi que sur les tests pour les désamorcer."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

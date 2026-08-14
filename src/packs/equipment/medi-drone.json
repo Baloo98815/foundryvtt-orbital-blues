@@ -1,0 +1,27 @@
+{
+  "_id": "dZtBbSxO53tXRUjV",
+  "_key": "!items!dZtBbSxO53tXRUjV",
+  "name": "Medi-Drone",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Illégal (dysfonctionnements signalés). Radios, scans et analyses sanguines rudimentaires, avec rapports imprimés.</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

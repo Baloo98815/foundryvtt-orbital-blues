@@ -1,0 +1,147 @@
+<form class="orbital-blues sheet actor character">
+
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="header-fields">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'OB.Actor.Name'}}" />
+      </h1>
+      <div class="concept">
+        <label>{{localize 'OB.Details.Concept'}}</label>
+        <input type="text" name="system.details.concept" value="{{system.details.concept}}" />
+      </div>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs" data-group="primary">
+    <a class="item" data-tab="main">{{localize 'OB.Tab.Main'}}</a>
+    <a class="item" data-tab="items">{{localize 'OB.Tab.Items'}}</a>
+    <a class="item" data-tab="bio">{{localize 'OB.Tab.Biography'}}</a>
+  </nav>
+
+  <section class="sheet-body">
+
+    <!-- MAIN -->
+    <div class="tab main" data-group="primary" data-tab="main">
+
+      <div class="stats-block">
+        {{#each config.stats as |label key|}}
+        <div class="stat">
+          <label class="stat-label" title="Shift+clic = jet rapide">{{localize label}}</label>
+          <input type="number" class="stat-value" name="system.stats.{{key}}.value" value="{{lookup (lookup ../system.stats key) 'value'}}" />
+          <button type="button" class="ob-roll-stat" data-stat="{{key}}">
+            <i class="fa-solid fa-dice-d6"></i> {{localize 'OB.Roll.Roll'}}
+          </button>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="resources">
+        <div class="resource heart">
+          <label>{{localize 'OB.Resource.Heart'}}</label>
+          <input type="number" name="system.resources.heart.value" value="{{system.resources.heart.value}}" />
+          <span>/</span>
+          <input type="number" name="system.resources.heart.max" value="{{system.resources.heart.max}}" />
+        </div>
+        <div class="resource blues">
+          <label>{{localize 'OB.Resource.Blues'}}</label>
+          <input type="number" name="system.resources.blues.value" value="{{system.resources.blues.value}}" />
+          <span>/</span>
+          <input type="number" name="system.resources.blues.max" value="{{system.resources.blues.max}}" />
+        </div>
+        <div class="resource cash">
+          <label>{{localize 'OB.Resource.Cash'}}</label>
+          <input type="number" name="system.resources.cash.value" value="{{system.resources.cash.value}}" />
+        </div>
+      </div>
+
+      <div class="ob-checks">
+        <button type="button" class="ob-roll-perception" title="Shift+clic = avantage">
+          <i class="fa-solid fa-eye"></i> {{localize 'OB.Chat.Perception'}}
+        </button>
+        <button type="button" class="ob-roll-blues">
+          <i class="fa-solid fa-heart-crack"></i> {{localize 'OB.Chat.BluesCheck'}}
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ITEMS -->
+    <div class="tab items" data-group="primary" data-tab="items">
+
+      <section class="item-group">
+        <header>
+          <h3>{{localize 'OB.Section.Gambits'}}</h3>
+          <button type="button" class="ob-item-create" data-type="gambit"><i class="fa-solid fa-plus"></i></button>
+        </header>
+        <ul class="item-list">
+          {{#each gambits as |it|}}
+          <li data-item-id="{{it.id}}">
+            <span class="name">{{it.name}}</span>
+            <span class="trigger">{{it.system.trigger}}</span>
+            <span class="controls">
+              <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
+              <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
+            </span>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+
+      <section class="item-group">
+        <header>
+          <h3>{{localize 'OB.Section.Troubles'}}</h3>
+          <button type="button" class="ob-item-create" data-type="trouble"><i class="fa-solid fa-plus"></i></button>
+        </header>
+        <ul class="item-list">
+          {{#each troubles as |it|}}
+          <li data-item-id="{{it.id}}">
+            <span class="name">{{it.name}}</span>
+            <span class="hook">{{it.system.hook}}</span>
+            <span class="controls">
+              <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
+              <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
+            </span>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+
+      <section class="item-group">
+        <header>
+          <h3>{{localize 'OB.Section.Gear'}}</h3>
+          <button type="button" class="ob-item-create" data-type="gear"><i class="fa-solid fa-plus"></i></button>
+        </header>
+        <ul class="item-list">
+          {{#each gear as |it|}}
+          <li data-item-id="{{it.id}}">
+            <span class="name">{{it.name}}</span>
+            <span class="qty">×{{it.system.quantity}}</span>
+            <span class="tags">{{it.system.tags}}</span>
+            <span class="controls">
+              {{#if it.system.isWeapon}}
+              <a class="ob-attack" title="{{localize 'OB.Chat.Attack'}} (Shift+clic = jet direct)"><i class="fa-solid fa-crosshairs"></i></a>
+              {{/if}}
+              <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
+              <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
+            </span>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- BIO -->
+    <div class="tab bio" data-group="primary" data-tab="bio">
+      <label>{{localize 'OB.Details.Look'}}</label>
+      <textarea name="system.details.look">{{system.details.look}}</textarea>
+      <label>{{localize 'OB.Details.Past'}}</label>
+      <textarea name="system.details.past">{{system.details.past}}</textarea>
+      <label>{{localize 'OB.Details.Biography'}}</label>
+      {{editor enriched.biography target="system.biography" button=true editable=editable engine="prosemirror"}}
+    </div>
+
+  </section>
+
+</form>

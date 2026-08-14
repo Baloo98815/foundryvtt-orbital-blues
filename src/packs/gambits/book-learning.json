@@ -1,0 +1,20 @@
+{
+  "_id": "IPNCvf3909osjqP2",
+  "_key": "!items!IPNCvf3909osjqP2",
+  "name": "Book Learning",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "Choisis un domaine académique ou une spécialisation. Avantage sur tous les tests liés à tes connaissances dans ce domaine."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

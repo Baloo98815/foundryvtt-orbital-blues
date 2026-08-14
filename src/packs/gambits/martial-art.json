@@ -1,0 +1,20 @@
+{
+  "_id": "kEVSMzhfrJfvsMJS",
+  "_key": "!items!kEVSMzhfrJfvsMJS",
+  "name": "Martial Art",
+  "type": "gambit",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "",
+    "source": "Orbital Blues",
+    "trigger": "",
+    "effect": "À mains nues, tu ne lances jamais en Désavantage. Confère à tes attaques à mains nues un trait au choix : Défensif, Intimidant ou Précis."
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

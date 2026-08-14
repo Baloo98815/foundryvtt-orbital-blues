@@ -1,0 +1,20 @@
+{
+  "_id": "ZKANdwMUS98jrCzs",
+  "_key": "!items!ZKANdwMUS98jrCzs",
+  "name": "Brick in the Wall",
+  "type": "trouble",
+  "img": "icons/svg/hazard.svg",
+  "system": {
+    "description": "<p>Tu es juste une personne normale, bien ajustée. Pas de drame, pas de trauma. Comment t'es-tu retrouvé ici ?</p><p><strong>Ça se déclenche quand :</strong></p><ul><li>Quelqu'un profite de ta gentillesse.</li><li>Tu fais quelque chose d'anodin.</li><li>Quelqu'un te fait confiance alors qu'il ne ferait pas confiance à un hors-la-loi ordinaire.</li></ul><p><strong>Questions :</strong></p><ol><li>Comment as-tu eu une enfance sans histoire ?</li><li>Quel ami te doit une faveur ?</li><li>Quel est ton trait le plus rassurant ?</li><li>Qui est la seule personne à ne pas trop t'aimer ?</li><li>Comment as-tu fini sur la route au lieu d'un boulot classique ?</li></ol>",
+    "source": "Orbital Blues",
+    "hook": "Tu es juste une personne normale, bien ajustée. Pas de drame, pas de trauma. Comment t'es-tu retrouvé ici ?",
+    "triggered": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "MgeaBaaZzwbnFLFv",
+  "_key": "!items!MgeaBaaZzwbnFLFv",
+  "name": "Cargo Scanner",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Légal (bientôt restreint hors forces de l'ordre). Scanne le chargement d'un vaisseau : identification et tonnage (qualité élevée : légalité de la cargaison).</p>",
+    "source": "Orbital Blues",
+    "quantity": 1,
+    "tags": "Équipement d'équipage",
+    "damage": "",
+    "range": "",
+    "cash": 0,
+    "isWeapon": false,
+    "attackStat": "muscle",
+    "damageBonus": 0,
+    "difficulty": 8
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
