@@ -1,21 +1,8 @@
-2026/08/14-19:08:32.411 6d18 Recovering log #10
-2026/08/14-19:08:32.452 6d18 Delete type=0 #10
-2026/08/14-19:08:32.452 6d18 Delete type=3 #8
-2026/08/14-19:09:10.660 3638 Level-0 table #14: started
-2026/08/14-19:09:10.660 3638 Level-0 table #14: 0 bytes OK
-2026/08/14-19:09:10.683 3638 Delete type=0 #12
-2026/08/14-19:09:10.693 3638 Manual compaction at level-0 from '!items!0WjLvD4yZUB9Y3rh' @ 72057594037927935 : 1 .. '!items!zjCFidferEGSlP4O' @ 0 : 0; will stop at '!items!zjCFidferEGSlP4O' @ 36 : 1
-2026/08/14-19:09:10.693 3638 Compacting 1@0 + 0@1 files
-2026/08/14-19:09:10.717 3638 Generated table #15@0: 18 keys, 3259 bytes
-2026/08/14-19:09:10.717 3638 Compacted 1@0 + 0@1 files => 3259 bytes
-2026/08/14-19:09:10.741 3638 compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/08/14-19:09:10.741 3638 Delete type=2 #9
-2026/08/14-19:09:10.749 3638 Manual compaction at level-0 from '!items!zjCFidferEGSlP4O' @ 36 : 1 .. '!items!zjCFidferEGSlP4O' @ 0 : 0; will stop at (end)
-2026/08/14-19:09:10.752 3638 Manual compaction at level-1 from '!items!0WjLvD4yZUB9Y3rh' @ 72057594037927935 : 1 .. '!items!zjCFidferEGSlP4O' @ 0 : 0; will stop at '!items!zjCFidferEGSlP4O' @ 36 : 1
-2026/08/14-19:09:10.752 3638 Compacting 1@1 + 1@2 files
-2026/08/14-19:09:10.776 3638 Generated table #16@1: 18 keys, 3259 bytes
-2026/08/14-19:09:10.776 3638 Compacted 1@1 + 1@2 files => 3259 bytes
-2026/08/14-19:09:10.799 3638 compacted to: files[ 0 0 1 0 0 0 0 ]
-2026/08/14-19:09:10.800 3638 Delete type=2 #5
-2026/08/14-19:09:10.800 3638 Delete type=2 #15
-2026/08/14-19:09:10.817 3638 Manual compaction at level-1 from '!items!zjCFidferEGSlP4O' @ 36 : 1 .. '!items!zjCFidferEGSlP4O' @ 0 : 0; will stop at (end)
+2026/08/14-19:21:46.977 d3c Recovering log #13
+2026/08/14-19:21:47.043 d3c Delete type=0 #13
+2026/08/14-19:21:47.043 d3c Delete type=3 #11
+2026/08/14-19:24:04.088 5fa8 Level-0 table #20: started
+2026/08/14-19:24:04.088 5fa8 Level-0 table #20: 0 bytes OK
+2026/08/14-19:24:04.113 5fa8 Delete type=0 #18
+2026/08/14-19:24:04.113 5fa8 Manual compaction at level-0 from '!items!0WjLvD4yZUB9Y3rh' @ 72057594037927935 : 1 .. '!items!zjCFidferEGSlP4O' @ 0 : 0; will stop at (end)
+2026/08/14-19:24:04.113 5fa8 Manual compaction at level-1 from '!items!0WjLvD4yZUB9Y3rh' @ 72057594037927935 : 1 .. '!items!zjCFidferEGSlP4O' @ 0 : 0; will stop at (end)
