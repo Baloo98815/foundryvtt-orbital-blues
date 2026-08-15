@@ -54,9 +54,9 @@
   },
   "primaryTokenAttribute": "resources.heart",
   "background": "",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/Baloo98815/foundryvtt-orbital-blues",
+  "manifest": "https://github.com/Baloo98815/foundryvtt-orbital-blues/releases/latest/download/system.json",
+  "download": "https://github.com/Baloo98815/foundryvtt-orbital-blues/releases/latest/download/system.zip",
   "license": "MIT",
   "readme": "README.md"
 }
