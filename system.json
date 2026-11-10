@@ -2,7 +2,7 @@
   "id": "orbital-blues",
   "title": "Orbital Blues",
   "description": "Système non officiel pour Orbital Blues (Soulmuppet Publishing) sur Foundry VTT v14.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "compatibility": {
     "minimum": "13",
     "verified": "14",

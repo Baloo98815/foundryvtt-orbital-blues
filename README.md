@@ -103,17 +103,38 @@ les entrées dans un dossier/monde.
 > Pour éditer le contenu : modifie `scripts/data/*.mjs` puis relance `npm run build:packs`.
 > Ne modifie pas `packs/**` à la main (format binaire).
 
-## Publier une release (pour l'installation par URL)
+## Publier une release et mettre à jour Foundry
 
-1. Renseigne `manifest`, `download` et `url` dans `system.json` (déjà fait).
-2. Crée un zip du système **avec `system.json` à la racine** (sans `node_modules/`).
-3. Crée une release GitHub taguée `v0.1.0` et attache-y `system.json` + `system.zip`.
+Foundry ne propose la mise à jour que si la `version` du manifeste est **supérieure** à celle installée.
 
-L'URL de manifeste à donner à Foundry est alors :
+1. **Monter la version** dans `system.json` (et `package.json`), par ex. `0.1.1`.
+2. **Reconstruire les compendiums** si les données ont changé : `npm run build:packs`.
+3. **Commit et push** sur `main`, sans oublier `packs/` (base LevelDB compilée).
+4. **Créer le zip**, avec `system.json` à la racine, sans `node_modules`, `.git`, `src/` ni `scripts/` :
 
-```
-https://github.com/Baloo98815/foundryvtt-orbital-blues/releases/latest/download/system.json
-```
+   ```bash
+   zip -r system.zip system.json README.md module templates lang styles packs -x "*.DS_Store"
+   ```
+
+5. **Créer la release GitHub** (tag `v<version>`) avec `system.json` et `system.zip` :
+
+   ```bash
+   gh release create v0.1.1 system.zip system.json --title "v0.1.1" --notes "Description des changements"
+   ```
+
+6. **Sur le serveur Foundry (VPS)** : *Configuration → Systèmes de jeu* → bouton **Mettre à jour**
+   à côté d'Orbital Blues. S'il n'apparaît pas, désinstaller puis réinstaller via l'URL du manifeste :
+
+   ```
+   https://github.com/Baloo98815/foundryvtt-orbital-blues/releases/latest/download/system.json
+   ```
+
+   Les mondes ne sont pas affectés.
+7. **Relancer le serveur Foundry** (ou au moins le monde) : les compendiums ne sont rechargés
+   qu'au démarrage.
+
+**Alternative sans release** : copier les fichiers directement dans `Data/systems/orbital-blues/`
+du VPS (`rsync` / `scp`), puis redémarrer Foundry.
 
 ## Encore à faire
 
