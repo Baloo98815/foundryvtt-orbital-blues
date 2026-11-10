@@ -107,7 +107,7 @@ les entrées dans un dossier/monde.
 
 Foundry ne propose la mise à jour que si la `version` du manifeste est **supérieure** à celle installée.
 
-1. **Monter la version** dans `system.json` (et `package.json`), par ex. `0.1.1`.
+1. **Monter la version** dans `system.json` (et `package.json`), par ex. `0.1.2`.
 2. **Reconstruire les compendiums** si les données ont changé : `npm run build:packs`.
 3. **Commit et push** sur `main`, sans oublier `packs/` (base LevelDB compilée).
 4. **Créer le zip**, avec `system.json` à la racine, sans `node_modules`, `.git`, `src/` ni `scripts/` :
@@ -119,7 +119,7 @@ Foundry ne propose la mise à jour que si la `version` du manifeste est **supér
 5. **Créer la release GitHub** (tag `v<version>`) avec `system.json` et `system.zip` :
 
    ```bash
-   gh release create v0.1.1 system.zip system.json --title "v0.1.1" --notes "Description des changements"
+   gh release create v0.1.2 system.zip system.json --title "v0.1.2" --notes "Description des changements"
    ```
 
 6. **Sur le serveur Foundry (VPS)** : *Configuration → Systèmes de jeu* → bouton **Mettre à jour**
