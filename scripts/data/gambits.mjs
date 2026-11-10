@@ -1,5 +1,5 @@
 /**
- * Ruses (Gambits) — source : page Notion « Ruses ».
+ * Gambits (Gambits) — source : page Notion « Gambits ».
  * name : intitulé canonique (EN). effect : texte mécanique (FR).
  */
 export const GAMBITS = [
@@ -31,7 +31,7 @@ export const GAMBITS = [
   ["The Captain", "Une fois par scène, quand tu ordonnes à un membre d'équipage d'agir, il lance ce test avec Avantage."],
   ["The Gambler", "Quand tu utilises un Effort pour relancer un dé en jouant ou en bluffant, relance jusqu'à 2 dés par Cœur dépensé."],
   ["The Perfect Lie", "Une fois par session, tu peux convaincre parfaitement quelqu'un d'un mensonge."],
-  ["Thick Pockets", "Tu comptes toujours comme ayant 2 Crédits en Économies. Tu peux abandonner cette Ruse à tout moment pour 1D3 paiements et la retirer de ta fiche."],
+  ["Thick Pockets", "Tu comptes toujours comme ayant 2 Crédits en Économies. Tu peux abandonner ce Gambit à tout moment pour 1D3 paiements et la retirer de ta fiche."],
   ["Tooled Up", "Choisis-en deux : équipement d'équipage supplémentaire ; trait supplémentaire sur une arme ; arme en plus ; arme sur ton vaisseau ; armure (seuil pour te toucher = 9)."],
   ["True Grit", "Une fois par session, lance un test de caractéristique ou une attaque avec Avantage en utilisant ton Cran à la place de la caractéristique normale."],
   ["Unstoppable", "Une fois par Arc, ne subis que la moitié des dégâts d'une attaque. Combiné à Trouble's Brewing, cela annule tous les dégâts reçus."],

@@ -72,18 +72,25 @@
       <section class="item-group">
         <header>
           <h3>{{localize 'OB.Section.Gambits'}}</h3>
-          <button type="button" class="ob-item-create" data-type="gambit"><i class="fa-solid fa-plus"></i></button>
         </header>
-        <ul class="item-list">
+        <ul class="item-list rich">
           {{#each gambits as |it|}}
           <li data-item-id="{{it.id}}">
-            <span class="name">{{it.name}}</span>
-            <span class="trigger">{{it.system.trigger}}</span>
-            <span class="controls">
-              <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
-              <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
-            </span>
+            <div class="rich-head">
+              <span class="name">{{it.name}}</span>
+              <span class="controls">
+                <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
+                <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
+              </span>
+            </div>
+            {{#if it.system.trigger}}<div class="rich-sub">{{it.system.trigger}}</div>{{/if}}
+            <div class="rich-body">
+              {{#if it.system.effect}}<p>{{it.system.effect}}</p>{{/if}}
+              {{#if it.enrichedDescription}}{{{it.enrichedDescription}}}{{/if}}
+            </div>
           </li>
+          {{else}}
+          <li class="empty">{{localize 'OB.Section.DropHint'}}</li>
           {{/each}}
         </ul>
       </section>
@@ -91,18 +98,25 @@
       <section class="item-group">
         <header>
           <h3>{{localize 'OB.Section.Troubles'}}</h3>
-          <button type="button" class="ob-item-create" data-type="trouble"><i class="fa-solid fa-plus"></i></button>
         </header>
-        <ul class="item-list">
+        <ul class="item-list rich">
           {{#each troubles as |it|}}
           <li data-item-id="{{it.id}}">
-            <span class="name">{{it.name}}</span>
-            <span class="hook">{{it.system.hook}}</span>
-            <span class="controls">
-              <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
-              <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
-            </span>
+            <div class="rich-head">
+              <span class="name">{{it.name}}</span>
+              <span class="controls">
+                <a class="ob-item-edit"><i class="fa-solid fa-pen"></i></a>
+                <a class="ob-item-delete"><i class="fa-solid fa-trash"></i></a>
+              </span>
+            </div>
+            {{#if it.enrichedDescription}}
+            <div class="rich-body">{{{it.enrichedDescription}}}</div>
+            {{else if it.system.hook}}
+            <div class="rich-body"><p>{{it.system.hook}}</p></div>
+            {{/if}}
           </li>
+          {{else}}
+          <li class="empty">{{localize 'OB.Section.DropHint'}}</li>
           {{/each}}
         </ul>
       </section>
@@ -134,12 +148,23 @@
 
     <!-- BIO -->
     <div class="tab bio" data-group="primary" data-tab="bio">
-      <label>{{localize 'OB.Details.Look'}}</label>
-      <textarea name="system.details.look">{{system.details.look}}</textarea>
-      <label>{{localize 'OB.Details.Past'}}</label>
-      <textarea name="system.details.past">{{system.details.past}}</textarea>
-      <label>{{localize 'OB.Details.Biography'}}</label>
-      {{editor enriched.biography target="system.biography" button=true editable=editable engine="prosemirror"}}
+      <div class="bio-block">
+        <label>{{localize 'OB.Details.Look'}}</label>
+        <textarea name="system.details.look" rows="3">{{system.details.look}}</textarea>
+      </div>
+
+      <div class="bio-block">
+        <label>{{localize 'OB.Details.PublicBiography'}}</label>
+        {{editor enriched.biography target="system.biography" button=true editable=editable engine="prosemirror"}}
+      </div>
+
+      {{#if owner}}
+      <div class="bio-block private">
+        <label><i class="fa-solid fa-lock"></i> {{localize 'OB.Details.PrivateBiography'}}</label>
+        <p class="hint">{{localize 'OB.Details.PrivateHint'}}</p>
+        {{editor enriched.privateBiography target="system.privateBiography" button=true editable=editable engine="prosemirror"}}
+      </div>
+      {{/if}}
     </div>
 
   </section>

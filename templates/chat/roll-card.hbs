@@ -21,8 +21,15 @@
   <div class="outcome"><strong>{{outcomeLabel}}</strong></div>
   {{/if}}
 
+  {{#each notes}}<div class="exert-note">{{this}}</div>{{/each}}
+  {{#if exertable}}
+  <button type="button" class="ob-exert"><i class="fa-solid fa-heart"></i> {{localize 'OB.Exert.Button'}}</button>
+  {{/if}}
+
+  {{#if rollTooltip}}
   <details class="tooltip">
     <summary>{{localize 'OB.Chat.Details'}}</summary>
     {{{rollTooltip}}}
   </details>
+  {{/if}}
 </div>

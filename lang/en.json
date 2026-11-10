@@ -66,10 +66,20 @@
 
   "OB.Details.Concept": "Concept",
   "OB.Details.Look": "Look",
-  "OB.Details.Past": "Past",
+  "OB.Details.PrivateBiography": "Private biography",
+  "OB.Details.PublicBiography": "Public biography",
+  "OB.Details.PrivateHint": "Only visible to the sheet owner and the GM.",
   "OB.Details.Biography": "Biography",
   "OB.Details.Notes": "Notes",
   "OB.Details.Description": "Description",
+
+  "OB.Exert.Button": "Exertion: −1 Heart, reroll the lowest die",
+  "OB.Exert.NoHeart": "No Heart left to spend.",
+  "OB.Exert.NotAllowed": "You cannot edit this message.",
+  "OB.Exert.Note": "Exertion: {old} → {new}",
+  "OB.Gambit.NoEffect": "(no effect set)",
+  "OB.Trouble.Details": "Triggers and questions",
+  "OB.Section.DropHint": "Drag an entry here from the compendium.",
 
   "OB.Item.New": "New {type}",
   "OB.ItemType.gambit": "Gambit",

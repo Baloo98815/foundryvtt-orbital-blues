@@ -29,12 +29,25 @@ export class OrbitalBluesCharacterSheet extends BaseActorSheet {
     context.system = context.actor.system;
     context.config = OB;
 
-    context.gambits  = context.actor.items.filter((i) => i.type === "gambit");
-    context.troubles = context.actor.items.filter((i) => i.type === "trouble");
+    // Description enrichie attachée à chaque item pour l'affichage direct sur la fiche.
+    const withDesc = async (type) => Promise.all(
+      context.actor.items.filter((i) => i.type === type).map(async (i) => {
+        const data = i.toObject(false);
+        data.id = i.id;
+        data.system = i.system;
+        data.enrichedDescription = await TextEditorImpl.enrichHTML(i.system.description ?? "", { async: true });
+        return data;
+      })
+    );
+    context.gambits  = await withDesc("gambit");
+    context.troubles = await withDesc("trouble");
     context.gear     = context.actor.items.filter((i) => i.type === "gear");
 
     context.enriched = {
       biography: await TextEditorImpl.enrichHTML(context.system.biography ?? ""),
+      privateBiography: context.owner
+        ? await TextEditorImpl.enrichHTML(context.system.privateBiography ?? "")
+        : "",
       notes:     await TextEditorImpl.enrichHTML(context.system.notes ?? "")
     };
 

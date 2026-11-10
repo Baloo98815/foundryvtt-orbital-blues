@@ -66,10 +66,20 @@
 
   "OB.Details.Concept": "Concept",
   "OB.Details.Look": "Apparence",
-  "OB.Details.Past": "Passé",
+  "OB.Details.PrivateBiography": "Biographie privée",
+  "OB.Details.PublicBiography": "Biographie publique",
+  "OB.Details.PrivateHint": "Visible uniquement par le propriétaire de la fiche et le MJ.",
   "OB.Details.Biography": "Biographie",
   "OB.Details.Notes": "Notes",
   "OB.Details.Description": "Description",
+
+  "OB.Exert.Button": "Effort : −1 Cœur, relancer le dé le plus bas",
+  "OB.Exert.NoHeart": "Plus de Cœur à dépenser.",
+  "OB.Exert.NotAllowed": "Tu ne peux pas modifier ce message.",
+  "OB.Exert.Note": "Effort : {old} → {new}",
+  "OB.Gambit.NoEffect": "(aucun effet renseigné)",
+  "OB.Trouble.Details": "Déclencheurs et questions",
+  "OB.Section.DropHint": "Glisse un élément depuis le compendium.",
 
   "OB.Item.New": "Nouveau {type}",
   "OB.ItemType.gambit": "Gambit",

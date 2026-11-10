@@ -79,7 +79,7 @@ Cinq compendiums sont livrés avec le système (127 entrées) :
 
 | Compendium | Contenu | Type d'item |
 |---|---|---|
-| Ruses (Gambits) | 34 Ruses avec effet mécanique | `gambit` |
+| Gambits | 34 Gambits avec effet mécanique | `gambit` |
 | Troubles | 20 Troubles (description, déclencheurs, questions) | `trouble` |
 | Armes | 24 armes de départ (mêlée + distance) | `gear` (arme) |
 | Équipement | 31 équipements d'équipage | `gear` |

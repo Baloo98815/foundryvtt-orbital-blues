@@ -35,7 +35,7 @@
     { "lang": "fr", "name": "Français", "path": "lang/fr.json" }
   ],
   "packs": [
-    { "name": "gambits",   "label": "Ruses (Gambits)", "path": "packs/gambits",   "type": "Item", "system": "orbital-blues" },
+    { "name": "gambits",   "label": "Gambits", "path": "packs/gambits",   "type": "Item", "system": "orbital-blues" },
     { "name": "troubles",  "label": "Troubles",        "path": "packs/troubles",  "type": "Item", "system": "orbital-blues" },
     { "name": "weapons",   "label": "Armes",           "path": "packs/weapons",   "type": "Item", "system": "orbital-blues" },
     { "name": "equipment", "label": "Équipement",      "path": "packs/equipment", "type": "Item", "system": "orbital-blues" },

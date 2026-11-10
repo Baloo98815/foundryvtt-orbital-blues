@@ -46,14 +46,33 @@ function statLabelOf(statKey) {
 }
 
 /** Envoie la carte de résultat dans le chat. */
-async function toChat(actor, roll, data, flavor) {
-  const content = await renderTpl(CARD, data);
+async function toChat(actor, roll, data, flavor, exert = null) {
+  const content = await renderTpl(CARD, { ...data, exertable: !!exert && data.outcome === "miss" });
+  const flags = exert ? { "orbital-blues": { roll: { ...exert, actorUuid: actor.uuid, flavor } } } : {};
   await roll.toMessage({
     speaker: ChatMessage.getSpeaker({ actor }),
     flavor,
     content,
+    flags,
     rollMode: game.settings.get("core", "rollMode")
   });
+}
+
+/** Valeurs des dés conservés d'un jet. */
+function keptDice(roll) {
+  return roll.dice[0].results.filter((r) => r.active).map((r) => r.result);
+}
+
+/** Résolution d'une attaque à partir des 3 dés conservés. */
+function resolveAttack(kept, statValue, difficulty, damageBonus) {
+  const [a, b, c] = [...kept].sort((x, y) => y - x);
+  let hit = true, damage, hitTotal;
+  if (b + c + statValue >= difficulty)      { hitTotal = b + c + statValue; damage = a; }
+  else if (a + c + statValue >= difficulty) { hitTotal = a + c + statValue; damage = b; }
+  else if (a + b + statValue >= difficulty) { hitTotal = a + b + statValue; damage = c; }
+  else { hit = false; hitTotal = a + b + statValue; damage = 0; }
+  if (hit) damage = Math.max(0, damage + damageBonus);
+  return { hit, hitTotal, damage };
 }
 
 /* -------------------------------------------- */
@@ -94,7 +113,8 @@ export async function rollCheck(actor, statKey, options = {}) {
     formula, total: roll.total, target,
     outcome, outcomeLabel,
     rollTooltip: await roll.getTooltip()
-  }, flavor);
+  }, flavor, { type: "check", kept: keptDice(roll), flat: statValue + bonus, target, kind: "check",
+    title: `${statLabel} (${modeLabel})`, formula });
 
   return { roll, total: roll.total, success, outcome };
 }
@@ -121,7 +141,8 @@ export async function rollPerception(actor, options = {}) {
     formula: roll.formula, total: roll.total, target,
     outcome: success ? "success" : "miss", outcomeLabel,
     rollTooltip: await roll.getTooltip()
-  }, `${label} (${modeLabel})`);
+  }, `${label} (${modeLabel})`, { type: "check", kept: keptDice(roll), flat: 0, target, kind: "perception",
+    title: `${label} (${modeLabel})`, formula: roll.formula });
 
   return { roll, total: roll.total, success };
 }
@@ -186,23 +207,8 @@ export async function rollAttack(actor, statKey, options = {}) {
   const roll = new Roll(formula);
   await roll.evaluate();
 
-  // Les 3 dés conservés, triés décroissant.
-  const kept = roll.dice[0].results
-    .filter((r) => r.active)
-    .map((r) => r.result)
-    .sort((a, b) => b - a);
-  const [a, b, c] = kept;
-
-  // On garde le plus gros dé possible en dégâts tout en atteignant la Difficulté.
-  let hit = false;
-  let damage = 0;
-  let hitTotal = 0;
-  if (b + c + statValue >= difficulty)      { hit = true; hitTotal = b + c + statValue; damage = a; }
-  else if (a + c + statValue >= difficulty) { hit = true; hitTotal = a + c + statValue; damage = b; }
-  else if (a + b + statValue >= difficulty) { hit = true; hitTotal = a + b + statValue; damage = c; }
-  else { hit = false; hitTotal = a + b + statValue; }
-
-  if (hit) damage = Math.max(0, damage + damageBonus);
+  const kept = keptDice(roll);
+  const { hit, hitTotal, damage } = resolveAttack(kept, statValue, difficulty, damageBonus);
 
   const outcomeLabel = game.i18n.localize(hit ? "OB.Attack.Hit" : "OB.Attack.Miss");
   const modeLabel = game.i18n.localize(OB.rollModes[mode]);
@@ -218,7 +224,8 @@ export async function rollAttack(actor, statKey, options = {}) {
     difficulty, hit, hitTotal, damage,
     outcome: hit ? "success" : "miss", outcomeLabel,
     rollTooltip: await roll.getTooltip()
-  }, title);
+  }, title, { type: "attack", kept, statValue, difficulty, damageBonus, kind: "attack",
+    title: `${title} (${modeLabel})`, formula: roll.formula });
 
   return { roll, hit, hitTotal, damage };
 }
@@ -309,5 +316,69 @@ export async function promptAttack(actor, statKey, presets = {}) {
     difficulty: opts.difficulty ?? presets.difficulty,
     damageBonus: opts.damageBonus ?? 0,
     weaponName: presets.weaponName
+  });
+}
+
+
+/* -------------------------------------------- */
+/*  Exertion (dépense de 1 Cœur → relance 1 dé)  */
+/* -------------------------------------------- */
+
+/**
+ * Dépense 1 Cœur pour relancer le dé conservé le plus bas d'un jet raté,
+ * puis met à jour la carte de chat.
+ * @param {ChatMessage} message
+ */
+export async function exertRoll(message) {
+  const flag = message.getFlag("orbital-blues", "roll");
+  if (!flag) return;
+
+  const actor = await fromUuid(flag.actorUuid);
+  if (!actor?.isOwner) return;
+  if (!message.canUserModify(game.user, "update")) {
+    return ui.notifications.warn(game.i18n.localize("OB.Exert.NotAllowed"));
+  }
+  const heart = Number(actor.system.resources?.heart?.value ?? 0);
+  if (heart < 1) return ui.notifications.warn(game.i18n.localize("OB.Exert.NoHeart"));
+
+  // Dépense du Cœur, puis relance du dé le plus bas.
+  await actor.update({ "system.resources.heart.value": heart - 1 });
+  const reroll = await new Roll("1d6").evaluate();
+  if (game.dice3d) game.dice3d.showForRoll(reroll, game.user, true);
+
+  const kept = [...flag.kept];
+  const idx = kept.indexOf(Math.min(...kept));
+  const oldVal = kept[idx];
+  const newVal = reroll.total;
+  kept[idx] = newVal;
+  const notes = [...(flag.notes ?? []),
+    game.i18n.format("OB.Exert.Note", { old: oldVal, new: newVal })];
+
+  let data;
+  if (flag.type === "attack") {
+    const r = resolveAttack(kept, flag.statValue, flag.difficulty, flag.damageBonus);
+    data = {
+      kind: "attack", difficulty: flag.difficulty, hit: r.hit, hitTotal: r.hitTotal, damage: r.damage,
+      outcome: r.hit ? "success" : "miss",
+      outcomeLabel: game.i18n.localize(r.hit ? "OB.Attack.Hit" : "OB.Attack.Miss")
+    };
+  } else {
+    const total = kept.reduce((a, b) => a + b, 0) + flag.flat;
+    const ok = total >= flag.target;
+    data = {
+      kind: flag.kind, total, target: flag.target,
+      outcome: ok ? "success" : "miss",
+      outcomeLabel: game.i18n.localize(ok ? "OB.Outcome.Success" : "OB.Outcome.Miss")
+    };
+  }
+  data = {
+    ...data, actor, title: flag.title, formula: `[${kept.join(", ")}]` + (flag.flat ? ` + ${flag.flat}` : ""),
+    notes, exertable: data.outcome === "miss"
+  };
+
+  const content = await renderTpl(CARD, data);
+  await message.update({
+    content,
+    "flags.orbital-blues.roll": { ...flag, kept, notes }
   });
 }

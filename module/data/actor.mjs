@@ -23,8 +23,10 @@ function resourceField(value = 0, max = 0) {
 /** Champs communs à tous les acteurs. */
 function baseActorFields() {
   return {
-    biography: new fields.HTMLField({ required: true, initial: "" }),
-    notes:     new fields.HTMLField({ required: true, initial: "" })
+    biography:        new fields.HTMLField({ required: true, initial: "" }),
+    // Biographie privée : affichée uniquement au propriétaire de la fiche (et au MJ).
+    privateBiography: new fields.HTMLField({ required: true, initial: "" }),
+    notes:            new fields.HTMLField({ required: true, initial: "" })
   };
 }
 
@@ -49,8 +51,7 @@ export class OrbitalBluesCharacterData extends foundry.abstract.TypeDataModel {
       details: new fields.SchemaField({
         name:    new fields.StringField({ required: true, initial: "" }),
         concept: new fields.StringField({ required: true, initial: "" }),
-        look:    new fields.StringField({ required: true, initial: "" }),
-        past:    new fields.StringField({ required: true, initial: "" })
+        look:    new fields.StringField({ required: true, initial: "" })
       })
     };
   }

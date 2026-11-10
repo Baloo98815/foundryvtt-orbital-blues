@@ -10,7 +10,7 @@ import { OrbitalBluesCharacterSheet } from "./sheets/character-sheet.mjs";
 import { OrbitalBluesShipSheet } from "./sheets/ship-sheet.mjs";
 import { OrbitalBluesNpcSheet } from "./sheets/npc-sheet.mjs";
 import { OrbitalBluesItemSheet } from "./sheets/item-sheet.mjs";
-import { rollCheck, rollPerception, rollBlues, rollAttack } from "./helpers/roll.mjs";
+import { rollCheck, rollPerception, rollBlues, rollAttack, exertRoll } from "./helpers/roll.mjs";
 import {
   OrbitalBluesCharacterData,
   OrbitalBluesShipData,
@@ -105,6 +105,16 @@ Hooks.once("init", function () {
 /* -------------------------------------------- */
 /*  Ready Hook                                   */
 /* -------------------------------------------- */
+
+// Bouton Effort sur les cartes de jet : visible uniquement par les propriétaires de l'acteur.
+Hooks.on("renderChatMessageHTML", (message, html) => {
+  const btn = html.querySelector(".ob-exert");
+  if (!btn) return;
+  const uuid = message.getFlag("orbital-blues", "roll")?.actorUuid;
+  const actor = uuid ? fromUuidSync(uuid) : null;
+  if (!actor?.isOwner) return btn.remove();
+  btn.addEventListener("click", () => { btn.disabled = true; exertRoll(message); });
+});
 
 Hooks.once("ready", function () {
   console.log("Orbital Blues | Prêt");
