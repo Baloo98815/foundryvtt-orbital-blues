@@ -20,6 +20,20 @@
     </div>
     <label>{{localize 'OB.Gear.Tags'}}</label>
     <input type="text" name="system.tags" value="{{system.tags}}" placeholder="ex. Bruyante, Voyante" />
+    {{#if traitChips.length}}
+    <div class="ob-traits">
+      <div class="ob-trait-chips">
+        {{#each traitChips as |t i|}}
+        <button type="button" class="ob-trait-chip {{#if t.drawback}}drawback{{/if}} {{#unless t.known}}unknown{{/unless}}" data-trait="{{i}}">{{t.name}}</button>
+        {{/each}}
+      </div>
+      {{#each traitChips as |t i|}}
+      <div class="ob-trait-desc" data-trait="{{i}}" hidden>
+        <strong>{{t.name}}</strong>{{#if t.known}} {{{t.description}}}{{else}}<p>Trait inconnu du compendium.</p>{{/if}}
+      </div>
+      {{/each}}
+    </div>
+    {{/if}}
     {{#if system.isWeapon}}<p class="ob-hint">{{localize 'OB.Gear.TraitsHint'}}</p>{{/if}}
 
     <label class="ob-weapon-toggle">

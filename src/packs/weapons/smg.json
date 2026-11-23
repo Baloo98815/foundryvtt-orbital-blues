@@ -5,7 +5,7 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Tir rapide</p>",
+    "description": "<p><strong>Type : Personnelle</strong> — Les petites armes à feu, légales sur la plupart des systèmes : un pistolet à canon scié ou un fusil de chasse d'entrée de gamme.</p><p><strong>Traits :</strong></p><ul><li><strong>Tir rapide</strong> — En cas de réussite, réduit la Taille d'une bande d'un point supplémentaire.</li></ul>",
     "source": "Orbital Blues",
     "quantity": 1,
     "tags": "Tir rapide",

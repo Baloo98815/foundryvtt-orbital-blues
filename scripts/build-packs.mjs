@@ -112,10 +112,31 @@ function frTraits(traits) {
   });
 }
 
+const TYPE_TEXT = {
+  "Personnelle": "Les petites armes à feu, légales sur la plupart des systèmes : un pistolet à canon scié ou un fusil de chasse d'entrée de gamme.",
+  "Militaire": "Des armes prévues pour faire mal, aux méchants comme à ceux qui se mettent en travers de leur chemin. Soumises à un permis sur la plupart des mondes. Elles sont létales et voyantes.",
+  "Martiale": "N'importe quelle arme utilisée dans les arts martiaux, de la paire de saïs à la masse ou la vibrolame futuriste.",
+  "Improvisée": "Une arme de mêlée moindre ou plus discrète. « Improvisée » couvre tout, depuis les outils utilisés en tant qu'armes, comme une clé à molette ou un cutter, jusqu'aux plus modestes armes, comme des poings américains ou des couteaux à cran d'arrêt. Vos propres poings sont également considérés comme une arme improvisée. Jouez avec une main basse contre les gangs.",
+  "Mêlée": "Dangereuses mais voyantes, les armes de mêlée sont soit explicitement prévues pour blesser, soit elles le deviennent dans les bonnes mains. Les armes de mêlée communément rencontrées peuvent être des épées, des pistolets à impulsion électrique ou des machettes."
+};
+
+function traitLine(name) {
+  const t = WEAPON_TRAITS.find(([fr]) => fr.toLowerCase() === name.toLowerCase());
+  return t ? `<li><strong>${t[0]}</strong> — ${t[3]}</li>` : `<li><strong>${name}</strong></li>`;
+}
+
 function weaponSystem(rawTraits, type, attackStat, rangeIdeal) {
-  const traits = frTraits(rawTraits);
+  // Les armes de mêlée sont d'office dangereuses et voyantes (livre, p. 74).
+  // Les armes militaires sont d'office létales et voyantes (livre, p. 75).
+  const base = type === "Mêlée" ? "Dangereuse, Voyante, " : type === "Militaire" ? "Létale, Voyante, " : "";
+  const traits = base + frTraits(rawTraits);
+  const names = traits.split(",").map((t) => t.trim());
+  const isChoice = /choix/i.test(traits);
+  const traitBlock = isChoice
+    ? `<p><strong>Traits :</strong> ${traits}</p>`
+    : `<p><strong>Traits :</strong></p><ul>${names.map(traitLine).join("")}</ul>`;
   return {
-    description: `<p><strong>Type :</strong> ${type}<br/><strong>Traits :</strong> ${traits}</p>`,
+    description: `<p><strong>Type : ${type}</strong> — ${TYPE_TEXT[type] ?? ""}</p>${traitBlock}`,
     source: "Orbital Blues",
     quantity: 1,
     tags: traits,

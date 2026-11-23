@@ -1,6 +1,6 @@
 {
   "name": "orbital-blues",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "type": "module",
   "description": "Outils de build pour le système Foundry VTT Orbital Blues (compendiums).",

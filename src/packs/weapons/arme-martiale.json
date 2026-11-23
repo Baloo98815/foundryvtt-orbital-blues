@@ -5,7 +5,7 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Martiale<br/><strong>Traits :</strong> 1 trait au choix (Perforante, Dissimulable, Létale, Défensive, Intimidante ou Précise) + 1 désavantage (Voyante ou Lourde)</p>",
+    "description": "<p><strong>Type : Martiale</strong> — N'importe quelle arme utilisée dans les arts martiaux, de la paire de saïs à la masse ou la vibrolame futuriste.</p><p><strong>Traits :</strong> 1 trait au choix (Perforante, Dissimulable, Létale, Défensive, Intimidante ou Précise) + 1 désavantage (Voyante ou Lourde)</p>",
     "source": "Orbital Blues",
     "quantity": 1,
     "tags": "1 trait au choix (Perforante, Dissimulable, Létale, Défensive, Intimidante ou Précise) + 1 désavantage (Voyante ou Lourde)",

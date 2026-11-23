@@ -5,10 +5,10 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Mêlée<br/><strong>Traits :</strong> Intimidante</p>",
+    "description": "<p><strong>Type : Mêlée</strong> — Dangereuses mais voyantes, les armes de mêlée sont soit explicitement prévues pour blesser, soit elles le deviennent dans les bonnes mains. Les armes de mêlée communément rencontrées peuvent être des épées, des pistolets à impulsion électrique ou des machettes.</p><p><strong>Traits :</strong></p><ul><li><strong>Dangereuse</strong> — En cas de réussite, élimine automatiquement un sbire.</li><li><strong>Voyante</strong> — Lancez avec Désavantage pour les tests de dissimulation.</li><li><strong>Intimidante</strong> — Inspire la peur chez les individus faibles. Les intimidations faites avec cette arme se font avec l'Avantage.</li></ul>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Intimidante",
+    "tags": "Dangereuse, Voyante, Intimidante",
     "weaponType": "melee",
     "damage": "",
     "range": "À proximité (mêlée)",

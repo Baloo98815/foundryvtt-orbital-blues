@@ -5,7 +5,7 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Shrapnel</p>",
+    "description": "<p><strong>Type : Personnelle</strong> — Les petites armes à feu, légales sur la plupart des systèmes : un pistolet à canon scié ou un fusil de chasse d'entrée de gamme.</p><p><strong>Traits :</strong></p><ul><li><strong>Shrapnel</strong> — Tire de nombreux petits projectiles via une seule cartouche. Faites les attaques contre les cibles proches et à portée moyenne avec Avantage. Lancez avec Désavantage contre les cibles lointaines. Les attaques contre les cibles très éloignées sont impossibles.</li></ul>",
     "source": "Orbital Blues",
     "quantity": 1,
     "tags": "Shrapnel",

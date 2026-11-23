@@ -5,7 +5,7 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Précise</p>",
+    "description": "<p><strong>Type : Personnelle</strong> — Les petites armes à feu, légales sur la plupart des systèmes : un pistolet à canon scié ou un fusil de chasse d'entrée de gamme.</p><p><strong>Traits :</strong></p><ul><li><strong>Précise</strong> — Peut attaquer un endroit précis sur ou près de la cible sans devoir lancer avec Désavantage.</li></ul>",
     "source": "Orbital Blues",
     "quantity": 1,
     "tags": "Précise",

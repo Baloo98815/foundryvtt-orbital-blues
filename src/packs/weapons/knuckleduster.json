@@ -5,7 +5,7 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Étourdissante</p>",
+    "description": "<p><strong>Type : Improvisée</strong> — Une arme de mêlée moindre ou plus discrète. « Improvisée » couvre tout, depuis les outils utilisés en tant qu'armes, comme une clé à molette ou un cutter, jusqu'aux plus modestes armes, comme des poings américains ou des couteaux à cran d'arrêt. Vos propres poings sont également considérés comme une arme improvisée. Jouez avec une main basse contre les gangs.</p><p><strong>Traits :</strong></p><ul><li><strong>Étourdissante</strong> — Les cibles réduites à zéro Cœur sont inconscientes au lieu d'être mortes.</li></ul>",
     "source": "Orbital Blues",
     "quantity": 1,
     "tags": "Étourdissante",

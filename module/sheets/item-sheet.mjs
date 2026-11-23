@@ -27,7 +27,36 @@ export class OrbitalBluesItemSheet extends BaseItemSheet {
     context.enriched = {
       description: await TextEditorImpl.enrichHTML(context.system.description ?? "")
     };
+    if (this.item.type === "gear") context.traitChips = await this._buildTraitChips();
     return context;
+  }
+
+  /** Découpe les Tags et associe chaque trait connu à sa description (compendium). */
+  async _buildTraitChips() {
+    const tags = (this.item.system.tags ?? "").split(",").map((t) => t.trim()).filter(Boolean);
+    if (!tags.length) return [];
+    const pack = game.packs.get("orbital-blues.traits");
+    const docs = pack ? await pack.getDocuments() : [];
+    const key = (v) => String(v ?? "").toLowerCase().replace(/[-\s]+/g, " ").trim();
+    return tags.map((name) => {
+      const doc = docs.find((d) => key(d.name) === key(name) || key(d.system.nameEn) === key(name));
+      return { name, known: !!doc, drawback: doc?.system.kind === "drawback", description: doc?.system.description ?? "" };
+    });
+  }
+
+  /** @override */
+  activateListeners(html) {
+    super.activateListeners(html);
+    // Clic sur un trait : affiche / masque sa description.
+    html.find(".ob-trait-chip").on("click", (ev) => {
+      ev.preventDefault();
+      const chip = ev.currentTarget;
+      const panel = chip.closest(".ob-traits").querySelector(`.ob-trait-desc[data-trait="${chip.dataset.trait}"]`);
+      const wasOpen = !panel.hidden;
+      chip.closest(".ob-traits").querySelectorAll(".ob-trait-desc").forEach((p) => (p.hidden = true));
+      chip.closest(".ob-traits").querySelectorAll(".ob-trait-chip").forEach((c) => c.classList.remove("open"));
+      if (!wasOpen) { panel.hidden = false; chip.classList.add("open"); }
+    });
   }
 
   /**

@@ -392,3 +392,15 @@
 
 .orbital-blues .ob-body .ob-hint { margin: 0; color: var(--ob-muted, #7a6f60); font-size: .75rem; font-style: italic; }
 .orbital-blues .ob-body.ob-drop-active { outline: 2px dashed var(--ob-accent, #d97845); }
+
+/* Traits cliquables */
+.orbital-blues .ob-traits { display: flex; flex-direction: column; gap: 8px; }
+.orbital-blues .ob-trait-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.orbital-blues .ob-trait-chip { width: auto; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--ob-accent, #d97845); background: rgba(217,120,69,.12); color: var(--ob-fg, #f2ebd8); cursor: pointer; line-height: 1.3; }
+.orbital-blues .ob-trait-chip.drawback { border-color: #a04040; background: rgba(160,64,64,.15); }
+.orbital-blues .ob-trait-chip.unknown { border-style: dashed; opacity: .7; }
+.orbital-blues .ob-trait-chip.open, .orbital-blues .ob-trait-chip:hover { background: var(--ob-accent, #d97845); color: var(--ob-bg, #1a1520); }
+.orbital-blues .ob-trait-chip.drawback.open, .orbital-blues .ob-trait-chip.drawback:hover { background: #a04040; color: #fff; }
+.orbital-blues .ob-trait-desc { padding: 8px 12px; border-left: 3px solid var(--ob-accent, #d97845); background: rgba(0,0,0,.2); border-radius: 0 4px 4px 0; line-height: 1.45; }
+.orbital-blues .ob-trait-desc[hidden] { display: none; }
+.orbital-blues .ob-trait-desc p { display: inline; margin: 0; }
