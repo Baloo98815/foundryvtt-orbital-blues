@@ -25,7 +25,7 @@ OB.rollModes = {
   againstOdds: "OB.RollMode.AgainstOdds"
 };
 
-// Caractéristiques pouvant servir à une attaque (mêlée : Muscle ; distance : Astuce).
+// Caractéristiques pouvant servir à une attaque (mêlée : Muscle ; distance : Neurones).
 OB.attackStats = {
   muscle: "OB.Stat.Muscle",
   savvy:  "OB.Stat.Savvy"
@@ -33,3 +33,13 @@ OB.attackStats = {
 
 // Seuil de réussite / difficulté par défaut.
 OB.targetNumber = 8;
+
+// Types d'arme.
+OB.weaponTypes = {
+  "":         "OB.WeaponType.None",
+  personal:   "OB.WeaponType.Personal",
+  military:   "OB.WeaponType.Military",
+  martial:    "OB.WeaponType.Martial",
+  improvised: "OB.WeaponType.Improvised",
+  melee:      "OB.WeaponType.Melee"
+};

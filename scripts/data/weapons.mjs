@@ -1,6 +1,6 @@
 /**
  * Armes de départ — source : page Notion « Equipements et Mementos ».
- * Mêlée → attaque au Muscle (Force) ; distance → attaque à l'Astuce (Savvy).
+ * Mêlée → attaque au Muscle (Force) ; distance → attaque à l'Neurones (Savvy).
  * traits : traits + drawback. type : catégorie d'arme. rangeIdeal : portée idéale.
  */
 
@@ -17,7 +17,7 @@ export const MELEE_WEAPONS = [
   ["Machete", "Mêlée", "Intimidating"],
   ["Mono-Edge Knife", "Mêlée", "Armour piercing"],
   ["Stun Gun", "Mêlée", "Stun"],
-  ["Arme Martiale", "Martiale", "1 trait au choix (Armour piercing, Concealable, Deadly, Defensive, Intimidating ou Precise) + 1 drawback (Conspicuous ou Heavy)"]
+  ["Arme Martiale", "Martiale", "1 trait au choix (Perforante, Dissimulable, Létale, Défensive, Intimidante ou Précise) + 1 désavantage (Voyante ou Lourde)"]
 ];
 
 // [name, type, traits]  — distance

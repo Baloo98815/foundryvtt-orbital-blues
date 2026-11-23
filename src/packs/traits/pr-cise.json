@@ -1,0 +1,20 @@
+{
+  "_id": "dGwdItErRUPXgDFu",
+  "_key": "!items!dGwdItErRUPXgDFu",
+  "name": "Précise",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Peut attaquer un endroit précis sur ou près de la cible sans devoir lancer avec Désavantage.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Precise"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

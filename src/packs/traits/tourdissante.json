@@ -1,0 +1,20 @@
+{
+  "_id": "oO5uS0w9KDCy1p8S",
+  "_key": "!items!oO5uS0w9KDCy1p8S",
+  "name": "Étourdissante",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Les cibles réduites à zéro Cœur sont inconscientes au lieu d'être mortes.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Stun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

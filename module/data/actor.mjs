@@ -89,14 +89,29 @@ export class OrbitalBluesNpcData extends foundry.abstract.TypeDataModel {
     return {
       ...baseActorFields(),
       stats: new fields.SchemaField({
+        muscle: statField(0),
+        grit:   statField(0),
+        savvy:  statField(0),
         threat: statField(1)
       }),
       resources: new fields.SchemaField({
         heart: resourceField(3, 3)
       }),
       details: new fields.SchemaField({
-        role:   new fields.StringField({ required: true, initial: "" }),
-        motive: new fields.StringField({ required: true, initial: "" })
+        role:      new fields.StringField({ required: true, initial: "" }),
+        motive:    new fields.StringField({ required: true, initial: "" }),
+        // Loyauté : pour qui il travaille (ex. « Forces de police de New Houston »).
+        loyalty:   new fields.StringField({ required: true, initial: "" }),
+        equipment: new fields.StringField({ required: true, initial: "" })
+      }),
+      // Humeur : table d'un D6 suggérant le comportement en jeu.
+      mood: new fields.SchemaField({
+        1: new fields.StringField({ required: true, initial: "" }),
+        2: new fields.StringField({ required: true, initial: "" }),
+        3: new fields.StringField({ required: true, initial: "" }),
+        4: new fields.StringField({ required: true, initial: "" }),
+        5: new fields.StringField({ required: true, initial: "" }),
+        6: new fields.StringField({ required: true, initial: "" })
       })
     };
   }

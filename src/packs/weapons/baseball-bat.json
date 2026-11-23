@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Intimidating</p>",
+    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Intimidante</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Intimidating",
+    "tags": "Intimidante",
+    "weaponType": "improvised",
     "damage": "",
     "range": "À proximité (mêlée)",
     "cash": 0,

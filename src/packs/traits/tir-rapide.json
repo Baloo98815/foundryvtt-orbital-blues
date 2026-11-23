@@ -1,0 +1,20 @@
+{
+  "_id": "n6VMeuu9F47Acr8w",
+  "_key": "!items!n6VMeuu9F47Acr8w",
+  "name": "Tir rapide",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>En cas de réussite, réduit la Taille d'une bande d'un point supplémentaire.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Rapid-Fire"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

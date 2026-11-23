@@ -1,0 +1,20 @@
+{
+  "_id": "BUsivT77SXWuPx9I",
+  "_key": "!items!BUsivT77SXWuPx9I",
+  "name": "Défensive",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Quand vous vous défendez contre des attaques de mêlée, le seuil de réussite de votre adversaire est augmenté de 1.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Defensive"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

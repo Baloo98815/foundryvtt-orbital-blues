@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Martiale<br/><strong>Traits :</strong> 1 trait au choix (Armour piercing, Concealable, Deadly, Defensive, Intimidating ou Precise) + 1 drawback (Conspicuous ou Heavy)</p>",
+    "description": "<p><strong>Type :</strong> Martiale<br/><strong>Traits :</strong> 1 trait au choix (Perforante, Dissimulable, Létale, Défensive, Intimidante ou Précise) + 1 désavantage (Voyante ou Lourde)</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "1 trait au choix (Armour piercing, Concealable, Deadly, Defensive, Intimidating ou Precise) + 1 drawback (Conspicuous ou Heavy)",
+    "tags": "1 trait au choix (Perforante, Dissimulable, Létale, Défensive, Intimidante ou Précise) + 1 désavantage (Voyante ou Lourde)",
+    "weaponType": "martial",
     "damage": "",
     "range": "À proximité (mêlée)",
     "cash": 0,

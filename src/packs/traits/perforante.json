@@ -1,0 +1,20 @@
+{
+  "_id": "ORmWjOAwi9MBvVj3",
+  "_key": "!items!ORmWjOAwi9MBvVj3",
+  "name": "Perforante",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Le seuil de réussite pour les attaques est toujours 8.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Armour-Piercing"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

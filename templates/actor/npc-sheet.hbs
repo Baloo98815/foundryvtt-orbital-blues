@@ -8,13 +8,25 @@
         <input type="text" name="system.details.role" value="{{system.details.role}}" />
       </div>
       <div>
-        <label>{{localize 'OB.Npc.Motive'}}</label>
-        <input type="text" name="system.details.motive" value="{{system.details.motive}}" />
+        <label>{{localize 'OB.Npc.Loyalty'}}</label>
+        <input type="text" name="system.details.loyalty" value="{{system.details.loyalty}}" />
       </div>
     </div>
   </header>
 
   <section class="sheet-body">
+    <div class="stats-block">
+      {{#each config.stats as |label key|}}
+      <div class="stat">
+        <label class="stat-label" title="Shift+clic = jet rapide">{{localize label}}</label>
+        <input type="number" class="stat-value" name="system.stats.{{key}}.value" value="{{lookup (lookup ../system.stats key) 'value'}}" />
+        <button type="button" class="ob-roll-stat" data-stat="{{key}}">
+          <i class="fa-solid fa-dice-d6"></i> {{localize 'OB.Roll.Roll'}}
+        </button>
+      </div>
+      {{/each}}
+    </div>
+
     <div class="resources">
       <div class="resource threat">
         <label>{{localize 'OB.Npc.Threat'}}</label>
@@ -28,7 +40,31 @@
       </div>
     </div>
 
-    <label>{{localize 'OB.Details.Notes'}}</label>
-    <textarea name="system.notes">{{system.notes}}</textarea>
+    <div class="npc-field">
+      <label>{{localize 'OB.Npc.Motive'}}</label>
+      <input type="text" name="system.details.motive" value="{{system.details.motive}}" />
+    </div>
+
+    <div class="npc-field">
+      <label>{{localize 'OB.Npc.Equipment'}}</label>
+      <input type="text" name="system.details.equipment" value="{{system.details.equipment}}" placeholder="pistolet, matraque, radio, menottes" />
+    </div>
+
+    <h3 class="ob-section-title">{{localize 'OB.Npc.Mood'}} (D6)</h3>
+    <div class="npc-mood">
+      {{#each moods as |m|}}
+      <label><span class="n">{{m.n}}.</span>
+        <input type="text" name="system.mood.{{m.n}}" value="{{m.value}}" />
+      </label>
+      {{/each}}
+    </div>
+    <div class="ob-checks">
+      <button type="button" class="ob-roll-mood"><i class="fa-solid fa-dice-d6"></i> {{localize 'OB.Npc.RollMood'}}</button>
+    </div>
+
+    <div class="npc-field">
+      <label>{{localize 'OB.Details.Notes'}}</label>
+      <textarea name="system.notes" rows="4">{{system.notes}}</textarea>
+    </div>
   </section>
 </form>

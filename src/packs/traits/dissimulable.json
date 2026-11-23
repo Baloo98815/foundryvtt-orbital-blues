@@ -1,0 +1,20 @@
+{
+  "_id": "xuJd1VsNyM7oGdjO",
+  "_key": "!items!xuJd1VsNyM7oGdjO",
+  "name": "Dissimulable",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Petit, facile à dissimuler. Faites les tests pour le dissimuler avec Avantage.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Concealable"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -8,7 +8,7 @@
     "description": "",
     "source": "Orbital Blues",
     "trigger": "",
-    "effect": "Pour réparer un véhicule, utilise ton Cran ou ton Astuce au lieu de ta Force. Dépense 1 Cœur pour choisir deux options au lieu d'une lors d'une Action de Réparation réussie."
+    "effect": "Pour réparer un véhicule, utilise ton Cran ou tes Neurones au lieu de ta Force. Dépense 1 Cœur pour choisir deux options au lieu d'une lors d'une Action de Réparation réussie."
   },
   "effects": [],
   "folder": null,

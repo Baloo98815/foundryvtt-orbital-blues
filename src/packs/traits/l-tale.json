@@ -1,0 +1,20 @@
+{
+  "_id": "bsHuwUa7wLsAT4Nw",
+  "_key": "!items!bsHuwUa7wLsAT4Nw",
+  "name": "Létale",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>En cas de réussite, élimine un sbire ou réduit la Taille d'une bande d'un point supplémentaire.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Deadly"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

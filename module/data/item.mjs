@@ -49,6 +49,7 @@ export class OrbitalBluesGearData extends foundry.abstract.TypeDataModel {
       range:       new fields.StringField({ required: true, initial: "" }),
       cash:        new fields.NumberField({ required: true, integer: true, initial: 0 }),
       isWeapon:    new fields.BooleanField({ required: true, initial: false }),
+      weaponType:  new fields.StringField({ required: true, initial: "" }),
       attackStat:  new fields.StringField({ required: true, initial: "muscle" }),
       damageBonus: new fields.NumberField({ required: true, integer: true, initial: 0 }),
       difficulty:  new fields.NumberField({ required: true, integer: true, initial: 8 })
@@ -78,6 +79,19 @@ export class OrbitalBluesShipPartData extends foundry.abstract.TypeDataModel {
       ...baseItemFields(),
       slot: new fields.StringField({ required: true, initial: "" }),
       tags: new fields.StringField({ required: true, initial: "" })
+    };
+  }
+}
+
+/* -------------------------------------------- */
+
+/** Trait ou désavantage (drawback) d'arme, à glisser sur un objet « arme ». */
+export class OrbitalBluesWeaponTraitData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      ...baseItemFields(),
+      kind:   new fields.StringField({ required: true, initial: "trait" }), // trait | drawback
+      nameEn: new fields.StringField({ required: true, initial: "" })
     };
   }
 }

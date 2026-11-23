@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Concealable</p>",
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Dissimulable</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Concealable",
+    "tags": "Dissimulable",
+    "weaponType": "personal",
     "damage": "",
     "range": "Loin (tir)",
     "cash": 0,

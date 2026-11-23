@@ -111,5 +111,24 @@
 
   "OB.Npc.Role": "Role",
   "OB.Npc.Motive": "Motive",
-  "OB.Npc.Threat": "Threat"
+  "OB.Npc.Threat": "Threat",
+  "OB.Npc.Loyalty": "Loyalty",
+  "OB.Npc.Equipment": "Equipment",
+  "OB.Npc.Mood": "Mood",
+  "OB.Npc.RollMood": "Roll mood",
+  "OB.ItemType.weaponTrait": "Weapon trait",
+  "OB.Gear.WeaponType": "Weapon type",
+  "OB.Gear.TraitsHint": "Drop a trait or drawback from the compendium to add it.",
+  "OB.Gear.TraitAdded": "Trait added: {name}",
+  "OB.Gear.TraitDuplicate": "This trait is already present.",
+  "OB.Trait.Kind": "Category",
+  "OB.Trait.KindTrait": "Trait",
+  "OB.Trait.KindDrawback": "Drawback",
+  "OB.Trait.NameEn": "English name",
+  "OB.WeaponType.None": "—",
+  "OB.WeaponType.Personal": "Personal",
+  "OB.WeaponType.Military": "Military",
+  "OB.WeaponType.Martial": "Martial",
+  "OB.WeaponType.Improvised": "Improvised",
+  "OB.WeaponType.Melee": "Melee"
 }

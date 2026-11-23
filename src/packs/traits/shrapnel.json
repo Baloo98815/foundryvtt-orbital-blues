@@ -1,0 +1,20 @@
+{
+  "_id": "fxQxARUaJmn2F1Ns",
+  "_key": "!items!fxQxARUaJmn2F1Ns",
+  "name": "Shrapnel",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Tire de nombreux petits projectiles via une seule cartouche. Faites les attaques contre les cibles proches et à portée moyenne avec Avantage. Lancez avec Désavantage contre les cibles lointaines. Les attaques contre les cibles très éloignées sont impossibles.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Shot"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

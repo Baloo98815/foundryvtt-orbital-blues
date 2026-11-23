@@ -1,0 +1,20 @@
+{
+  "_id": "ce88QlYDRRrmVsXl",
+  "_key": "!items!ce88QlYDRRrmVsXl",
+  "name": "Portée longue",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Peut tirer sur des cibles éloignées sans pénalité.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Long Ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

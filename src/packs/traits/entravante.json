@@ -1,0 +1,20 @@
+{
+  "_id": "eDksl7urhKlq6slk",
+  "_key": "!items!eDksl7urhKlq6slk",
+  "name": "Entravante",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>En cas de réussite, la cible ne peut ni se déplacer ni agir lors de son prochain tour.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Bind"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

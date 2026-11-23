@@ -1,0 +1,20 @@
+{
+  "_id": "VZcB6OEdMVijz06b",
+  "_key": "!items!VZcB6OEdMVijz06b",
+  "name": "Munitions limitées",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Les munitions sont rares, chères et lourdes. Attaquer avec impose une Dette.</p>",
+    "source": "Orbital Blues",
+    "kind": "drawback",
+    "nameEn": "Limited Ammo"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

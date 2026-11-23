@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Armour piercing</p>",
+    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Perforante</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Armour piercing",
+    "tags": "Perforante",
+    "weaponType": "improvised",
     "damage": "",
     "range": "À proximité (mêlée)",
     "cash": 0,

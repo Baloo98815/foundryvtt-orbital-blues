@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Militaire<br/><strong>Traits :</strong> Long Range, Limited ammo</p>",
+    "description": "<p><strong>Type :</strong> Militaire<br/><strong>Traits :</strong> Portée longue, Munitions limitées</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Long Range, Limited ammo",
+    "tags": "Portée longue, Munitions limitées",
+    "weaponType": "military",
     "damage": "",
     "range": "Loin (tir)",
     "cash": 0,

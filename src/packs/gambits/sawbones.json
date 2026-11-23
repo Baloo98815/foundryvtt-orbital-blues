@@ -8,7 +8,7 @@
     "description": "",
     "source": "Orbital Blues",
     "trigger": "",
-    "effect": "Toujours Avantage sur les jets de Soin ou liés à la médecine. En fin de session, jet d'Astuce si l'équipage doit récupérer du Cœur (Désavantage si c'est pour toi) : réussite = aucune Dette."
+    "effect": "Toujours Avantage sur les jets de Soin ou liés à la médecine. En fin de session, jet de Neurones si l'équipage doit récupérer du Cœur (Désavantage si c'est pour toi) : réussite = aucune Dette."
   },
   "effects": [],
   "folder": null,

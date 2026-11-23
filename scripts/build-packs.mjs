@@ -20,6 +20,7 @@ import { compilePack } from "@foundryvtt/foundryvtt-cli";
 import { GAMBITS } from "./data/gambits.mjs";
 import { TROUBLES } from "./data/troubles.mjs";
 import { MELEE_WEAPONS, RANGED_WEAPONS } from "./data/weapons.mjs";
+import { WEAPON_TRAITS, TRAIT_EN_TO_FR, normTrait } from "./data/traits.mjs";
 import { EQUIPMENT, MEMENTOS } from "./data/equipment.mjs";
 
 const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
@@ -53,6 +54,7 @@ const ICONS = {
   gambit: "icons/svg/aura.svg",
   trouble: "icons/svg/hazard.svg",
   weapon: "icons/svg/sword.svg",
+  trait: "icons/svg/upgrade.svg",
   gear: "icons/svg/item-bag.svg",
   memento: "icons/svg/chest.svg"
 };
@@ -100,12 +102,24 @@ function buildTroubles() {
   });
 }
 
-function weaponSystem(traits, type, attackStat, rangeIdeal) {
+const WEAPON_TYPES = { "Personnelle": "personal", "Militaire": "military", "Martiale": "martial", "Improvisée": "improvised", "Mêlée": "melee" };
+
+/** Traduit les noms de traits anglais ("Armour piercing, Loud") en français. */
+function frTraits(traits) {
+  return traits.replace(/[A-Za-z][A-Za-z ]*/g, (w) => {
+    const k = normTrait(w);
+    return TRAIT_EN_TO_FR[k] ?? w;
+  });
+}
+
+function weaponSystem(rawTraits, type, attackStat, rangeIdeal) {
+  const traits = frTraits(rawTraits);
   return {
     description: `<p><strong>Type :</strong> ${type}<br/><strong>Traits :</strong> ${traits}</p>`,
     source: "Orbital Blues",
     quantity: 1,
     tags: traits,
+    weaponType: WEAPON_TYPES[type] ?? "",
     damage: "",
     range: rangeIdeal,
     cash: 0,
@@ -126,6 +140,13 @@ function buildWeapons() {
       weaponSystem(traits, type, "savvy", "Loin (tir)"),
       ICONS.weapon));
   return [...melee, ...ranged];
+}
+
+function buildTraits() {
+  return WEAPON_TRAITS.map(([name, nameEn, kind, desc]) =>
+    makeItem("traits", name, "weaponTrait",
+      { description: `<p>${desc}</p>`, source: "Orbital Blues", kind, nameEn },
+      ICONS.trait));
 }
 
 function buildEquipment() {
@@ -170,6 +191,7 @@ const PACKS = {
   gambits: buildGambits,
   troubles: buildTroubles,
   weapons: buildWeapons,
+  traits: buildTraits,
   equipment: buildEquipment,
   mementos: buildMementos
 };

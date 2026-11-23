@@ -21,7 +21,8 @@ import {
   OrbitalBluesTroubleData,
   OrbitalBluesGearData,
   OrbitalBluesCargoData,
-  OrbitalBluesShipPartData
+  OrbitalBluesShipPartData,
+  OrbitalBluesWeaponTraitData
 } from "./data/item.mjs";
 
 /* -------------------------------------------- */
@@ -58,8 +59,9 @@ Hooks.once("init", function () {
   CONFIG.Item.dataModels.gear     = OrbitalBluesGearData;
   CONFIG.Item.dataModels.cargo    = OrbitalBluesCargoData;
   CONFIG.Item.dataModels.shipPart = OrbitalBluesShipPartData;
+  CONFIG.Item.dataModels.weaponTrait = OrbitalBluesWeaponTraitData;
 
-  // Initiative (règles) : 1d3 + Astuce (Savvy).
+  // Initiative (règles) : 1d3 + Neurones (Savvy).
   // Variante mêlée « Knives to a cinematic gunfight » (2d3 en gardant le meilleur)
   // à déclarer manuellement au cas par cas.
   CONFIG.Combat.initiative = {

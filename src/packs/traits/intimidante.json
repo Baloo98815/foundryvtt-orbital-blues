@@ -1,0 +1,20 @@
+{
+  "_id": "EMuCYT0evSmCF5od",
+  "_key": "!items!EMuCYT0evSmCF5od",
+  "name": "Intimidante",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Inspire la peur chez les individus faibles. Les intimidations faites avec cette arme se font avec l'Avantage.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Intimidating"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

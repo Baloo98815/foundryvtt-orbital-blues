@@ -51,7 +51,7 @@ orbital-blues/
 
 Conformes au résumé des règles (jet **binaire**, seuil 8).
 
-- **Trois stats personnage** : Muscle (Force), Grit (Cran), Savvy (Astuce).
+- **Trois stats personnage** : Muscle (Force), Grit (Cran), Savvy (Neurones).
 - **Trois stats vaisseau** : Engines (Moteurs), Systems (Systèmes), Hull (Coque).
 - **Test de caractéristique** : 2d6 + stat, **réussite si total ≥ 8**, sinon échec.
   - *Upper Hand* (avantage) : 3d6, on retire le plus bas.
@@ -61,7 +61,7 @@ Conformes au résumé des règles (jet **binaire**, seuil 8).
 - **Attaque** : 3d6 (4d6 avec avantage/désavantage), on garde 2 dés + stat vs Difficulté (défaut 8) ;
   le dé restant = dégâts + bonus d'arme. Le système choisit automatiquement le meilleur découpage
   (toucher tout en maximisant les dégâts).
-- **Initiative** : 1d3 + Astuce. *(Variante mêlée 2d3 à déclarer manuellement.)*
+- **Initiative** : 1d3 + Neurones. *(Variante mêlée 2d3 à déclarer manuellement.)*
 - **Ressources personnage** : Heart, Blues (max 9, pour permettre Trouble's Brewing à 8), Cash.
 - **Ressources vaisseau** : Integrity, Fuel, Cargo.
 - **Items** : Gambit, Trouble, Gear (avec option « arme »), Cargo, Ship Part.
@@ -69,7 +69,7 @@ Conformes au résumé des règles (jet **binaire**, seuil 8).
 
 ### Armes
 
-Coche « C'est une arme » sur un objet *Gear* pour révéler : caractéristique d'attaque (Muscle/Astuce),
+Coche « C'est une arme » sur un objet *Gear* pour révéler : caractéristique d'attaque (Muscle/Neurones),
 difficulté et bonus de dégâts. Un bouton d'attaque (🎯) apparaît alors sur la ligne de l'objet
 (Shift+clic = jet direct sans dialogue).
 
@@ -143,7 +143,7 @@ Mécaniques non automatisées (narration MJ ou travail futur) :
 1. **Jet de mort** à 0 Cœur (D6 vs nombre de Troubles), Knocking on Heaven's Door, Swansong.
 2. **Effort/Exertion** : dépense de Cœur pour relancer des dés — non automatisé.
 3. **Trouble's Brewing** : reset des Blues + choix de récompense en fin de scène.
-4. **Diving Save**, **Soin** (2 jets Astuce + Force), portées de combat.
+4. **Diving Save**, **Soin** (2 jets Neurones + Force), portées de combat.
 5. Application automatique des **dégâts** à une cible ciblée.
 
 ## Interactions

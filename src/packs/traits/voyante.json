@@ -1,0 +1,20 @@
+{
+  "_id": "r3C0mdzBCbXAEglw",
+  "_key": "!items!r3C0mdzBCbXAEglw",
+  "name": "Voyante",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Lancez avec Désavantage pour les tests de dissimulation.</p>",
+    "source": "Orbital Blues",
+    "kind": "drawback",
+    "nameEn": "Conspicuous"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

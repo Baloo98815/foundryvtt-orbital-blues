@@ -29,4 +29,26 @@ export class OrbitalBluesItemSheet extends BaseItemSheet {
     };
     return context;
   }
+
+  /**
+   * Glisser un trait / désavantage d'arme sur un objet : l'ajoute aux Tags.
+   * @override
+   */
+  async _onDrop(event) {
+    const data = TextEditorImpl.getDragEventData?.(event)
+      ?? foundry.applications?.ux?.TextEditor?.implementation?.getDragEventData?.(event)
+      ?? JSON.parse(event.dataTransfer.getData("text/plain") || "{}");
+    if (data?.type !== "Item" || this.item.type !== "gear" || !this.isEditable) return super._onDrop?.(event);
+    const dropped = await fromUuid(data.uuid);
+    if (dropped?.type !== "weaponTrait") return;
+
+    const current = (this.item.system.tags ?? "").split(",").map((t) => t.trim()).filter(Boolean);
+    if (current.some((t) => t.toLowerCase() === dropped.name.toLowerCase())) {
+      ui.notifications.info(game.i18n.localize("OB.Gear.TraitDuplicate"));
+      return;
+    }
+    current.push(dropped.name);
+    await this.item.update({ "system.tags": current.join(", ") });
+    ui.notifications.info(game.i18n.format("OB.Gear.TraitAdded", { name: dropped.name }));
+  }
 }

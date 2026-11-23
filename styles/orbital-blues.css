@@ -346,3 +346,49 @@
 .orbital-blues.roll-dialog { display: flex; flex-direction: column; gap: 12px; padding: 8px 4px 12px; }
 .orbital-blues.roll-dialog .form-group { display: flex; flex-direction: column; gap: 4px; }
 .orbital-blues.roll-dialog label { text-transform: uppercase; font-size: .75rem; letter-spacing: .08em; }
+
+/* ===== Marges des fiches d'objets (indépendantes de la classe du conteneur) ===== */
+.orbital-blues .ob-head { gap: 16px; padding: 16px 20px; }
+.orbital-blues .ob-head h1 { flex: 1; margin: 0; }
+.orbital-blues .ob-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 24px 24px;
+  box-sizing: border-box;
+}
+.orbital-blues .ob-body > label,
+.orbital-blues .ob-body .grid-2 > label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: .1em;
+  color: var(--ob-accent, #d97845);
+}
+.orbital-blues .ob-body input[type="text"],
+.orbital-blues .ob-body input[type="number"],
+.orbital-blues .ob-body select,
+.orbital-blues .ob-body textarea { width: 100%; box-sizing: border-box; padding: 6px 10px; }
+.orbital-blues .ob-body .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; }
+.orbital-blues .ob-body .editor { min-height: 160px; padding: 10px 12px; border: 1px solid var(--ob-border, #3a2f2a); border-radius: 4px; line-height: 1.5; }
+.orbital-blues .ob-body .ob-weapon-toggle { flex-direction: row; align-items: center; gap: 8px; text-transform: none; letter-spacing: 0; font-size: .9rem; color: var(--ob-fg, #f2ebd8); }
+.orbital-blues .ob-body .ob-weapon-toggle input { width: auto; }
+
+/* ===== Fiche PNJ ===== */
+.orbital-blues.sheet.npc .tab-pad { padding: 0 16px; }
+.orbital-blues.sheet.npc .ob-section-title { margin: 12px 16px 6px; text-transform: uppercase; font-size: .75rem; letter-spacing: .1em; color: var(--ob-accent); }
+.orbital-blues.sheet.npc .npc-field { display: flex; flex-direction: column; gap: 4px; padding: 0 16px 10px; }
+.orbital-blues.sheet.npc .npc-field label { text-transform: uppercase; font-size: .75rem; letter-spacing: .1em; color: var(--ob-muted); }
+.orbital-blues.sheet.npc .npc-field input,
+.orbital-blues.sheet.npc .npc-field textarea { padding: 6px 10px; box-sizing: border-box; width: 100%; }
+.orbital-blues.sheet.npc .npc-mood { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; padding: 0 16px 10px; }
+.orbital-blues.sheet.npc .npc-mood label { display: flex; align-items: center; gap: 8px; }
+.orbital-blues.sheet.npc .npc-mood input { flex: 1; padding: 4px 8px; }
+.orbital-blues.sheet.npc .npc-mood .n { color: var(--ob-accent); font-weight: bold; }
+.orbital-blues.sheet.npc .ob-checks { padding: 4px 16px 12px; }
+
+.orbital-blues .ob-body .ob-hint { margin: 0; color: var(--ob-muted, #7a6f60); font-size: .75rem; font-style: italic; }
+.orbital-blues .ob-body.ob-drop-active { outline: 2px dashed var(--ob-accent, #d97845); }

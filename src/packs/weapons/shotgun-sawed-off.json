@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Shot</p>",
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Shrapnel</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Shot",
+    "tags": "Shrapnel",
+    "weaponType": "personal",
     "damage": "",
     "range": "Loin (tir)",
     "cash": 0,

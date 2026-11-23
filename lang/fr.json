@@ -14,7 +14,7 @@
 
   "OB.Stat.Muscle": "Muscle",
   "OB.Stat.Grit": "Cran",
-  "OB.Stat.Savvy": "Malice",
+  "OB.Stat.Savvy": "Neurones",
 
   "OB.ShipStat.Engines": "Moteurs",
   "OB.ShipStat.Systems": "Systèmes",
@@ -111,5 +111,24 @@
 
   "OB.Npc.Role": "Rôle",
   "OB.Npc.Motive": "Motivation",
-  "OB.Npc.Threat": "Menace"
+  "OB.Npc.Threat": "Menace",
+  "OB.Npc.Loyalty": "Loyauté",
+  "OB.Npc.Equipment": "Équipement",
+  "OB.Npc.Mood": "Humeur",
+  "OB.Npc.RollMood": "Tirer l'humeur",
+  "OB.ItemType.weaponTrait": "Trait d'arme",
+  "OB.Gear.WeaponType": "Type d'arme",
+  "OB.Gear.TraitsHint": "Glisse un trait ou un désavantage depuis le compendium pour l'ajouter.",
+  "OB.Gear.TraitAdded": "Trait ajouté : {name}",
+  "OB.Gear.TraitDuplicate": "Ce trait est déjà présent.",
+  "OB.Trait.Kind": "Catégorie",
+  "OB.Trait.KindTrait": "Trait",
+  "OB.Trait.KindDrawback": "Désavantage",
+  "OB.Trait.NameEn": "Nom anglais",
+  "OB.WeaponType.None": "—",
+  "OB.WeaponType.Personal": "Personnelle",
+  "OB.WeaponType.Military": "Militaire",
+  "OB.WeaponType.Martial": "Martiale",
+  "OB.WeaponType.Improvised": "Improvisée",
+  "OB.WeaponType.Melee": "Mêlée"
 }

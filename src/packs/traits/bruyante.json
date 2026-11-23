@@ -1,0 +1,20 @@
+{
+  "_id": "fMvQgduGfwf6ZBPz",
+  "_key": "!items!fMvQgduGfwf6ZBPz",
+  "name": "Bruyante",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Quand tu tires, même les gens sur la lune d'à côté l'entendent probablement. Les ennemis rappliquent.</p>",
+    "source": "Orbital Blues",
+    "kind": "drawback",
+    "nameEn": "Loud"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

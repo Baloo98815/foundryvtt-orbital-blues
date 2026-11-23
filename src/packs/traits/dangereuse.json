@@ -1,0 +1,20 @@
+{
+  "_id": "aMsc29UHCwIiWrS3",
+  "_key": "!items!aMsc29UHCwIiWrS3",
+  "name": "Dangereuse",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>En cas de réussite, élimine automatiquement un sbire.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Dangerous"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

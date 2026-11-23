@@ -1,0 +1,20 @@
+{
+  "_id": "XvdQDcgBn7PSScsl",
+  "_key": "!items!XvdQDcgBn7PSScsl",
+  "name": "Silencieuse",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Ne fait pas un bruit tonitruant lorsqu'elle est utilisée.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Silent"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

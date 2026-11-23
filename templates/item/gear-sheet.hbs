@@ -1,9 +1,9 @@
 <form class="orbital-blues sheet item gear">
-  <header class="sheet-header">
+  <header class="sheet-header ob-head">
     <img class="profile-img" src="{{item.img}}" data-edit="img" />
     <h1><input type="text" name="name" value="{{item.name}}" /></h1>
   </header>
-  <section class="sheet-body">
+  <section class="sheet-body ob-body">
     <div class="grid-2">
       <label>{{localize 'OB.Gear.Quantity'}}
         <input type="number" name="system.quantity" value="{{system.quantity}}" />
@@ -19,7 +19,8 @@
       </label>
     </div>
     <label>{{localize 'OB.Gear.Tags'}}</label>
-    <input type="text" name="system.tags" value="{{system.tags}}" placeholder="e.g. Loud, Ranged, Heavy" />
+    <input type="text" name="system.tags" value="{{system.tags}}" placeholder="ex. Bruyante, Voyante" />
+    {{#if system.isWeapon}}<p class="ob-hint">{{localize 'OB.Gear.TraitsHint'}}</p>{{/if}}
 
     <label class="ob-weapon-toggle">
       <input type="checkbox" name="system.isWeapon" {{checked system.isWeapon}} />
@@ -27,6 +28,13 @@
     </label>
     {{#if system.isWeapon}}
     <div class="grid-2">
+      <label>{{localize 'OB.Gear.WeaponType'}}
+        <select name="system.weaponType">
+          {{#each config.weaponTypes as |label key|}}
+          <option value="{{key}}" {{#if (ob-eq ../system.weaponType key)}}selected{{/if}}>{{localize label}}</option>
+          {{/each}}
+        </select>
+      </label>
       <label>{{localize 'OB.Gear.AttackStat'}}
         <select name="system.attackStat">
           {{#each config.attackStats as |label key|}}

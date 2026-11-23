@@ -1,0 +1,21 @@
+<form class="orbital-blues sheet item weaponTrait">
+  <header class="sheet-header ob-head">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" />
+    <h1><input type="text" name="name" value="{{item.name}}" /></h1>
+  </header>
+  <section class="sheet-body ob-body">
+    <div class="grid-2">
+      <label>{{localize 'OB.Trait.Kind'}}
+        <select name="system.kind">
+          <option value="trait" {{#if (ob-eq system.kind "trait")}}selected{{/if}}>{{localize 'OB.Trait.KindTrait'}}</option>
+          <option value="drawback" {{#if (ob-eq system.kind "drawback")}}selected{{/if}}>{{localize 'OB.Trait.KindDrawback'}}</option>
+        </select>
+      </label>
+      <label>{{localize 'OB.Trait.NameEn'}}
+        <input type="text" name="system.nameEn" value="{{system.nameEn}}" />
+      </label>
+    </div>
+    <label>{{localize 'OB.Details.Description'}}</label>
+    {{editor enriched.description target="system.description" button=true editable=editable engine="prosemirror"}}
+  </section>
+</form>

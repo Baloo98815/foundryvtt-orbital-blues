@@ -1,0 +1,20 @@
+{
+  "_id": "AsJW1Qw32B2O9JcT",
+  "_key": "!items!AsJW1Qw32B2O9JcT",
+  "name": "Lourde",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Nécessite au moins +1 en Force pour pouvoir le transporter.</p>",
+    "source": "Orbital Blues",
+    "kind": "drawback",
+    "nameEn": "Heavy"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

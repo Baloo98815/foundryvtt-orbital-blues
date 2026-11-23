@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Rapid Fire</p>",
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Tir rapide</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Rapid Fire",
+    "tags": "Tir rapide",
+    "weaponType": "personal",
     "damage": "",
     "range": "Loin (tir)",
     "cash": 0,

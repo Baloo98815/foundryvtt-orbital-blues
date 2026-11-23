@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Stun</p>",
+    "description": "<p><strong>Type :</strong> Improvisée<br/><strong>Traits :</strong> Étourdissante</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Stun",
+    "tags": "Étourdissante",
+    "weaponType": "improvised",
     "damage": "",
     "range": "À proximité (mêlée)",
     "cash": 0,

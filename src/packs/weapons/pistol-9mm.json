@@ -5,10 +5,11 @@
   "type": "gear",
   "img": "icons/svg/sword.svg",
   "system": {
-    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Precise</p>",
+    "description": "<p><strong>Type :</strong> Personnelle<br/><strong>Traits :</strong> Précise</p>",
     "source": "Orbital Blues",
     "quantity": 1,
-    "tags": "Precise",
+    "tags": "Précise",
+    "weaponType": "personal",
     "damage": "",
     "range": "Loin (tir)",
     "cash": 0,

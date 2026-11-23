@@ -1,0 +1,20 @@
+{
+  "_id": "zZkC9nzPIj15nIHq",
+  "_key": "!items!zZkC9nzPIj15nIHq",
+  "name": "Explosive",
+  "type": "weaponTrait",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Endommage les structures proches lorsqu'elle est utilisée. En cas de réussite, réduit la Taille d'une bande du double de la valeur normale. Choisissez Bruyante ou Munitions limitées en plus des inconvénients habituels.</p>",
+    "source": "Orbital Blues",
+    "kind": "trait",
+    "nameEn": "Explosive"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
